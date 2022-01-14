@@ -2,7 +2,7 @@ server:
   # 本地接口服务
   test: http://127.0.0.1:8888/
   # https://space.bilibili.com/283273603 演示项目后端服务来自
-  dev: http://api.zreai.com:606/api/private/v1/
+  dev: http://192.168.5.120:8080/backend/
 
 # 基准的请求头信息
 request_headers:
@@ -13,7 +13,7 @@ request_headers:
 file_path:
   test_case: data/case_data.xls
   report: report/
-  log: log/run{time}.log
+  log: log/run{time} log
 
 email:
   # 发件人邮箱
@@ -31,11 +31,11 @@ email:
 
 # 数据库校验- mysql
 database:
-  host: localhost
+  host: 192.168.5.120
   port: 3306
   user: root
   # 不用''会被解析成int类型数据
-  password: '123456'
+  password: 'password'
   db_name:  apiautotest
   charset:  utf8mb4
 
@@ -43,7 +43,7 @@ database:
   ssh_server:
     port: 22
     username: root
-    password: '123456'
+    password: 'password'
     # 私有密钥文件路径
     private_key_file:
     # 私钥密码

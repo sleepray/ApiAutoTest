@@ -1,0 +1,208 @@
+{
+  "uid" : "d206d70c3ee0ba77",
+  "name" : "链路列表查询",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "97179921739f490790b38e4bb04acae0",
+  "time" : {
+    "start" : 1642146160022,
+    "stop" : 1642146160032,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1642146160022,
+      "stop" : 1642146160022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.5.120:8080/backend/trace/list",
+      "time" : {
+        "start" : 1642146160022,
+        "stop" : 1642146160022,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1642146160022,
+        "stop" : 1642146160023,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1d45889d1a5e7e91",
+        "name" : "请求头",
+        "source" : "1d45889d1a5e7e91.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1642146160023,
+        "stop" : 1642146160023,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f53c403f5a684512",
+        "name" : "请求数据",
+        "source" : "f53c403f5a684512.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(s): 0.006106",
+      "time" : {
+        "start" : 1642146160030,
+        "stop" : 1642146160030,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1642146160030,
+        "stop" : 1642146160031,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b20c9e8f30e3dfda",
+        "name" : "响应结果",
+        "source" : "b20c9e8f30e3dfda.json",
+        "type" : "application/json",
+        "size" : 3857
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1642146160031,
+        "stop" : 1642146160031,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f1ebfe3411c9b59b",
+        "name" : "断言结果",
+        "source" : "f1ebfe3411c9b59b.json",
+        "type" : "application/json",
+        "size" : 57
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c0cf909d8d49a27d",
+      "name" : "stderr",
+      "source" : "c0cf909d8d49a27d.txt",
+      "type" : "text/plain",
+      "size" : 4083
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "21936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c41', '链路列表查询', '{\"Authorization\": \"${token}\"}', 'trace/list', 'get', 'params', '', 'check_code', '', '{\"traceId1\": \"$.data.list.0.traceID\"}', '', 200.0]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "d206d70c3ee0ba77.json",
+  "parameterValues" : [ "['c41', '链路列表查询', '{\"Authorization\": \"${token}\"}', 'trace/list', 'get', 'params', '', 'check_code', '', '{\"traceId1\": \"$.data.list.0.traceID\"}', '', 200.0]" ]
+}

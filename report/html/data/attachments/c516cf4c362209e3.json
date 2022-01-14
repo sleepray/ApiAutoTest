@@ -1,7 +1,0 @@
-{
-    "token": "DPn3ZB1AcUi6az/GMSrY1VBiX+zjzaMmvWSPjHzlElQ=",
-    "configType": "global",
-    "key": "degradation.limit,192.168.5.120,2304,locationservice",
-    "degradationService": "statisticsservice",
-    "service": "degradation.service,192.168.5.120,2304,locationservice"
-}

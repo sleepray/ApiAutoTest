@@ -28,8 +28,10 @@ from tools.data_process import DataProcess
 #     # 断言操作
 #     DataProcess.assert_result(response, expect)
 
+
+@pytest.mark.flaky(reruns=None, reruns_delay=1) #pytest 失败重跑装饰器
 def test_main(cases):   # 不使用数据库功能
     # 发送请求
-    response, expect, sql = BaseRequest.send_request(cases)
+    response, response_code, expect, sql, check_mode = BaseRequest.send_request(cases, env = 'dev')
     # 断言操作
-    DataProcess.assert_result(response, expect)
+    DataProcess.assert_result(response, response_code, expect, check_mode)

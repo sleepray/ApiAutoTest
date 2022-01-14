@@ -33,22 +33,23 @@ class BaseRequest(object):
         :param env: 环境名称 默认使用config.yaml server下的 dev 后面的基准地址
         return: 响应结果， 预期结果
         """
-        case_number, case_title, header, path, method, parametric_key, file_obj, data, extra, sql, expect = case
+        case_number, case_title, header, path, method, parametric_key, file_obj, check_mode, data, extra, sql, expect = case
         logger.debug(
-            f"用例进行处理前数据: \n 接口路径: {path} \n 请求参数: {data} \n  提取参数: {extra} \n 后置sql: {sql} \n 预期结果: {expect} \n ")
+            f"用例进行处理前数据: \n用例标题：{case_title}\n 请求头：{header}\n 接口路径: {path}\n 检验方式: {check_mode} \n 请求参数: {data} \n  提取参数: {extra} \n 后置sql: {sql} \n 预期结果: {expect} \n ")
         # allure报告 用例标题
         allure_title(case_title)
         # 处理url、header、data、file、的前置方法
         url = DataProcess.handle_path(path, env)
         header = DataProcess.handle_header(header)
+        logger.info(f"请求头数据： \n {header}")
         data = DataProcess.handle_data(data)
         allure_step('请求数据', data)
         file = DataProcess.handler_files(file_obj)
         # 发送请求
-        response = cls.send_api(url, method, parametric_key, header, data, file)
+        response, response_code = cls.send_api(url, method, parametric_key, header, data, file)
         # 提取参数
         DataProcess.handle_extra(extra, response)
-        return response, expect, sql
+        return response, response_code, expect, sql, check_mode
 
     @classmethod
     def send_api(
@@ -64,6 +65,7 @@ class BaseRequest(object):
         :param url: 请求url
         :param parametric_key: 入参关键字， params(查询参数类型，明文传输，一般在url?参数名=参数值), data(一般用于form表单类型参数)
         json(一般用于json类型请求参数)
+        :param check_mode: 检验方式，有code和json两种
         :param data: 参数数据，默认等于None
         :param file: 文件对象
         :param header: 请求头
@@ -94,9 +96,23 @@ class BaseRequest(object):
         else:
             raise ValueError(
                 '可选关键字为params, json, data')
+
+
+
+        #接口不返回数据时，处理掉，当前方式比较蠢暂时不知道如何处理
+        try :
+            res.json()
+        except Exception as e:
+            assert res.status_code == 200
+            logger.info(f"\n状态为：{res.status_code}")
+            logger.info(f"\n错误{e},返回数据不是json")
+            allure_step('错误信息',f'{e},返回数据不是json')
+            raise e
+            # return None,None
+
         response = res.json()
         logger.info(
-            f'\n最终请求地址:{res.url}\n请求方法:{method}\n请求头:{header}\n请求参数:{data}\n上传文件:{file}\n响应数据:{response}')
+            f'\n最终请求地址:{res.url}\n请求方法:{method}\n请求头:{header}\n请求参数:{data}\n上传文件:{file}\n相应状态码{res.status_code}\n响应数据:{response}')
         allure_step_no(f'响应耗时(s): {res.elapsed.total_seconds()}')
         allure_step('响应结果', response)
-        return response
+        return response, res.status_code

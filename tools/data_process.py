@@ -10,6 +10,7 @@
 from tools import logger, extractor, convert_json, rep_expr, allure_step, allure_step_no
 from tools.db import DB
 from tools.read_file import ReadFile
+import json, requests, json
 
 
 class DataProcess:
@@ -104,6 +105,7 @@ class DataProcess:
         :param extra_str: excel中 提取参数栏内容，需要是 {"参数名": "jsonpath提取式"} 可以有多个
         :param response: 当前用例的响应结果字典
         """
+
         if extra_str != '':
             extra_dict = convert_json(extra_str)
             for k, v in extra_dict.items():
@@ -111,26 +113,47 @@ class DataProcess:
                 logger.info(f'加入依赖字典,key: {k}, 对应value: {v}')
 
     @classmethod
-    def assert_result(cls, response: dict, expect_str: str):
+    def assert_result(cls, response: dict, response_code: str, expect_str: str, check_mode: str):
         """ 预期结果实际结果断言方法
         :param response: 实际响应结果
         :param expect_str: 预期响应内容，从excel中读取
         return None
         """
-        # 后置sql变量转换
-        allure_step("当前可用参数池", cls.extra_pool)
-        expect_str = rep_expr(expect_str, cls.extra_pool)
-        expect_dict = convert_json(expect_str)
-        index = 0
-        for k, v in expect_dict.items():
-            # 获取需要断言的实际结果部分
-            actual = extractor(response, k)
-            index += 1
+
+        #当接口返回为空时，处理掉
+        if response == None:
             logger.info(
-                f'第{index}个断言,实际结果:{actual} | 预期结果:{v} \n断言结果 {actual == v}')
-            allure_step(f'第{index}个断言', f'实际结果:{actual} = 预期结果:{v}')
+                f'断言结果, 返回值为空,无法断言')
+            allure_step(f'断言结果', f'返回值为空,无法断言')
+            return None
+
+        if check_mode == 'check_code':
+            logger.info(
+                f'断言结果, 实际结果:{response_code} | 预期结果:{expect_str} \n断言结果 {int(expect_str) == int(response_code)}')
+            allure_step(f'断言结果',f'实际结果状态码:{response_code} = 预期结果状态码:{expect_str}')
             try:
-                assert actual == v
+                assert int(expect_str) == int(response_code)
             except AssertionError:
                 raise AssertionError(
-                    f'第{index}个断言失败 -|- 实际结果:{actual} || 预期结果: {v}')
+                    f'断言失败 -|- 实际结果:{expect_str} || 预期结果: {response_code}')
+        else:
+            # 后置sql变量转换
+            allure_step("当前可用参数池", cls.extra_pool)
+            expect_str = rep_expr(expect_str, cls.extra_pool)
+            expect_dict = convert_json(expect_str)
+            index = 0
+            for k, v in expect_dict.items():
+                # 获取需要断言的实际结果部分
+                actual = extractor(response, k)
+                index += 1
+                logger.info(
+                    f'第{index}个断言,实际结果:{actual} | 预期结果:{v} \n断言结果 {actual == v}')
+                allure_step(f'第{index}个断言', f'实际结果:{actual} = 预期结果:{v}')
+                try:
+                    assert actual == v
+                except AssertionError:
+                    raise AssertionError(
+                        f'第{index}个断言失败 -|- 实际结果:{actual} || 预期结果: {v}')
+
+
+# if __name__ == '__main__':

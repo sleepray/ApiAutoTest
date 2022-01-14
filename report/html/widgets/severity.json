@@ -1,121 +1,531 @@
 [ {
-  "uid" : "a16534ded807893",
-  "name" : "删除用户zy7y",
+  "uid" : "25917f093d4bc0bb",
+  "name" : "服务降级阈值编辑",
   "time" : {
-    "start" : 1611727380615,
-    "stop" : 1611727380689,
-    "duration" : 74
+    "start" : 1642146159733,
+    "stop" : 1642146159739,
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a7f4cefbb5f96a28",
+  "uid" : "b472c07e52296f45",
+  "name" : "地理位置开",
+  "time" : {
+    "start" : 1642146159868,
+    "stop" : 1642146159874,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d206d70c3ee0ba77",
+  "name" : "链路列表查询",
+  "time" : {
+    "start" : 1642146160022,
+    "stop" : 1642146160032,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "834281b5ab1a6ad",
+  "name" : "服务降级列表查询",
+  "time" : {
+    "start" : 1642146159720,
+    "stop" : 1642146159730,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f35ca3fff57b110c",
+  "name" : "流量控制权重编辑",
+  "time" : {
+    "start" : 1642146160081,
+    "stop" : 1642146160088,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b56f0218406c9e46",
+  "name" : "服务降级",
+  "time" : {
+    "start" : 1642146159742,
+    "stop" : 1642146159748,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3699d261672465dd",
+  "name" : "指标统计",
+  "time" : {
+    "start" : 1642146160151,
+    "stop" : 1642146160157,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce984eb26df4807c",
+  "name" : "服务配置删除-service",
+  "time" : {
+    "start" : 1642146160014,
+    "stop" : 1642146160020,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d93a249ad2a61357",
+  "name" : "白名单删除",
+  "time" : {
+    "start" : 1642146159848,
+    "stop" : 1642146159856,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fe3328f361ab6f2",
+  "name" : "地理位置强制开启",
+  "time" : {
+    "start" : 1642146159885,
+    "stop" : 1642146159891,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac453b2e81fef505",
+  "name" : "白名单修改",
+  "time" : {
+    "start" : 1642146159830,
+    "stop" : 1642146159837,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22e39bd62700d70d",
+  "name" : "服务管理查询",
+  "time" : {
+    "start" : 1642146160132,
+    "stop" : 1642146160138,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c66e5aea8c91e7c",
+  "name" : "服务配置编辑-service",
+  "time" : {
+    "start" : 1642146159997,
+    "stop" : 1642146160003,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24cf1fd9e6e95525",
+  "name" : "服务熔断开",
+  "time" : {
+    "start" : 1642146159761,
+    "stop" : 1642146159767,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fdbe4935d72cae2f",
+  "name" : "服务质量开",
+  "time" : {
+    "start" : 1642146160100,
+    "stop" : 1642146160106,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "841b033a30a6f885",
+  "name" : "条件表达式编辑",
+  "time" : {
+    "start" : 1642146159961,
+    "stop" : 1642146159968,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e50321382644c631",
+  "name" : "负载均衡-哈希",
+  "time" : {
+    "start" : 1642146159607,
+    "stop" : 1642146159689,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c8e0688df30a4e",
+  "name" : "条件表达式标签关闭",
+  "time" : {
+    "start" : 1642146159940,
+    "stop" : 1642146159949,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ac7497a5d32b862",
+  "name" : "服务质量列表查询",
+  "time" : {
+    "start" : 1642146160108,
+    "stop" : 1642146160114,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45615d86fd480f30",
+  "name" : "地理位置添加",
+  "time" : {
+    "start" : 1642146159876,
+    "stop" : 1642146159883,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af405d881b28fc68",
+  "name" : "负载均衡-随机",
+  "time" : {
+    "start" : 1642146159587,
+    "stop" : 1642146159593,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf838544c4cbf9b",
+  "name" : "服务配置新建-service",
+  "time" : {
+    "start" : 1642146159979,
+    "stop" : 1642146159985,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fac646c6dcfa9d9",
+  "name" : "负载均衡-最小连接",
+  "time" : {
+    "start" : 1642146159692,
+    "stop" : 1642146159698,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97dd1a588131c0f3",
   "name" : "post请求实现登录",
   "time" : {
-    "start" : 1611727379836,
-    "stop" : 1611727380017,
-    "duration" : 181
+    "start" : 1642146159505,
+    "stop" : 1642146159584,
+    "duration" : 79
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c78627aa4a5a8921",
-  "name" : "get请求查询用户数据列表",
+  "uid" : "156ea89c1bfb068f",
+  "name" : "服务配置新建-global",
   "time" : {
-    "start" : 1611727380024,
-    "stop" : 1611727380194,
-    "duration" : 170
+    "start" : 1642146159971,
+    "stop" : 1642146159977,
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8635dce19545396f",
-  "name" : "修改用户状态接口",
+  "uid" : "8327ffd95c660290",
+  "name" : "服务管理修改",
   "time" : {
-    "start" : 1611727380475,
-    "stop" : 1611727380541,
-    "duration" : 66
+    "start" : 1642146160141,
+    "stop" : 1642146160148,
+    "duration" : 7
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4970b263bd143b68",
-  "name" : "修改用户状态为2",
+  "uid" : "d9164018fb6a8083",
+  "name" : "黑名单添加",
   "time" : {
-    "start" : 1611727380546,
-    "stop" : 1611727380611,
-    "duration" : 65
+    "start" : 1642146159815,
+    "stop" : 1642146159822,
+    "duration" : 7
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8e8882fe810305d4",
-  "name" : "调试运算新功能",
+  "uid" : "9561a2d877309e1a",
+  "name" : "黑名单删除",
   "time" : {
-    "start" : 1611727380763,
-    "stop" : 1611727380933,
-    "duration" : 170
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "1115b273d1a7588e",
-  "name" : "添加用户正常接口数据",
-  "time" : {
-    "start" : 1611727380270,
-    "stop" : 1611727380469,
-    "duration" : 199
+    "start" : 1642146159858,
+    "stop" : 1642146159865,
+    "duration" : 7
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "775201c98d5e3a30",
-  "name" : "get请求实现登录",
+  "uid" : "665c5077b0489ef",
+  "name" : "服务质量编辑",
   "time" : {
-    "start" : 1611727379651,
-    "stop" : 1611727379762,
-    "duration" : 111
+    "start" : 1642146160117,
+    "stop" : 1642146160123,
+    "duration" : 6
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f1600089f14cf0d7",
-  "name" : "get请求查询用户数据列表",
+  "uid" : "d13500ba9705afa1",
+  "name" : "服务熔断默认阈值",
   "time" : {
-    "start" : 1611727380199,
-    "stop" : 1611727380256,
-    "duration" : 57
+    "start" : 1642146159770,
+    "stop" : 1642146159777,
+    "duration" : 7
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9100d8f4e1fc0167",
-  "name" : "调试运算新功能,从响应提取后运算",
+  "uid" : "19f0fb5c234c15d2",
+  "name" : "服务配置编辑-global",
   "time" : {
-    "start" : 1611727380944,
-    "stop" : 1611727380988,
-    "duration" : 44
+    "start" : 1642146159988,
+    "stop" : 1642146159994,
+    "duration" : 6
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3df58905af4378fb",
-  "name" : "调试运算新功能,从path需要运算",
+  "uid" : "1b0cb471fca8221b",
+  "name" : "负载均衡-轮询",
   "time" : {
-    "start" : 1611727380998,
-    "stop" : 1611727381044,
-    "duration" : 46
+    "start" : 1642146159596,
+    "stop" : 1642146159604,
+    "duration" : 8
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5363b4ff311218d8",
-  "name" : "本地添加用户，测试数据库备份",
+  "uid" : "71b2674782f4e8e2",
+  "name" : "服务熔断编辑",
   "time" : {
-    "start" : 1611727380696,
-    "stop" : 1611727380750,
-    "duration" : 54
+    "start" : 1642146159789,
+    "stop" : 1642146159794,
+    "duration" : 5
   },
-  "status" : "failed",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "16001aefe7d56cb4",
+  "name" : "服务降级关",
+  "time" : {
+    "start" : 1642146159751,
+    "stop" : 1642146159759,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef31b1e5c6558737",
+  "name" : "服务熔断列表",
+  "time" : {
+    "start" : 1642146159779,
+    "stop" : 1642146159787,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f5fdfeaac257dd8",
+  "name" : "服务质量关",
+  "time" : {
+    "start" : 1642146160125,
+    "stop" : 1642146160129,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ffc499f1ed98b1d2",
+  "name" : "地理位置强制关闭",
+  "time" : {
+    "start" : 1642146159895,
+    "stop" : 1642146159900,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8a4d265051e0f2f",
+  "name" : "条件表达式添加",
+  "time" : {
+    "start" : 1642146159930,
+    "stop" : 1642146159938,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37ab005e820ed22",
+  "name" : "服务配置删除-global",
+  "time" : {
+    "start" : 1642146160005,
+    "stop" : 1642146160011,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9c7555635cb8c17",
+  "name" : "地理位置编辑",
+  "time" : {
+    "start" : 1642146159903,
+    "stop" : 1642146159910,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1b726f28c0a2b4f",
+  "name" : "流量控制列表查询",
+  "time" : {
+    "start" : 1642146160061,
+    "stop" : 1642146160078,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fec8a8876dc476b",
+  "name" : "服务降级开",
+  "time" : {
+    "start" : 1642146159701,
+    "stop" : 1642146159708,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26b34d5caed8fb59",
+  "name" : "白名单添加",
+  "time" : {
+    "start" : 1642146159806,
+    "stop" : 1642146159813,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da2a2311e8d981dc",
+  "name" : "条件表达式标签开启",
+  "time" : {
+    "start" : 1642146159951,
+    "stop" : 1642146159959,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "21428b314633df6d",
+  "name" : "流量默认网速值",
+  "time" : {
+    "start" : 1642146160053,
+    "stop" : 1642146160059,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a9d14b63104c092",
+  "name" : "地理位置删除",
+  "time" : {
+    "start" : 1642146159913,
+    "stop" : 1642146159920,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b7e8bfe3fd1e7f3",
+  "name" : "地理位置关",
+  "time" : {
+    "start" : 1642146159922,
+    "stop" : 1642146159927,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7645701e500cdd0e",
+  "name" : "流量控制关",
+  "time" : {
+    "start" : 1642146160091,
+    "stop" : 1642146160097,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0d6a45e86818b6c",
+  "name" : "链路查询",
+  "time" : {
+    "start" : 1642146160034,
+    "stop" : 1642146160041,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dee2fe4e6a6bbbd0",
+  "name" : "服务熔断关",
+  "time" : {
+    "start" : 1642146159797,
+    "stop" : 1642146159803,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a1ba179d52340ff",
+  "name" : "服务降级默认阈值",
+  "time" : {
+    "start" : 1642146159711,
+    "stop" : 1642146159718,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13f6024c4106a88e",
+  "name" : "流量控制开",
+  "time" : {
+    "start" : 1642146160044,
+    "stop" : 1642146160051,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a966afc4a5aebea",
+  "name" : "黑名单修改",
+  "time" : {
+    "start" : 1642146159839,
+    "stop" : 1642146159846,
+    "duration" : 7
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

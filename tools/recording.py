@@ -38,6 +38,7 @@ class Counter:
             '请求方式',
             '入参关键字',
             '上传文件',
+            '检验方式',
             '请求数据',
             '提取参数',
             '后置sql',
@@ -135,6 +136,7 @@ class Counter:
         """
         data_dict = {}
         if data.startswith('{') and data.endswith('}'):
+            #判断请求头是否是 {}格式
             return data
         try:
             for i in data.split('&'):

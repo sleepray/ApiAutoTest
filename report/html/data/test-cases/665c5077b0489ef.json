@@ -1,0 +1,229 @@
+{
+  "uid" : "665c5077b0489ef",
+  "name" : "服务质量编辑",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "d90cba7385e9471943c57cd1332d0ac5",
+  "time" : {
+    "start" : 1642146160117,
+    "stop" : 1642146160123,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1642146160116,
+      "stop" : 1642146160116,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.5.120:8080/backend/config/update",
+      "time" : {
+        "start" : 1642146160117,
+        "stop" : 1642146160117,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1642146160117,
+        "stop" : 1642146160117,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "150c2b0459c7becb",
+        "name" : "请求头",
+        "source" : "150c2b0459c7becb.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1642146160118,
+        "stop" : 1642146160118,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "db8c6d006f3dc319",
+        "name" : "请求数据",
+        "source" : "db8c6d006f3dc319.json",
+        "type" : "application/json",
+        "size" : 111
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(s): 0.00233",
+      "time" : {
+        "start" : 1642146160121,
+        "stop" : 1642146160121,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1642146160121,
+        "stop" : 1642146160121,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e271fa960525d5ed",
+        "name" : "响应结果",
+        "source" : "e271fa960525d5ed.json",
+        "type" : "application/json",
+        "size" : 78
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1642146160122,
+        "stop" : 1642146160122,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bda97cd3cf0560c5",
+        "name" : "当前可用参数池",
+        "source" : "bda97cd3cf0560c5.json",
+        "type" : "application/json",
+        "size" : 304
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1642146160122,
+        "stop" : 1642146160122,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cdd325d181cf30ef",
+        "name" : "第1个断言",
+        "source" : "cdd325d181cf30ef.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "86d20f1990ef665a",
+      "name" : "stderr",
+      "source" : "86d20f1990ef665a.txt",
+      "type" : "text/plain",
+      "size" : 1789
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "21936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c50', '服务质量编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"2,5,2\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "665c5077b0489ef.json",
+  "parameterValues" : [ "['c50', '服务质量编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"2,5,2\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+}

@@ -1,0 +1,229 @@
+{
+  "uid" : "1b0cb471fca8221b",
+  "name" : "负载均衡-轮询",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "3a098e261ee7b9115a8be890393002aa",
+  "time" : {
+    "start" : 1642146159596,
+    "stop" : 1642146159604,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1642146159596,
+      "stop" : 1642146159596,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.5.120:8080/backend/config/update",
+      "time" : {
+        "start" : 1642146159596,
+        "stop" : 1642146159597,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1642146159597,
+        "stop" : 1642146159597,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "78fbc954de6b9dfc",
+        "name" : "请求头",
+        "source" : "78fbc954de6b9dfc.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1642146159597,
+        "stop" : 1642146159597,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cbcd1dcc676ea7c",
+        "name" : "请求数据",
+        "source" : "cbcd1dcc676ea7c.json",
+        "type" : "application/json",
+        "size" : 82
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(s): 0.003341",
+      "time" : {
+        "start" : 1642146159602,
+        "stop" : 1642146159602,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1642146159602,
+        "stop" : 1642146159602,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "87f9e6cfcb73f2b4",
+        "name" : "响应结果",
+        "source" : "87f9e6cfcb73f2b4.json",
+        "type" : "application/json",
+        "size" : 78
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1642146159602,
+        "stop" : 1642146159603,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e9cc8df95efe222d",
+        "name" : "当前可用参数池",
+        "source" : "e9cc8df95efe222d.json",
+        "type" : "application/json",
+        "size" : 63
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1642146159603,
+        "stop" : 1642146159603,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "50c96889a5e154be",
+        "name" : "第1个断言",
+        "source" : "50c96889a5e154be.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9d4b68c078985075",
+      "name" : "stderr",
+      "source" : "9d4b68c078985075.txt",
+      "type" : "text/plain",
+      "size" : 1763
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "21936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c3', '负载均衡-轮询', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"loadBalance.default\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "1b0cb471fca8221b.json",
+  "parameterValues" : [ "['c3', '负载均衡-轮询', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"loadBalance.default\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+}

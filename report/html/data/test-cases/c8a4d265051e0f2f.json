@@ -1,0 +1,229 @@
+{
+  "uid" : "c8a4d265051e0f2f",
+  "name" : "条件表达式添加",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "2cb684a829197011f919e130a4dbfdd0",
+  "time" : {
+    "start" : 1642146159930,
+    "stop" : 1642146159938,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1642146159929,
+      "stop" : 1642146159929,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.5.120:8080/backend/condition/add",
+      "time" : {
+        "start" : 1642146159930,
+        "stop" : 1642146159930,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1642146159930,
+        "stop" : 1642146159930,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7f97330190ffa9cb",
+        "name" : "请求头",
+        "source" : "7f97330190ffa9cb.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1642146159931,
+        "stop" : 1642146159931,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a845c015fff605f7",
+        "name" : "请求数据",
+        "source" : "a845c015fff605f7.json",
+        "type" : "application/json",
+        "size" : 195
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(s): 0.003922",
+      "time" : {
+        "start" : 1642146159936,
+        "stop" : 1642146159936,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1642146159936,
+        "stop" : 1642146159936,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c9a367c2e126ac64",
+        "name" : "响应结果",
+        "source" : "c9a367c2e126ac64.json",
+        "type" : "application/json",
+        "size" : 285
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1642146159936,
+        "stop" : 1642146159937,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3b8e4017e554b6dd",
+        "name" : "当前可用参数池",
+        "source" : "3b8e4017e554b6dd.json",
+        "type" : "application/json",
+        "size" : 270
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1642146159937,
+        "stop" : 1642146159937,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a3d1e8f7f4203225",
+        "name" : "第1个断言",
+        "source" : "a3d1e8f7f4203225.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "42d1ba6e7c45798c",
+      "name" : "stderr",
+      "source" : "42d1ba6e7c45798c.txt",
+      "type" : "text/plain",
+      "size" : 1925
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "21936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c30', '条件表达式添加', '{\"Authorization\": \"${token}\"}', 'condition/add', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"enabled\":true,\"tags\":[{\"address\":[\"432.1.3.5\"],\"tagname\":\"标签1\"}]}', '', '', '{\"$.data.servicename\": \"服务1\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "c8a4d265051e0f2f.json",
+  "parameterValues" : [ "['c30', '条件表达式添加', '{\"Authorization\": \"${token}\"}', 'condition/add', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"enabled\":true,\"tags\":[{\"address\":[\"432.1.3.5\"],\"tagname\":\"标签1\"}]}', '', '', '{\"$.data.servicename\": \"服务1\"}']" ]
+}
