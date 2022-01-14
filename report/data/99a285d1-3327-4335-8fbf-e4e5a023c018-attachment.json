@@ -1,0 +1,47 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "degradationLimit": {
+                    "key": "degradation.limit,192.168.5.120,3021,locationservice",
+                    "value": "5",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "degradationService": {
+                    "key": "degradation.service,192.168.5.120,3021,locationservice",
+                    "value": "statisticsservice",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "name": "locationservice",
+                "port": 3021,
+                "deviceName": "",
+                "clusterName": "admin"
+            },
+            {
+                "degradationLimit": {
+                    "key": "degradation.limit,192.168.5.120,2351,statisticsservice",
+                    "value": "5",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "degradationService": {
+                    "key": "degradation.service,192.168.5.120,2351,statisticsservice",
+                    "value": "$.data.list.1.name",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "name": "statisticsservice",
+                "port": 2351,
+                "deviceName": "stati1",
+                "clusterName": "admin"
+            }
+        ],
+        "page": 1,
+        "size": 10,
+        "total": 2
+    }
+}

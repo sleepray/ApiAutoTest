@@ -1,0 +1,159 @@
+{
+  "uid" : "18a7ba5256ad47f3",
+  "name" : "条件表达式删除",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "abfd3a4f7f4e445d9fadd1040c41f2e2",
+  "time" : {
+    "start" : 1642130677103,
+    "stop" : 1642130677109,
+    "duration" : 6
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: cannot unpack non-iterable NoneType object",
+  "statusTrace" : "cases = ['c34', '条件表达式删除', '{\"Authorization\": \"${token}\"}', 'condition/delete', 'get', 'params', ...]\n\n    @pytest.mark.flaky(reruns=None, reruns_delay=1) #pytest 失败重跑装饰器\n    def test_main(cases):   # 不使用数据库功能\n        # 发送请求\n>       response, response_code, expect, sql, check_mode = BaseRequest.send_request(cases, env = 'dev')\n\ntest\\test_api.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncls = <class 'api.base_requests.BaseRequest'>\ncase = ['c34', '条件表达式删除', '{\"Authorization\": \"${token}\"}', 'condition/delete', 'get', 'params', ...]\nenv = 'dev'\n\n    @classmethod\n    def send_request(cls, case: list, env: str = 'dev') -> object:\n        \"\"\"处理case数据，转换成可用数据发送请求\n        :param case: 读取出来的每一行用例内容，可进行解包\n        :param env: 环境名称 默认使用config.yaml server下的 dev 后面的基准地址\n        return: 响应结果， 预期结果\n        \"\"\"\n        case_number, case_title, header, path, method, parametric_key, file_obj, check_mode, data, extra, sql, expect = case\n        logger.debug(\n            f\"用例进行处理前数据: \\n用例标题：{case_title}\\n 请求头：{header}\\n 接口路径: {path}\\n 检验方式: {check_mode} \\n 请求参数: {data} \\n  提取参数: {extra} \\n 后置sql: {sql} \\n 预期结果: {expect} \\n \")\n        # allure报告 用例标题\n        allure_title(case_title)\n        # 处理url、header、data、file、的前置方法\n        url = DataProcess.handle_path(path, env)\n        header = DataProcess.handle_header(header)\n        logger.info(f\"请求头数据： \\n {header}\")\n        data = DataProcess.handle_data(data)\n        allure_step('请求数据', data)\n        file = DataProcess.handler_files(file_obj)\n        # 发送请求\n>       response, response_code = cls.send_api(url, method, parametric_key, check_mode, header, data, file)\nE       TypeError: cannot unpack non-iterable NoneType object\n\napi\\base_requests.py:49: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1642130677103,
+      "stop" : 1642130677103,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: cannot unpack non-iterable NoneType object",
+    "statusTrace" : "cases = ['c34', '条件表达式删除', '{\"Authorization\": \"${token}\"}', 'condition/delete', 'get', 'params', ...]\n\n    @pytest.mark.flaky(reruns=None, reruns_delay=1) #pytest 失败重跑装饰器\n    def test_main(cases):   # 不使用数据库功能\n        # 发送请求\n>       response, response_code, expect, sql, check_mode = BaseRequest.send_request(cases, env = 'dev')\n\ntest\\test_api.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncls = <class 'api.base_requests.BaseRequest'>\ncase = ['c34', '条件表达式删除', '{\"Authorization\": \"${token}\"}', 'condition/delete', 'get', 'params', ...]\nenv = 'dev'\n\n    @classmethod\n    def send_request(cls, case: list, env: str = 'dev') -> object:\n        \"\"\"处理case数据，转换成可用数据发送请求\n        :param case: 读取出来的每一行用例内容，可进行解包\n        :param env: 环境名称 默认使用config.yaml server下的 dev 后面的基准地址\n        return: 响应结果， 预期结果\n        \"\"\"\n        case_number, case_title, header, path, method, parametric_key, file_obj, check_mode, data, extra, sql, expect = case\n        logger.debug(\n            f\"用例进行处理前数据: \\n用例标题：{case_title}\\n 请求头：{header}\\n 接口路径: {path}\\n 检验方式: {check_mode} \\n 请求参数: {data} \\n  提取参数: {extra} \\n 后置sql: {sql} \\n 预期结果: {expect} \\n \")\n        # allure报告 用例标题\n        allure_title(case_title)\n        # 处理url、header、data、file、的前置方法\n        url = DataProcess.handle_path(path, env)\n        header = DataProcess.handle_header(header)\n        logger.info(f\"请求头数据： \\n {header}\")\n        data = DataProcess.handle_data(data)\n        allure_step('请求数据', data)\n        file = DataProcess.handler_files(file_obj)\n        # 发送请求\n>       response, response_code = cls.send_api(url, method, parametric_key, check_mode, header, data, file)\nE       TypeError: cannot unpack non-iterable NoneType object\n\napi\\base_requests.py:49: TypeError",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.5.120:8080/backend/condition/delete",
+      "time" : {
+        "start" : 1642130677103,
+        "stop" : 1642130677103,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1642130677103,
+        "stop" : 1642130677104,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7c8fb1d4a5d18af3",
+        "name" : "请求头",
+        "source" : "7c8fb1d4a5d18af3.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1642130677104,
+        "stop" : 1642130677104,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "80af92d3668cc977",
+        "name" : "请求数据",
+        "source" : "80af92d3668cc977.json",
+        "type" : "application/json",
+        "size" : 25
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "ace198085e69d88c",
+      "name" : "stderr",
+      "source" : "ace198085e69d88c.txt",
+      "type" : "text/plain",
+      "size" : 1147
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "15972-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c34', '条件表达式删除', '{\"Authorization\": \"${token}\"}', 'condition/delete', 'get', 'params', '', '', '{\"name\":\"服务1\"}', '', '', '']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "18a7ba5256ad47f3.json",
+  "parameterValues" : [ "['c34', '条件表达式删除', '{\"Authorization\": \"${token}\"}', 'condition/delete', 'get', 'params', '', '', '{\"name\":\"服务1\"}', '', '', '']" ]
+}

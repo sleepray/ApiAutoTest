@@ -1,0 +1,25 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "serviceName": "locationservice",
+                "ip": 3232236920,
+                "port": 3021,
+                "succeed": 1,
+                "failed": 0,
+                "fusing": 0,
+                "random": 0,
+                "round": 0,
+                "hash": 0,
+                "master": 0,
+                "leastConnection": 0,
+                "degradation": 0
+            }
+        ],
+        "page": 1,
+        "size": 10,
+        "total": 1
+    }
+}

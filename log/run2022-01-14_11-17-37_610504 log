@@ -1,0 +1,1146 @@
+2022-01-14 11:17:37.616 | INFO     | __main__:run:29 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-01-14 11:17:37.905 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: user/login
+ 检验方式: check_code 
+ 请求参数: {"username": "admin", "password": "password"} 
+  提取参数: {"token": "$.data"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: {"$.code":0} 
+ 
+2022-01-14 11:17:37.906 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-01-14 11:17:37.914 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/user/login
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'admin', 'password': 'password'}
+上传文件:None
+相应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': 'DPn3ZB1AcUi6az/GMSrY1dM+mDDcQoLK85y2I4nrodY='}
+2022-01-14 11:17:38.015 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-随机
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql: select * from apis; 
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.016 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.016 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.019 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.028 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-轮询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.029 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.029 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.032 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.040 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-哈希
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"2","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.041 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.042 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.044 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '2', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.052 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-最小连接
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"3","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.052 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.053 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.056 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '3', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.064 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"degradation.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.065 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.065 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.067 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'degradation.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.076 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级默认阈值
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"degradation.default","value":"5","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.076 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.077 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.080 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'degradation.default', 'value': '5', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.088 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/degradation/list
+ 检验方式:  
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.degradationLimit.configType", "key":"$.data.list.0.degradationLimit.key","degradationService":"$.data.list.1.name", "service":"$.data.list.0.degradationService.key"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.089 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.090 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.091 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/degradation/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:None
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.099 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级阈值编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"5","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.100 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.101 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.102 | ERROR    | tools:rep_expr:59 - name 'key' is not defined
+2022-01-14 11:17:38.102 | ERROR    | tools:rep_expr:59 - name 'configType' is not defined
+2022-01-14 11:17:38.105 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': '${key}', 'value': '5', 'configType': '${configType}'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.113 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${service}","value":"${degradationService}","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.113 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.114 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.115 | ERROR    | tools:rep_expr:59 - name 'service' is not defined
+2022-01-14 11:17:38.115 | ERROR    | tools:rep_expr:59 - name 'degradationService' is not defined
+2022-01-14 11:17:38.116 | ERROR    | tools:rep_expr:59 - name 'configType' is not defined
+2022-01-14 11:17:38.118 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': '${service}', 'value': '${degradationService}', 'configType': '${configType}'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.126 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"degradation.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.126 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.127 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.129 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'degradation.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.139 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"fusing.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.140 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.140 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.143 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'fusing.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.181 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断默认阈值
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"fusing.default","value":"5","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.181 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.182 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.221 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'fusing.default', 'value': '5', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.229 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断列表
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/fusing/list
+ 检验方式:  
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.configType", "key":"$.data.list.0.key"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.229 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.230 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.232 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/fusing/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:None
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.242 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"5","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.243 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.243 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.244 | ERROR    | tools:rep_expr:59 - name 'key' is not defined
+2022-01-14 11:17:38.244 | ERROR    | tools:rep_expr:59 - name 'configType' is not defined
+2022-01-14 11:17:38.246 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': '${key}', 'value': '5', 'configType': '${configType}'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.255 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"fusing.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.255 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.256 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.258 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'fusing.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.266 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：白名单添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/whitelist/add
+ 检验方式:  
+ 请求参数: ["192.168.5.101"] 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.267 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.268 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.270 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/ipfilter/whitelist/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:['192.168.5.101']
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.278 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：黑名单添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/blacklist/add
+ 检验方式:  
+ 请求参数: ["192.168.5.102"] 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.278 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.279 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.282 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/ipfilter/blacklist/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:['192.168.5.102']
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.290 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：白名单修改
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/whitelist/modify
+ 检验方式:  
+ 请求参数: {"ip":"192.168.5.11","index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.290 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.291 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.293 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/ipfilter/whitelist/modify
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'ip': '192.168.5.11', 'index': 0}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.304 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：黑名单修改
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/blacklist/modify
+ 检验方式:  
+ 请求参数: {"ip":"192.168.5.12","index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.304 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.305 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.307 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/ipfilter/blacklist/modify
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'ip': '192.168.5.12', 'index': 0}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.315 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：白名单删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/whitelist/remove
+ 检验方式:  
+ 请求参数: {"index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.316 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.317 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.319 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/ipfilter/whitelist/remove
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'index': 0}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.327 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：黑名单删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/blacklist/remove
+ 检验方式:  
+ 请求参数: {"index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.327 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.328 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.330 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/ipfilter/blacklist/remove
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'index': 0}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.338 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.339 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.340 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.342 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'location.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.350 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: location/add
+ 检验方式:  
+ 请求参数: {"locationname":"区域1","longtitude":32,"latitude":23,"radius":12} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.locationname": "区域1"} 
+ 
+2022-01-14 11:17:38.350 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.351 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.353 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/location/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'locationname': '区域1', 'longtitude': 32, 'latitude': 23, 'radius': 12}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.362 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置强制开启
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.force,区域1","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.362 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.363 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.365 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'location.force,区域1', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.373 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置强制关闭
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.force,区域1","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.374 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.374 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.376 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'location.force,区域1', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.384 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: location/update
+ 检验方式:  
+ 请求参数: {"locationname":"区域1","longtitude":30,"latitude":30,"radius":10} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.locationname": "区域1"} 
+ 
+2022-01-14 11:17:38.385 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.386 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.388 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/location/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'locationname': '区域1', 'longtitude': 30, 'latitude': 30, 'radius': 10}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.396 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: location/delete
+ 检验方式:  
+ 请求参数: {"index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.396 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.397 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.399 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/location/delete?index=0
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'index': 0}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.407 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.407 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.408 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.410 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'location.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.418 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/add
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","enabled":true,"tags":[{"address":["432.1.3.5"],"tagname":"标签1"}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.servicename": "服务1"} 
+ 
+2022-01-14 11:17:38.418 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.419 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.421 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/condition/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'servicename': '服务1', 'enabled': True, 'tags': [{'address': ['432.1.3.5'], 'tagname': '标签1'}]}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.429 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式标签关闭
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/update
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","tags":[{"tagname":"标签1","address":["432.1.3.5"]}],"enabled":false} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.servicename": "服务1"} 
+ 
+2022-01-14 11:17:38.430 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.430 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.432 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/condition/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'servicename': '服务1', 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}], 'enabled': False}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.440 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式标签开启
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/update
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","tags":[{"tagname":"标签1","address":["432.1.3.5"]}],"enabled":true} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.servicename": "服务1"} 
+ 
+2022-01-14 11:17:38.441 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.441 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.443 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/condition/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'servicename': '服务1', 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}], 'enabled': True}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.452 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/update
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","tags":[{"tagname":"标签2","address":["203.1.3.5"]}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.tags.0.tagname": "标签2"} 
+ 
+2022-01-14 11:17:38.452 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.453 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.455 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/condition/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'servicename': '服务1', 'tags': [{'tagname': '标签2', 'address': ['203.1.3.5']}]}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.462 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/delete
+ 检验方式:  
+ 请求参数: {"name":"服务1"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果:  
+ 
+2022-01-14 11:17:38.463 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.463 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.466 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/condition/delete?name=%E6%9C%8D%E5%8A%A11
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'name': '服务1'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.473 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置新建-global
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/post
+ 检验方式:  
+ 请求参数: {"configType":"global","configContent":[{"id":"${get_current_highest()}","key":"key1","value":"value1"}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.474 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.474 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.477 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/service/post
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'configType': 'global', 'configContent': [{'id': '1642130258', 'key': 'key1', 'value': 'value1'}]}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.484 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置新建-service
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/post
+ 检验方式:  
+ 请求参数: {"configType":"","configContent":[{"id":"${get_current_highest()}","key":"key2","value":"value/v1"}],"serviceName":"服务1"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.485 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.485 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.487 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/service/post
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'configType': '', 'configContent': [{'id': '1642130258', 'key': 'key2', 'value': 'value/v1'}], 'serviceName': '服务1'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.494 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置编辑-global
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/update
+ 检验方式:  
+ 请求参数: {"configType":"global","configContent":[{"key":"key1","value":"value2","id":"${get_current_highest()}"}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.495 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.495 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.497 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/service/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'configType': 'global', 'configContent': [{'key': 'key1', 'value': 'value2', 'id': '1642130258'}]}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.505 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置编辑-service
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/update
+ 检验方式:  
+ 请求参数: {"configType":"","configContent":[{"id":"${get_current_highest()}","key":"key2","value":"value/v2"}],"serviceName":"服务1"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.506 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.507 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.509 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/service/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'configType': '', 'configContent': [{'id': '1642130258', 'key': 'key2', 'value': 'value/v2'}], 'serviceName': '服务1'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.516 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置删除-global
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/delete
+ 检验方式:  
+ 请求参数: {"key":"key1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.517 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.518 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.521 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/service/delete?key=key1&configType=global
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'key1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.530 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置删除-service
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/delete
+ 检验方式:  
+ 请求参数: {"serviceName":"服务1","key":"key2","configType":"service"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.530 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.531 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.533 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/service/delete?serviceName=%E6%9C%8D%E5%8A%A11&key=key2&configType=service
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'serviceName': '服务1', 'key': 'key2', 'configType': 'service'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.541 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：链路列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: trace/list
+ 检验方式:  
+ 请求参数:  
+  提取参数: {"traceId1": "$.data.list.0.traceID"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.541 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.542 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.544 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/trace/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:None
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.551 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：链路查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: trace/detail
+ 检验方式:  
+ 请求参数: {"traceId":"${traceId1}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.552 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.552 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.553 | ERROR    | tools:rep_expr:59 - name 'traceId1' is not defined
+2022-01-14 11:17:38.555 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/trace/detail?traceId=%24%7BtraceId1%7D
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'traceId': '${traceId1}'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.562 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"trafficControl.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.563 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.563 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.565 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'trafficControl.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.574 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量默认网速值
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"trafficControl.default","value":"12","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.574 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.575 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.576 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'trafficControl.default', 'value': '12', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.585 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/trafficControl/list
+ 检验方式:  
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.configType", "key":"$.data.list.0.key"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.585 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.586 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.588 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/trafficControl/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:None
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.596 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制权重编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"10","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.597 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.597 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.598 | ERROR    | tools:rep_expr:59 - name 'key' is not defined
+2022-01-14 11:17:38.598 | ERROR    | tools:rep_expr:59 - name 'configType' is not defined
+2022-01-14 11:17:38.600 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': '${key}', 'value': '10', 'configType': '${configType}'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.607 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"trafficControl.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.608 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.608 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.611 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'trafficControl.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.618 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"qos.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.619 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.619 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.621 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'qos.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.629 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/qos/list
+ 检验方式:  
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.configType", "key":"$.data.list.0.key"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.629 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.630 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.632 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/qos/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:None
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.640 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"2,5,2","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.640 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.641 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.641 | ERROR    | tools:rep_expr:59 - name 'key' is not defined
+2022-01-14 11:17:38.642 | ERROR    | tools:rep_expr:59 - name 'configType' is not defined
+2022-01-14 11:17:38.644 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': '${key}', 'value': '2,5,2', 'configType': '${configType}'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.666 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"qos.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:38.666 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.667 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.669 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'qos.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.677 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务管理查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: registry/list
+ 检验方式:  
+ 请求参数:  
+  提取参数: {"ip":"$.data.list.0.ip", "servicename":"$.data.list.0.name", "port":"$.data.list.0.port", "id": "$.data.list.0.id", "clusterName":"$.data.list.0.clusterName"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.677 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.678 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.680 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/registry/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:None
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:38.688 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务管理修改
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: registry/update
+ 检验方式:  
+ 请求参数: {"id":"${id}","name":"${servicename}","ip":"${ip}","port":${port},"deviceName":"","longtitude":15.21,"latitude":16.321,"clusterName":"${clusterName}","description":"描述"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.688 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.689 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.689 | ERROR    | tools:rep_expr:59 - name 'servicename' is not defined
+2022-01-14 11:17:38.689 | ERROR    | tools:rep_expr:59 - name 'ip' is not defined
+2022-01-14 11:17:38.689 | ERROR    | tools:rep_expr:59 - name 'port' is not defined
+2022-01-14 11:17:38.690 | ERROR    | tools:rep_expr:59 - name 'clusterName' is not defined
+2022-01-14 11:17:38.768 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：指标统计
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: statusStat/StatCount
+ 检验方式:  
+ 请求参数: {"ip":"${iptoint("${ip}")}", "serviceName":"${servicename}", "port":"${port}", "infoType":4} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-01-14 11:17:38.768 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:38.769 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:38.783 | ERROR    | tools:rep_expr:59 - EOL while scanning string literal (<string>, line 1)
+2022-01-14 11:17:38.783 | ERROR    | tools:rep_expr:59 - name 'servicename' is not defined
+2022-01-14 11:17:38.783 | ERROR    | tools:rep_expr:59 - name 'port' is not defined
+2022-01-14 11:17:42.920 | SUCCESS  | __main__:run:48 - 报告已生成

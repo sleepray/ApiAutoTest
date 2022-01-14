@@ -1,0 +1,35 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "id": "53d3a6806f2ced5d77dbb918b804a7bf",
+                "name": "locationservice",
+                "ip": "192.168.5.120",
+                "port": 3021,
+                "clusterName": "admin",
+                "description": "描述",
+                "methods": [
+                    "CallFunc1"
+                ],
+                "longtitude": 15.21,
+                "latitude": 16.321
+            },
+            {
+                "id": "c38bba9bc07dbc7017206d65970cda34",
+                "name": "statisticsservice",
+                "ip": "192.168.5.120",
+                "port": 2351,
+                "deviceName": "stati1",
+                "clusterName": "admin",
+                "methods": [
+                    "CallFunc1"
+                ]
+            }
+        ],
+        "page": 1,
+        "size": 10,
+        "total": 2
+    }
+}

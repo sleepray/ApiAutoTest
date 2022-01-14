@@ -1,0 +1,8 @@
+{
+    "token": "ArO31hIy4x+aHx/WREzv6KqNsMzV/WMIsEL7SjJ1+4A=",
+    "configType": "global",
+    "key": "192.168.5.120,3021,locationservice,CallFunc1",
+    "degradationService": "statisticsservice",
+    "service": "degradation.service,192.168.5.120,3021,locationservice",
+    "traceId1": "52c47da901f001"
+}

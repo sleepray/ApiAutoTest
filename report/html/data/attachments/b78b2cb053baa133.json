@@ -1,0 +1,5 @@
+{
+    "key": "${service}",
+    "value": "${degradationService}",
+    "configType": "${configType}"
+}

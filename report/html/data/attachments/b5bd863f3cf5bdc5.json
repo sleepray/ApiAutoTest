@@ -1,0 +1,11 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "locationname": "区域1",
+        "longtitude": 30,
+        "latitude": 30,
+        "radius": 10,
+        "index": 0
+    }
+}

@@ -1,0 +1,22 @@
+[32m2022-01-14 13:56:32.276[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：服务质量编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"2,5,2","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ [0m
+[32m2022-01-14 13:56:32.277[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'DPn3ZB1AcUi6az/GMSrY1djU89UEbzX5ewPa1dz7MkI='}[0m
+[32m2022-01-14 13:56:32.280[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m114[0m - [1m
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'DPn3ZB1AcUi6az/GMSrY1djU89UEbzX5ewPa1dz7MkI='}
+请求参数:{'key': '192.168.5.120,2304,locationservice,CallFunc1', 'value': '2,5,2', 'configType': 'global'}
+上传文件:None
+相应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}[0m
+[32m2022-01-14 13:56:32.282[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m149[0m - [1m第1个断言,实际结果:success | 预期结果:success 
+断言结果 True[0m

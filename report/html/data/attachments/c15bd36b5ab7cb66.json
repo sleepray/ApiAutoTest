@@ -1,0 +1,5 @@
+{
+    "key": "degradation.limit,192.168.5.120,2304,locationservice",
+    "value": "5",
+    "configType": "global"
+}

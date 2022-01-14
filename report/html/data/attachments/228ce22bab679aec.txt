@@ -1,0 +1,21 @@
+[32m2022-01-10 09:46:49.802[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：链路列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: trace/list 
+ 请求参数:  
+  提取参数: {"traceId1": "$.data.list.0.traceID"} 
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ [0m
+[32m2022-01-10 09:46:49.803[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'ArO31hIy4x+aHx/WREzv6B1gEB6azBQtpisKozBY1dY='}[0m
+[32m2022-01-10 09:46:49.809[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m109[0m - [1m
+最终请求地址:http://192.168.5.120:8080/backend/trace/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'ArO31hIy4x+aHx/WREzv6B1gEB6azBQtpisKozBY1dY='}
+请求参数:None
+上传文件:None
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'traceID': '5931c77c817001', 'spanID': '5931c77c817000', 'parentID': '-1', 'startTime': 1641372157226, 'endTime': 1641372157227, 'toServiceName': 'locationservice', 'toMethodName': 'CallFunc1'}, {'traceID': '52c47da901f001', 'spanID': '52c47da901f000', 'parentID': '-1', 'startTime': 1640940854748, 'endTime': 1640940854749, 'toServiceName': 'locationservice', 'toMethodName': 'CallFunc1'}, {'traceID': '50322b6a512001', 'spanID': '50322b6a512000', 'parentID': '-1', 'startTime': 1640768279777, 'endTime': 1640768279778, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '50321b06888001', 'spanID': '50321b06888000', 'parentID': '-1', 'startTime': 1640768262994, 'endTime': 1640768262995, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '5030d09cc85001', 'spanID': '5030d09cc85000', 'parentID': '-1', 'startTime': 1640767924651, 'endTime': 1640767924652, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '5030cc13410001', 'spanID': '5030cc13410000', 'parentID': '-1', 'startTime': 1640767920005, 'endTime': 1640767920006, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '50309a06c1e001', 'spanID': '50309a06c1e000', 'parentID': '-1', 'startTime': 1640767868755, 'endTime': 1640767868756, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '50308cc54d6001', 'spanID': '50308cc54d6000', 'parentID': '-1', 'startTime': 1640767855181, 'endTime': 1640767855182, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '50303a96412001', 'spanID': '50303a96412000', 'parentID': '-1', 'startTime': 1640767771025, 'endTime': 1640767771026, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}, {'traceID': '50303a93cde001', 'spanID': '50303a93cde000', 'parentID': '-1', 'startTime': 1640767771015, 'endTime': 1640767771016, 'toServiceName': 'loadbalanceservice', 'toMethodName': 'CallFunc1', 'deviceName': 'linkClient'}], 'page': 1, 'size': 10, 'total': 131}}[0m
+[32m2022-01-10 09:46:49.810[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m111[0m - [1m加入依赖字典,key: traceId1, 对应value: $.data.list.0.traceID[0m
+[32m2022-01-10 09:46:49.810[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m134[0m - [1m第1个断言,实际结果:0 | 预期结果:0 
+断言结果 True[0m

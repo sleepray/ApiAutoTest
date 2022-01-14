@@ -1,0 +1,229 @@
+{
+  "uid" : "5d43d94779b1d961",
+  "name" : "服务管理查询",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "a6d5daa6e7ac328c2b9fac193bd0c4c2",
+  "time" : {
+    "start" : 1642130512226,
+    "stop" : 1642130512233,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1642130512226,
+      "stop" : 1642130512226,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.5.120:8080/backend/registry/list",
+      "time" : {
+        "start" : 1642130512227,
+        "stop" : 1642130512227,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1642130512227,
+        "stop" : 1642130512227,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "94acc5a3a0d259e5",
+        "name" : "请求头",
+        "source" : "94acc5a3a0d259e5.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1642130512227,
+        "stop" : 1642130512228,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c94e3db8ffb0c565",
+        "name" : "请求数据",
+        "source" : "c94e3db8ffb0c565.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(s): 0.00227",
+      "time" : {
+        "start" : 1642130512230,
+        "stop" : 1642130512230,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1642130512230,
+        "stop" : 1642130512231,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "16520757a8bf6990",
+        "name" : "响应结果",
+        "source" : "16520757a8bf6990.json",
+        "type" : "application/json",
+        "size" : 932
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1642130512232,
+        "stop" : 1642130512232,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8b58946bcdaa01b1",
+        "name" : "当前可用参数池",
+        "source" : "8b58946bcdaa01b1.json",
+        "type" : "application/json",
+        "size" : 461
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1642130512232,
+        "stop" : 1642130512233,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c110e782b43d5bf2",
+        "name" : "第1个断言",
+        "source" : "c110e782b43d5bf2.json",
+        "type" : "application/json",
+        "size" : 33
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b9241386161c1a80",
+      "name" : "stderr",
+      "source" : "b9241386161c1a80.txt",
+      "type" : "text/plain",
+      "size" : 3168
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "15624-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c52', '服务管理查询', '{\"Authorization\": \"${token}\"}', 'registry/list', 'get', 'params', '', '', '', '{\"ip\":\"$.data.list.0.ip\", \"servicename\":\"$.data.list.0.name\", \"port\":\"$.data.list.0.port\", \"id\": \"$.data.list.0.id\", \"clusterName\":\"$.data.list.0.clusterName\"}', '', '{\"$.code\": 0}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "5d43d94779b1d961.json",
+  "parameterValues" : [ "['c52', '服务管理查询', '{\"Authorization\": \"${token}\"}', 'registry/list', 'get', 'params', '', '', '', '{\"ip\":\"$.data.list.0.ip\", \"servicename\":\"$.data.list.0.name\", \"port\":\"$.data.list.0.port\", \"id\": \"$.data.list.0.id\", \"clusterName\":\"$.data.list.0.clusterName\"}', '', '{\"$.code\": 0}']" ]
+}

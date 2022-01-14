@@ -1,0 +1,15 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "servicename": "服务1",
+        "tags": [
+            {
+                "tagname": "标签2",
+                "address": [
+                    "203.1.3.5"
+                ]
+            }
+        ]
+    }
+}

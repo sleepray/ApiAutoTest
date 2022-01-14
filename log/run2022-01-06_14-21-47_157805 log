@@ -1,0 +1,217 @@
+2022-01-06 14:21:47.163 | INFO     | __main__:run:29 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-01-06 14:21:47.569 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:21:48.737 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:21:48.762 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:21:48.762 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: 
+2022-01-06 14:21:48.812 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:21:48.812 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:21:50.074 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:21:51.491 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:21:51.498 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:21:51.498 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:21:51.545 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:21:51.545 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:21:52.681 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:21:53.843 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:21:53.848 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:21:53.848 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:21:53.897 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:21:53.897 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:21:55.030 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:21:56.019 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:21:56.028 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:21:56.028 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:21:56.080 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:21:56.080 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:21:57.197 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:21:58.297 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:21:58.305 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:21:58.306 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:21:58.357 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:21:58.358 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:21:59.509 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:00.442 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:00.449 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:00.449 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:00.500 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:00.500 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:01.604 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:02.813 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:02.820 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:02.820 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:02.873 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:02.873 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:03.991 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:05.520 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:05.526 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:05.526 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:05.574 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:05.574 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:06.722 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:07.723 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:07.729 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:07.729 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:07.780 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:07.780 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:08.910 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:09.955 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:09.965 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:09.965 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:10.015 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:10.015 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:11.132 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:12.743 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:12.749 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:12.749 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:12.797 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:12.797 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:13.939 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:15.022 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:15.028 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:15.028 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:15.078 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:15.078 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:16.207 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:17.220 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:17.229 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:17.230 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:17.281 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:17.281 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:18.391 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:19.535 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:19.542 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:19.542 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:19.589 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:19.589 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:20.722 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:21.889 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:21.896 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:21.896 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:21.946 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:21.946 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:23.085 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:24.086 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:24.091 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:24.091 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:24.140 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:24.140 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:25.272 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:26.165 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:26.171 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:26.171 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:26.218 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:26.218 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:27.353 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:28.356 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:28.363 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:28.363 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:28.411 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:28.411 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:29.522 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:30.417 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:30.423 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:30.423 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:30.470 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:30.470 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:31.615 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:32.887 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:32.892 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:32.892 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:32.944 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:32.944 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:34.036 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:35.129 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:35.134 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:35.134 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:35.182 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:35.182 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:36.319 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:37.441 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:37.449 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:37.450 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:37.500 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:37.500 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:38.602 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:39.517 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:39.524 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:39.524 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:39.577 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:39.578 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:40.686 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:41.915 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:41.926 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:41.927 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:41.974 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:41.974 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:43.108 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:44.362 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:44.371 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:44.372 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:44.424 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:44.424 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:45.543 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.
+2022-01-06 14:22:46.886 | SUCCESS  | tools.data_clearing:__init__:47 - SFTP客户端创建成功.
+2022-01-06 14:22:46.891 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: mkdir backup_sql -> 输出结果: 
+2022-01-06 14:22:46.891 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: mkdir: cannot create directory ‘backup_sql’: File exists
+
+2022-01-06 14:22:46.940 | INFO     | tools.data_clearing:execute_cmd:55 - 输入命令: docker exec -i mysql8 mysqldump -h127.0.0.1 -uroot -ppassword apiautotest > /root/backup_sql/apiautotest_2022-01-06T14_21_46.sql -> 输出结果: 
+2022-01-06 14:22:46.940 | ERROR    | tools.data_clearing:execute_cmd:56 - 异常信息: bash: docker: command not found
+
+2022-01-06 14:22:48.073 | SUCCESS  | tools.data_clearing:__init__:43 - SSH客户端创建成功.

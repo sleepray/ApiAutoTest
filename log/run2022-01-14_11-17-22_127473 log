@@ -1,0 +1,112 @@
+2022-01-14 11:17:22.133 | INFO     | __main__:run:29 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-01-14 11:17:22.433 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: user/login
+ 检验方式: check_code 
+ 请求参数: {"username": "admin", "password": "password"} 
+  提取参数: {"token": "$.data"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: {"$.code":0} 
+ 
+2022-01-14 11:17:22.434 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-01-14 11:17:22.440 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/user/login
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'admin', 'password': 'password'}
+上传文件:None
+相应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': 'DPn3ZB1AcUi6az/GMSrY1e1rgryffB3CrtyoswrT9AE='}
+2022-01-14 11:17:23.546 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: user/login
+ 检验方式: check_code 
+ 请求参数: {"username": "admin", "password": "password"} 
+  提取参数: {"token": "$.data"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: {"$.code":0} 
+ 
+2022-01-14 11:17:23.547 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-01-14 11:17:23.551 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/user/login
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'admin', 'password': 'password'}
+上传文件:None
+相应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': 'DPn3ZB1AcUi6az/GMSrY1cG5UwuZmZqunXa+TGZ+VIs='}
+2022-01-14 11:17:23.559 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-随机
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql: select * from apis; 
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:23.560 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:23.560 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:23.563 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:24.577 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-随机
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql: select * from apis; 
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:24.578 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:24.578 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:24.581 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '0', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
+2022-01-14 11:17:24.589 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-轮询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-01-14 11:17:24.589 | ERROR    | tools:rep_expr:59 - name 'token' is not defined
+2022-01-14 11:17:24.590 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-01-14 11:17:24.592 | INFO     | api.base_requests:send_api:113 - 
+最终请求地址:http://192.168.5.120:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+请求参数:{'key': 'loadBalance.default', 'value': '1', 'configType': 'global'}
+上传文件:None
+相应状态码401
+响应数据:{'code': 303, 'msg': 'token错误', 'data': None}
