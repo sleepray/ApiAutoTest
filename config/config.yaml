@@ -17,14 +17,14 @@ file_path:
 
 email:
   # 发件人邮箱
-  user:  123456.com
+  user:  302559651@qq.com
   # 发件人邮箱授权码
-  password:  ASGCSFSGS
+  password:  gnwzuldkeobpbjdh
   # 邮箱host
-  host:  smtp.163.com
+  host:  smtp.qq.com
   contents:  解压apiAutoReport.zip(接口测试报告)后，请使用已安装Live Server 插件的VsCode，打开解压目录下的index.html查看报告
   # 收件人邮箱
-  addressees:  ["收件人邮箱1", "收件人邮箱2"]
+  addressees:  ["chenlei305@qq.com"]
   title:  接口自动化测试报告(见附件)
   # 附件
   enclosures: report.zip

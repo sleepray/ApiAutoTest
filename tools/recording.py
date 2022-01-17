@@ -103,6 +103,7 @@ class Counter:
                 method,
                 data_type,
                 "",
+                "check_json",
                 data,
                 "",
                 "",

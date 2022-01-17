@@ -25,6 +25,8 @@ email = ReadFile.read_config('$.email')
 def run():
     if os.path.exists('report/'):
         shutil.rmtree(path='report/')
+
+    logger.remove()
     logger.add(file_path['log'], enqueue=True, encoding='utf-8')
     logger.info("""
                  _    _         _      _____         _
@@ -39,8 +41,9 @@ def run():
         args=[
             'test/test_api.py',
             f'--alluredir={file_path["report"]}/data'])
+
     # 自动以服务形式打开报告
-    # os.system(f'allure serve {report}/data')
+    os.system(f'allure serve {file_path["report"]}/data')
 
     # 本地生成报告
     os.system(
