@@ -42,6 +42,15 @@ def iptoint(ip):
     return struct.unpack( "!I" ,socket.inet_aton(ip))[0]
 
 
+def random_ip():
+	"""生成随机IP"""
+	# 下面的方法可能生成 0.0.0.0，255.255.255.255的IP
+	# return socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
+
+	return(".".join(map(str, (random.randint(0, 255)
+                        for _ in range(4)))))
+
+
 def random_int(scope):
 	"""获取随机整型数据
 
@@ -222,6 +231,7 @@ if __name__ == "__main__":
 	print(random_int("100,200"))
 	print(random_float("200,100,5"))
 	print(random_choice("aaa,bbb,ccc"))
+	print(random_ip())
 
 	# 生成日期数据
 	print(generate_date())

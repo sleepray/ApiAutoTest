@@ -27,6 +27,7 @@ def exec_func(func: str) -> str:
     # 得到一个局部的变量字典，来修正exec函数中的变量，在其他函数内部使用不到的问题
     loc = locals()
     exec(f"result = {func}")
+    logger.info("func执行结果{}".format(str(loc['result'])))
     return str(loc['result'])
 
 
@@ -54,7 +55,8 @@ def rep_expr(content: str, data: dict) -> str:
     content = Template(content).safe_substitute(data)
     for func in re.findall('\\${(.*?)}', content):
         try:
-            content = content.replace('${%s}' % func, exec_func(func))
+            # replace添加参数1保证只替换一次，修复多次调用同一函数时值相同的bug
+            content = content.replace('${%s}' % func, exec_func(func),1)
         except Exception as e:
             logger.error(e)
     return content

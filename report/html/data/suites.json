@@ -7,13 +7,13 @@
       "name" : "test_api",
       "children" : [ {
         "name" : "post请求实现登录",
-        "uid" : "97dd1a588131c0f3",
+        "uid" : "38a0eaee0104f654",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159505,
-          "stop" : 1642146159584,
-          "duration" : 79
+          "start" : 1642399316090,
+          "stop" : 1642399316101,
+          "duration" : 11
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
         "parameters" : [ "['c1', 'post请求实现登录', '', 'user/login', 'post', 'json', '', 'check_code', '{\"username\": \"admin\", \"password\": \"password\"}', '{\"token\": \"$.data\"}', 'select * from apis; select * from cases', 200.0]" ]
       }, {
         "name" : "负载均衡-随机",
-        "uid" : "af405d881b28fc68",
+        "uid" : "a26b27f036b0bbba",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159587,
-          "stop" : 1642146159593,
-          "duration" : 6
+          "start" : 1642399316104,
+          "stop" : 1642399316112,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +41,13 @@
         "parameters" : [ "['c2', '负载均衡-随机', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"loadBalance.default\",\"value\":\"0\",\"configType\":\"global\"}', '', 'select * from apis;', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "负载均衡-轮询",
-        "uid" : "1b0cb471fca8221b",
+        "uid" : "d5b023a7f54f611c",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159596,
-          "stop" : 1642146159604,
-          "duration" : 8
+          "start" : 1642399316115,
+          "stop" : 1642399316121,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +58,13 @@
         "parameters" : [ "['c3', '负载均衡-轮询', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"loadBalance.default\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "负载均衡-哈希",
-        "uid" : "e50321382644c631",
+        "uid" : "28dda3551f7afa61",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159607,
-          "stop" : 1642146159689,
-          "duration" : 82
+          "start" : 1642399316124,
+          "stop" : 1642399316131,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,13 +75,13 @@
         "parameters" : [ "['c4', '负载均衡-哈希', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"loadBalance.default\",\"value\":\"2\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "负载均衡-最小连接",
-        "uid" : "1fac646c6dcfa9d9",
+        "uid" : "c7306927ad3bcc0f",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159692,
-          "stop" : 1642146159698,
-          "duration" : 6
+          "start" : 1642399316133,
+          "stop" : 1642399316141,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -92,13 +92,13 @@
         "parameters" : [ "['c5', '负载均衡-最小连接', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"loadBalance.default\",\"value\":\"3\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务降级开",
-        "uid" : "4fec8a8876dc476b",
+        "uid" : "6346befbf335076b",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159701,
-          "stop" : 1642146159708,
-          "duration" : 7
+          "start" : 1642399316145,
+          "stop" : 1642399316151,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -109,13 +109,13 @@
         "parameters" : [ "['c6', '服务降级开', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"degradation.switch\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务降级默认阈值",
-        "uid" : "4a1ba179d52340ff",
+        "uid" : "de47a213c2cb9ba1",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159711,
-          "stop" : 1642146159718,
-          "duration" : 7
+          "start" : 1642399316155,
+          "stop" : 1642399316161,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -126,13 +126,13 @@
         "parameters" : [ "['c7', '服务降级默认阈值', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"degradation.default\",\"value\":\"5\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务降级列表查询",
-        "uid" : "834281b5ab1a6ad",
+        "uid" : "cd600ec5bd2e374b",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159720,
-          "stop" : 1642146159730,
-          "duration" : 10
+          "start" : 1642399316163,
+          "stop" : 1642399316169,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -143,13 +143,13 @@
         "parameters" : [ "['c8', '服务降级列表查询', '{\"Authorization\": \"${token}\"}', 'config/degradation/list', 'get', 'params', '', 'check_code', '', '{\"configType\":\"$.data.list.0.degradationLimit.configType\", \"key\":\"$.data.list.0.degradationLimit.key\",\"degradationService\":\"$.data.list.1.name\", \"service\":\"$.data.list.0.degradationService.key\"}', '', 200.0]" ]
       }, {
         "name" : "服务降级阈值编辑",
-        "uid" : "25917f093d4bc0bb",
+        "uid" : "d11c6d493f1b80bc",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159733,
-          "stop" : 1642146159739,
-          "duration" : 6
+          "start" : 1642399316172,
+          "stop" : 1642399316179,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -160,13 +160,13 @@
         "parameters" : [ "['c9', '服务降级阈值编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"5\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务降级",
-        "uid" : "b56f0218406c9e46",
+        "uid" : "ea210a7007e9f45e",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159742,
-          "stop" : 1642146159748,
-          "duration" : 6
+          "start" : 1642399316183,
+          "stop" : 1642399316190,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -177,13 +177,13 @@
         "parameters" : [ "['c10', '服务降级', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${service}\",\"value\":\"${degradationService}\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务降级关",
-        "uid" : "16001aefe7d56cb4",
+        "uid" : "44953c9d1b589de4",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159751,
-          "stop" : 1642146159759,
-          "duration" : 8
+          "start" : 1642399316192,
+          "stop" : 1642399316198,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -194,12 +194,12 @@
         "parameters" : [ "['c11', '服务降级关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"degradation.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务熔断开",
-        "uid" : "24cf1fd9e6e95525",
+        "uid" : "e4fe01d74009ca74",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159761,
-          "stop" : 1642146159767,
+          "start" : 1642399316201,
+          "stop" : 1642399316207,
           "duration" : 6
         },
         "flaky" : false,
@@ -211,13 +211,13 @@
         "parameters" : [ "['c12', '服务熔断开', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"fusing.switch\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务熔断默认阈值",
-        "uid" : "d13500ba9705afa1",
+        "uid" : "2600d749264240f4",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159770,
-          "stop" : 1642146159777,
-          "duration" : 7
+          "start" : 1642399316210,
+          "stop" : 1642399316216,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -228,13 +228,13 @@
         "parameters" : [ "['c13', '服务熔断默认阈值', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"fusing.default\",\"value\":\"5\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务熔断列表",
-        "uid" : "ef31b1e5c6558737",
+        "uid" : "26cce7ea24229fcb",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159779,
-          "stop" : 1642146159787,
-          "duration" : 8
+          "start" : 1642399316219,
+          "stop" : 1642399316225,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -245,13 +245,13 @@
         "parameters" : [ "['c14', '服务熔断列表', '{\"Authorization\": \"${token}\"}', 'config/fusing/list', 'get', 'params', '', 'check_code', '', '{\"configType\":\"$.data.list.0.configType\", \"key\":\"$.data.list.0.key\"}', '', 200.0]" ]
       }, {
         "name" : "服务熔断编辑",
-        "uid" : "71b2674782f4e8e2",
+        "uid" : "e38720d27eec3162",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159789,
-          "stop" : 1642146159794,
-          "duration" : 5
+          "start" : 1642399316227,
+          "stop" : 1642399316233,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -262,13 +262,13 @@
         "parameters" : [ "['c15', '服务熔断编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"5\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务熔断关",
-        "uid" : "dee2fe4e6a6bbbd0",
+        "uid" : "87e3f16cf73ac3dd",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159797,
-          "stop" : 1642146159803,
-          "duration" : 6
+          "start" : 1642399316235,
+          "stop" : 1642399316242,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -279,13 +279,13 @@
         "parameters" : [ "['c16', '服务熔断关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"fusing.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "白名单添加",
-        "uid" : "26b34d5caed8fb59",
+        "uid" : "96d40d8d3fcc9567",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159806,
-          "stop" : 1642146159813,
-          "duration" : 7
+          "start" : 1642399316244,
+          "stop" : 1642399316252,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -293,16 +293,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c17', '白名单添加', '{\"Authorization\": \"${token}\"}', 'ipfilter/whitelist/add', 'post', 'json', '', '', '[\"192.168.5.101\"]', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c17', '白名单添加', '{\"Authorization\": \"${token}\"}', 'ipfilter/whitelist/add', 'post', 'json', '', '', '[\"${random_ip()}\"]', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "黑名单添加",
-        "uid" : "d9164018fb6a8083",
+        "uid" : "c8fe021ba8a1ede3",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159815,
-          "stop" : 1642146159822,
-          "duration" : 7
+          "start" : 1642399316254,
+          "stop" : 1642399316262,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -310,16 +310,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c18', '黑名单添加', '{\"Authorization\": \"${token}\"}', 'ipfilter/blacklist/add', 'post', 'json', '', '', '[\"192.168.5.102\"]', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c18', '黑名单添加', '{\"Authorization\": \"${token}\"}', 'ipfilter/blacklist/add', 'post', 'json', '', '', '[\"${random_ip()}\"]', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "白名单修改",
-        "uid" : "ac453b2e81fef505",
+        "uid" : "36c5c7ee7747b4c1",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159830,
-          "stop" : 1642146159837,
-          "duration" : 7
+          "start" : 1642399316265,
+          "stop" : 1642399316270,
+          "duration" : 5
         },
         "flaky" : false,
         "newFailed" : false,
@@ -327,16 +327,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c19', '白名单修改', '{\"Authorization\": \"${token}\"}', 'ipfilter/whitelist/modify', 'post', 'json', '', '', '{\"ip\":\"192.168.5.11\",\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c19', '白名单修改', '{\"Authorization\": \"${token}\"}', 'ipfilter/whitelist/modify', 'post', 'json', '', '', '{\"ip\":\"${random_ip()}\",\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "黑名单修改",
-        "uid" : "4a966afc4a5aebea",
+        "uid" : "e8c9d6f632f451ec",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159839,
-          "stop" : 1642146159846,
-          "duration" : 7
+          "start" : 1642399316273,
+          "stop" : 1642399316281,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -344,16 +344,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c20', '黑名单修改', '{\"Authorization\": \"${token}\"}', 'ipfilter/blacklist/modify', 'post', 'json', '', '', '{\"ip\":\"192.168.5.12\",\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c20', '黑名单修改', '{\"Authorization\": \"${token}\"}', 'ipfilter/blacklist/modify', 'post', 'json', '', '', '{\"ip\":\"${random_ip()}\",\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "白名单删除",
-        "uid" : "d93a249ad2a61357",
+        "uid" : "e3474eb50c880c29",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159848,
-          "stop" : 1642146159856,
-          "duration" : 8
+          "start" : 1642399316284,
+          "stop" : 1642399316291,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -364,12 +364,12 @@
         "parameters" : [ "['c21', '白名单删除', '{\"Authorization\": \"${token}\"}', 'ipfilter/whitelist/remove', 'post', 'json', '', '', '{\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "黑名单删除",
-        "uid" : "9561a2d877309e1a",
+        "uid" : "a897009a9be05e21",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159858,
-          "stop" : 1642146159865,
+          "start" : 1642399316293,
+          "stop" : 1642399316300,
           "duration" : 7
         },
         "flaky" : false,
@@ -381,12 +381,12 @@
         "parameters" : [ "['c22', '黑名单删除', '{\"Authorization\": \"${token}\"}', 'ipfilter/blacklist/remove', 'post', 'json', '', '', '{\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "地理位置开",
-        "uid" : "b472c07e52296f45",
+        "uid" : "5cfe6243327735fd",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159868,
-          "stop" : 1642146159874,
+          "start" : 1642399316303,
+          "stop" : 1642399316309,
           "duration" : 6
         },
         "flaky" : false,
@@ -398,12 +398,12 @@
         "parameters" : [ "['c23', '地理位置开', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"location.switch\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "地理位置添加",
-        "uid" : "45615d86fd480f30",
+        "uid" : "42aa1ead3c5d135",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159876,
-          "stop" : 1642146159883,
+          "start" : 1642399316311,
+          "stop" : 1642399316318,
           "duration" : 7
         },
         "flaky" : false,
@@ -415,13 +415,13 @@
         "parameters" : [ "['c24', '地理位置添加', '{\"Authorization\": \"${token}\"}', 'location/add', 'post', 'json', '', '', '{\"locationname\":\"区域1\",\"longtitude\":32,\"latitude\":23,\"radius\":12}', '', '', '{\"$.data.locationname\": \"区域1\"}']" ]
       }, {
         "name" : "地理位置强制开启",
-        "uid" : "1fe3328f361ab6f2",
+        "uid" : "155fdad6a5ca37b8",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159885,
-          "stop" : 1642146159891,
-          "duration" : 6
+          "start" : 1642399316321,
+          "stop" : 1642399316329,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -432,13 +432,13 @@
         "parameters" : [ "['c25', '地理位置强制开启', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"location.force,区域1\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "地理位置强制关闭",
-        "uid" : "ffc499f1ed98b1d2",
+        "uid" : "454896cb1bf29493",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159895,
-          "stop" : 1642146159900,
-          "duration" : 5
+          "start" : 1642399316331,
+          "stop" : 1642399316344,
+          "duration" : 13
         },
         "flaky" : false,
         "newFailed" : false,
@@ -449,13 +449,13 @@
         "parameters" : [ "['c26', '地理位置强制关闭', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"location.force,区域1\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "地理位置编辑",
-        "uid" : "a9c7555635cb8c17",
+        "uid" : "ba6a070a028ad48f",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159903,
-          "stop" : 1642146159910,
-          "duration" : 7
+          "start" : 1642399316346,
+          "stop" : 1642399316354,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -466,13 +466,13 @@
         "parameters" : [ "['c27', '地理位置编辑', '{\"Authorization\": \"${token}\"}', 'location/update', 'post', 'json', '', '', '{\"locationname\":\"区域1\",\"longtitude\":30,\"latitude\":30,\"radius\":10}', '', '', '{\"$.data.locationname\": \"区域1\"}']" ]
       }, {
         "name" : "地理位置删除",
-        "uid" : "8a9d14b63104c092",
+        "uid" : "4507f193e159c3c6",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159913,
-          "stop" : 1642146159920,
-          "duration" : 7
+          "start" : 1642399316356,
+          "stop" : 1642399316364,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -483,13 +483,13 @@
         "parameters" : [ "['c28', '地理位置删除', '{\"Authorization\": \"${token}\"}', 'location/delete', 'post', 'params', '', '', '{\"index\":0}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "地理位置关",
-        "uid" : "3b7e8bfe3fd1e7f3",
+        "uid" : "9f7f9ae9f3ac7efb",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159922,
-          "stop" : 1642146159927,
-          "duration" : 5
+          "start" : 1642399316366,
+          "stop" : 1642399316372,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -500,13 +500,13 @@
         "parameters" : [ "['c29', '地理位置关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"location.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "条件表达式添加",
-        "uid" : "c8a4d265051e0f2f",
+        "uid" : "4dbf4e98adc31de0",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159930,
-          "stop" : 1642146159938,
-          "duration" : 8
+          "start" : 1642399316375,
+          "stop" : 1642399316384,
+          "duration" : 9
         },
         "flaky" : false,
         "newFailed" : false,
@@ -517,13 +517,13 @@
         "parameters" : [ "['c30', '条件表达式添加', '{\"Authorization\": \"${token}\"}', 'condition/add', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"enabled\":true,\"tags\":[{\"address\":[\"432.1.3.5\"],\"tagname\":\"标签1\"}]}', '', '', '{\"$.data.servicename\": \"服务1\"}']" ]
       }, {
         "name" : "条件表达式标签关闭",
-        "uid" : "9c8e0688df30a4e",
+        "uid" : "edf7573d60b9cc5f",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159940,
-          "stop" : 1642146159949,
-          "duration" : 9
+          "start" : 1642399316386,
+          "stop" : 1642399316394,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -534,12 +534,12 @@
         "parameters" : [ "['c31', '条件表达式标签关闭', '{\"Authorization\": \"${token}\"}', 'condition/update', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"tags\":[{\"tagname\":\"标签1\",\"address\":[\"432.1.3.5\"]}],\"enabled\":false}', '', '', '{\"$.data.servicename\": \"服务1\"}']" ]
       }, {
         "name" : "条件表达式标签开启",
-        "uid" : "da2a2311e8d981dc",
+        "uid" : "5453e8525106d146",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159951,
-          "stop" : 1642146159959,
+          "start" : 1642399316396,
+          "stop" : 1642399316404,
           "duration" : 8
         },
         "flaky" : false,
@@ -551,13 +551,13 @@
         "parameters" : [ "['c32', '条件表达式标签开启', '{\"Authorization\": \"${token}\"}', 'condition/update', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"tags\":[{\"tagname\":\"标签1\",\"address\":[\"432.1.3.5\"]}],\"enabled\":true}', '', '', '{\"$.data.servicename\": \"服务1\"}']" ]
       }, {
         "name" : "条件表达式编辑",
-        "uid" : "841b033a30a6f885",
+        "uid" : "6c05b9c4330cb383",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159961,
-          "stop" : 1642146159968,
-          "duration" : 7
+          "start" : 1642399316407,
+          "stop" : 1642399316416,
+          "duration" : 9
         },
         "flaky" : false,
         "newFailed" : false,
@@ -565,15 +565,15 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c33', '条件表达式编辑', '{\"Authorization\": \"${token}\"}', 'condition/update', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"tags\":[{\"tagname\":\"标签2\",\"address\":[\"203.1.3.5\"]}]}', '', '', '{\"$.data.tags.0.tagname\": \"标签2\"}']" ]
+        "parameters" : [ "['c33', '条件表达式编辑', '{\"Authorization\": \"${token}\"}', 'condition/update', 'post', 'json', '', '', '{\"servicename\":\"服务1\",\"tags\":[{\"tagname\":\"标签2\",\"address\":[\"${random_ip()}\"]}]}', '', '', '{\"$.data.tags.0.tagname\": \"标签2\"}']" ]
       }, {
         "name" : "服务配置新建-global",
-        "uid" : "156ea89c1bfb068f",
+        "uid" : "69f62d2a792d3834",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159971,
-          "stop" : 1642146159977,
+          "start" : 1642399316419,
+          "stop" : 1642399316425,
           "duration" : 6
         },
         "flaky" : false,
@@ -585,13 +585,13 @@
         "parameters" : [ "['c35', '服务配置新建-global', '{\"Authorization\": \"${token}\"}', 'config/service/post', 'post', 'json', '', '', '{\"configType\":\"global\",\"configContent\":[{\"id\":\"${get_current_highest()}\",\"key\":\"key1\",\"value\":\"value1\"}]}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务配置新建-service",
-        "uid" : "cf838544c4cbf9b",
+        "uid" : "b071907ea2bdecc",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159979,
-          "stop" : 1642146159985,
-          "duration" : 6
+          "start" : 1642399316427,
+          "stop" : 1642399316434,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -602,13 +602,13 @@
         "parameters" : [ "['c36', '服务配置新建-service', '{\"Authorization\": \"${token}\"}', 'config/service/post', 'post', 'json', '', '', '{\"configType\":\"\",\"configContent\":[{\"id\":\"${get_current_highest()}\",\"key\":\"key2\",\"value\":\"value/v1\"}],\"serviceName\":\"服务1\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务配置编辑-global",
-        "uid" : "19f0fb5c234c15d2",
+        "uid" : "9dc3e1d0fcd3b03f",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159988,
-          "stop" : 1642146159994,
-          "duration" : 6
+          "start" : 1642399316436,
+          "stop" : 1642399316443,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -619,12 +619,12 @@
         "parameters" : [ "['c37', '服务配置编辑-global', '{\"Authorization\": \"${token}\"}', 'config/service/update', 'post', 'json', '', '', '{\"configType\":\"global\",\"configContent\":[{\"key\":\"key1\",\"value\":\"value2\",\"id\":\"${get_current_highest()}\"}]}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务配置编辑-service",
-        "uid" : "1c66e5aea8c91e7c",
+        "uid" : "501c755791f57f56",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146159997,
-          "stop" : 1642146160003,
+          "start" : 1642399316445,
+          "stop" : 1642399316451,
           "duration" : 6
         },
         "flaky" : false,
@@ -636,13 +636,13 @@
         "parameters" : [ "['c38', '服务配置编辑-service', '{\"Authorization\": \"${token}\"}', 'config/service/update', 'post', 'json', '', '', '{\"configType\":\"\",\"configContent\":[{\"id\":\"${get_current_highest()}\",\"key\":\"key2\",\"value\":\"value/v2\"}],\"serviceName\":\"服务1\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务配置删除-global",
-        "uid" : "37ab005e820ed22",
+        "uid" : "cead8f2b44d2f1e1",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160005,
-          "stop" : 1642146160011,
-          "duration" : 6
+          "start" : 1642399316454,
+          "stop" : 1642399316461,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -653,12 +653,12 @@
         "parameters" : [ "['c39', '服务配置删除-global', '{\"Authorization\": \"${token}\"}', 'config/service/delete', 'get', 'params', '', '', '{\"key\":\"key1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务配置删除-service",
-        "uid" : "ce984eb26df4807c",
+        "uid" : "4eb1c7054451b539",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160014,
-          "stop" : 1642146160020,
+          "start" : 1642399316463,
+          "stop" : 1642399316469,
           "duration" : 6
         },
         "flaky" : false,
@@ -670,12 +670,12 @@
         "parameters" : [ "['c40', '服务配置删除-service', '{\"Authorization\": \"${token}\"}', 'config/service/delete', 'get', 'params', '', '', '{\"serviceName\":\"服务1\",\"key\":\"key2\",\"configType\":\"service\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "链路列表查询",
-        "uid" : "d206d70c3ee0ba77",
+        "uid" : "7875e7a85a81e",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160022,
-          "stop" : 1642146160032,
+          "start" : 1642399316472,
+          "stop" : 1642399316482,
           "duration" : 10
         },
         "flaky" : false,
@@ -687,13 +687,13 @@
         "parameters" : [ "['c41', '链路列表查询', '{\"Authorization\": \"${token}\"}', 'trace/list', 'get', 'params', '', 'check_code', '', '{\"traceId1\": \"$.data.list.0.traceID\"}', '', 200.0]" ]
       }, {
         "name" : "链路查询",
-        "uid" : "b0d6a45e86818b6c",
+        "uid" : "de53c7d70d695019",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160034,
-          "stop" : 1642146160041,
-          "duration" : 7
+          "start" : 1642399316484,
+          "stop" : 1642399316492,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -704,13 +704,13 @@
         "parameters" : [ "['c42', '链路查询', '{\"Authorization\": \"${token}\"}', 'trace/detail', 'get', 'params', '', 'check_code', '{\"traceId\":\"${traceId1}\"}', '', '', 200.0]" ]
       }, {
         "name" : "流量控制开",
-        "uid" : "13f6024c4106a88e",
+        "uid" : "8db3434936ecac73",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160044,
-          "stop" : 1642146160051,
-          "duration" : 7
+          "start" : 1642399316494,
+          "stop" : 1642399316500,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -721,13 +721,13 @@
         "parameters" : [ "['c43', '流量控制开', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"trafficControl.switch\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "流量默认网速值",
-        "uid" : "21428b314633df6d",
+        "uid" : "1e2d4ce0662bf011",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160053,
-          "stop" : 1642146160059,
-          "duration" : 6
+          "start" : 1642399316503,
+          "stop" : 1642399316511,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -735,16 +735,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c44', '流量默认网速值', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"trafficControl.default\",\"value\":\"12\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c44', '流量默认网速值', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"trafficControl.default\",\"value\":\"${random_int(\"1,100\")}\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "流量控制列表查询",
-        "uid" : "b1b726f28c0a2b4f",
+        "uid" : "f0cc989f4dbdb00f",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160061,
-          "stop" : 1642146160078,
-          "duration" : 17
+          "start" : 1642399316513,
+          "stop" : 1642399316519,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -755,12 +755,12 @@
         "parameters" : [ "['c45', '流量控制列表查询', '{\"Authorization\": \"${token}\"}', 'config/trafficControl/list', 'get', 'params', '', 'check_code', '', '{\"configType\":\"$.data.list.0.configType\", \"key\":\"$.data.list.0.key\"}', '', 200.0]" ]
       }, {
         "name" : "流量控制权重编辑",
-        "uid" : "f35ca3fff57b110c",
+        "uid" : "358b513c6ed5a690",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160081,
-          "stop" : 1642146160088,
+          "start" : 1642399316521,
+          "stop" : 1642399316528,
           "duration" : 7
         },
         "flaky" : false,
@@ -769,15 +769,15 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c46', '流量控制权重编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"10\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c46', '流量控制权重编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"${random_int(\"1,100\")}\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "流量控制关",
-        "uid" : "7645701e500cdd0e",
+        "uid" : "16c8aba1f5d5a01c",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160091,
-          "stop" : 1642146160097,
+          "start" : 1642399316530,
+          "stop" : 1642399316536,
           "duration" : 6
         },
         "flaky" : false,
@@ -789,13 +789,13 @@
         "parameters" : [ "['c47', '流量控制关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"trafficControl.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务质量开",
-        "uid" : "fdbe4935d72cae2f",
+        "uid" : "fbae63623cec0004",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160100,
-          "stop" : 1642146160106,
-          "duration" : 6
+          "start" : 1642399316539,
+          "stop" : 1642399316548,
+          "duration" : 9
         },
         "flaky" : false,
         "newFailed" : false,
@@ -806,12 +806,12 @@
         "parameters" : [ "['c48', '服务质量开', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"qos.switch\",\"value\":\"1\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务质量列表查询",
-        "uid" : "4ac7497a5d32b862",
+        "uid" : "254954e9b85afa5a",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160108,
-          "stop" : 1642146160114,
+          "start" : 1642399316550,
+          "stop" : 1642399316556,
           "duration" : 6
         },
         "flaky" : false,
@@ -823,13 +823,13 @@
         "parameters" : [ "['c49', '服务质量列表查询', '{\"Authorization\": \"${token}\"}', 'config/qos/list', 'get', 'params', '', 'check_code', '', '{\"configType\":\"$.data.list.0.configType\", \"key\":\"$.data.list.0.key\"}', '', 200.0]" ]
       }, {
         "name" : "服务质量编辑",
-        "uid" : "665c5077b0489ef",
+        "uid" : "a059308de3dc051f",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160117,
-          "stop" : 1642146160123,
-          "duration" : 6
+          "start" : 1642399316559,
+          "stop" : 1642399316566,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -837,16 +837,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c50', '服务质量编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"2,5,2\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+        "parameters" : [ "['c50', '服务质量编辑', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"${key}\",\"value\":\"${random_int(\"0,100\")},${random_int(\"0,100\")},${random_int(\"0,100\")}\",\"configType\":\"${configType}\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务质量关",
-        "uid" : "6f5fdfeaac257dd8",
+        "uid" : "d9692134d28f6c63",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160125,
-          "stop" : 1642146160129,
-          "duration" : 4
+          "start" : 1642399316568,
+          "stop" : 1642399316574,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
@@ -857,13 +857,13 @@
         "parameters" : [ "['c51', '服务质量关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"qos.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
       }, {
         "name" : "服务管理查询",
-        "uid" : "22e39bd62700d70d",
+        "uid" : "c99e7c1032aca2f7",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160132,
-          "stop" : 1642146160138,
-          "duration" : 6
+          "start" : 1642399316577,
+          "stop" : 1642399316585,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -874,13 +874,13 @@
         "parameters" : [ "['c52', '服务管理查询', '{\"Authorization\": \"${token}\"}', 'registry/list', 'get', 'params', '', 'check_code', '', '{\"ip\":\"$.data.list.0.ip\", \"servicename\":\"$.data.list.0.name\", \"port\":\"$.data.list.0.port\", \"id\": \"$.data.list.0.id\", \"clusterName\":\"$.data.list.0.clusterName\"}', '', 200.0]" ]
       }, {
         "name" : "服务管理修改",
-        "uid" : "8327ffd95c660290",
+        "uid" : "954ee6343e22cbd5",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160141,
-          "stop" : 1642146160148,
-          "duration" : 7
+          "start" : 1642399316587,
+          "stop" : 1642399316595,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -891,12 +891,12 @@
         "parameters" : [ "['c53', '服务管理修改', '{\"Authorization\": \"${token}\"}', 'registry/update', 'post', 'json', '', '', '{\"id\":\"${id}\",\"name\":\"${servicename}\",\"ip\":\"${ip}\",\"port\":${port},\"deviceName\":\"\",\"longtitude\":15.21,\"latitude\":16.321,\"clusterName\":\"${clusterName}\",\"description\":\"描述\"}', '', '', '{\"$.code\": 0}']" ]
       }, {
         "name" : "指标统计",
-        "uid" : "3699d261672465dd",
+        "uid" : "ebd2818218671e1c",
         "parentUid" : "5ec56e5acb19289a654b41c9fccc3a4c",
         "status" : "passed",
         "time" : {
-          "start" : 1642146160151,
-          "stop" : 1642146160157,
+          "start" : 1642399316597,
+          "stop" : 1642399316603,
           "duration" : 6
         },
         "flaky" : false,

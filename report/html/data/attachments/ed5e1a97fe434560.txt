@@ -1,0 +1,26 @@
+[32m2022-01-17 14:01:56.162[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：服务降级列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/degradation/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.degradationLimit.configType", "key":"$.data.list.0.degradationLimit.key","degradationService":"$.data.list.1.name", "service":"$.data.list.0.degradationService.key"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ [0m
+[32m2022-01-17 14:01:56.163[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'DPn3ZB1AcUi6az/GMSrY1fWzolCTXO9aE/REG9fu8as='}[0m
+[32m2022-01-17 14:01:56.166[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m114[0m - [1m
+最终请求地址:http://192.168.5.120:8080/backend/config/degradation/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'DPn3ZB1AcUi6az/GMSrY1fWzolCTXO9aE/REG9fu8as='}
+请求参数:None
+上传文件:None
+相应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'degradationLimit': {'key': 'degradation.limit,192.168.5.120,2304,locationservice', 'value': '5', 'configType': 'global', 'serviceName': ''}, 'degradationService': {'key': 'degradation.service,192.168.5.120,2304,locationservice', 'value': 'statisticsservice', 'configType': 'global', 'serviceName': ''}, 'name': 'locationservice', 'port': 2304, 'deviceName': '', 'clusterName': 'admin'}, {'degradationLimit': {'key': 'degradation.limit,192.168.5.120,1205,statisticsservice', 'value': '', 'configType': 'global', 'serviceName': ''}, 'degradationService': {'key': 'degradation.service,192.168.5.120,1205,statisticsservice', 'value': '', 'configType': 'global', 'serviceName': ''}, 'name': 'statisticsservice', 'port': 1205, 'deviceName': 'statis1', 'clusterName': 'admin'}], 'page': 1, 'size': 10, 'total': 2}}[0m
+[32m2022-01-17 14:01:56.167[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m113[0m - [1m加入依赖字典,key: configType, 对应value: $.data.list.0.degradationLimit.configType[0m
+[32m2022-01-17 14:01:56.167[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m113[0m - [1m加入依赖字典,key: key, 对应value: $.data.list.0.degradationLimit.key[0m
+[32m2022-01-17 14:01:56.167[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m113[0m - [1m加入依赖字典,key: degradationService, 对应value: $.data.list.1.name[0m
+[32m2022-01-17 14:01:56.167[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m113[0m - [1m加入依赖字典,key: service, 对应value: $.data.list.0.degradationService.key[0m
+[32m2022-01-17 14:01:56.168[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m131[0m - [1m断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True[0m
