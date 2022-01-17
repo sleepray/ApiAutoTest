@@ -27,7 +27,6 @@ def exec_func(func: str) -> str:
     # 得到一个局部的变量字典，来修正exec函数中的变量，在其他函数内部使用不到的问题
     loc = locals()
     exec(f"result = {func}")
-    logger.info("func执行结果{}".format(str(loc['result'])))
     return str(loc['result'])
 
 
