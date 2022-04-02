@@ -1,0 +1,4 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ4ODY5MjU5LCJzdWIiOiIiLCJleHAiOjE2NDg5NTU2NTl9.xGfKwekb1JWjPdERYzcoXI2_SSlRKkCEjwcIJFVWP7M",
+    "roleId": "$.data.[*][?(@.name=='test')]"
+}

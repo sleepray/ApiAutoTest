@@ -1,0 +1,10 @@
+{
+    "configType": "global",
+    "configContent": [
+        {
+            "id": "${get_current_highest()}",
+            "key": "key1",
+            "value": "value1"
+        }
+    ]
+}

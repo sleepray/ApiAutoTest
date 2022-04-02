@@ -1,0 +1,223 @@
+{
+  "uid" : "a3d37c4bcfa9508a",
+  "name" : "查询角色详情",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "b0878ee5eb70538305b060fabbf99fe0",
+  "time" : {
+    "start" : 1648880315531,
+    "stop" : 1648880315547,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1648880315531,
+      "stop" : 1648880315531,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.0.6/api/userMgr/role",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315531,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315531,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9d037477184ad45",
+        "name" : "请求头",
+        "source" : "9d037477184ad45.json",
+        "type" : "application/json",
+        "size" : 382
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315531,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a23b9caf72af1cfd",
+        "name" : "请求数据",
+        "source" : "a23b9caf72af1cfd.json",
+        "type" : "application/json",
+        "size" : 17
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(s): 0.004139",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315531,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315531,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dfcf92052710f74a",
+        "name" : "响应结果",
+        "source" : "dfcf92052710f74a.json",
+        "type" : "application/json",
+        "size" : 1141
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315531,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1dd4d5f33dc45584",
+        "name" : "当前可用参数池",
+        "source" : "1dd4d5f33dc45584.json",
+        "type" : "application/json",
+        "size" : 359
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1648880315531,
+        "stop" : 1648880315547,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "28b5d6e402bedcb5",
+        "name" : "断言结果",
+        "source" : "28b5d6e402bedcb5.json",
+        "type" : "application/json",
+        "size" : 57
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "12432-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c19', '查询角色详情', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'get', 'params', '', 'check_code', '{\"id\":${roleId1}}', '', '', 200.0]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "a3d37c4bcfa9508a.json",
+  "parameterValues" : [ "['c19', '查询角色详情', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'get', 'params', '', 'check_code', '{\"id\":${roleId1}}', '', '', 200.0]" ]
+}

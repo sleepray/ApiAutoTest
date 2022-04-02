@@ -1,0 +1,48 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "topDetail": {
+            "TraceId": "758d215645d001",
+            "duration": 0,
+            "startTime": 1643275152529
+        },
+        "chartData": [
+            {
+                "serviceName": "serviceName",
+                "time": 0,
+                "duration": 0,
+                "frequency": 500500
+            },
+            {
+                "serviceName": "serviceName2",
+                "time": 0,
+                "duration": 0,
+                "frequency": 500000
+            }
+        ],
+        "graphData": {
+            "id": "root",
+            "serviceName": "Client",
+            "methodName": "",
+            "duration": 0,
+            "children": [
+                {
+                    "id": "758d215645d000",
+                    "serviceName": "serviceName",
+                    "methodName": "CourierCallFunc_Helloworld",
+                    "duration": 0,
+                    "children": [
+                        {
+                            "id": "758d2156407000",
+                            "serviceName": "serviceName2",
+                            "methodName": "CourierCallFunc_Helloworld________2",
+                            "duration": 0,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

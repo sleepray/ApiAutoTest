@@ -1,0 +1,9 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQzMDgxNzg3LCJzdWIiOiIiLCJleHAiOjE2NDMxNjgxODd9.JM5ryXmJsTZdpxF_odmD6_yE3WPgMwiXCKHbhDWqC_I",
+    "roleId": 64,
+    "username": "new_admin",
+    "id": 130,
+    "id2": 131,
+    "id3": 132,
+    "new_username": "$.data.list.0.username"
+}

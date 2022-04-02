@@ -1,0 +1,11 @@
+{
+    "id": "fe6dbb3dadd23489f71572f77e1b540d",
+    "name": "locationservice",
+    "ip": "192.168.5.120",
+    "port": 2304,
+    "deviceName": "",
+    "longtitude": 15.21,
+    "latitude": 16.321,
+    "clusterName": "admin",
+    "description": "描述"
+}

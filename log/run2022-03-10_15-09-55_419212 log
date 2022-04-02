@@ -1,0 +1,1197 @@
+2022-03-10 15:09:55.425 | INFO     | __main__:run:31 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-03-10 15:09:55.687 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: user/login
+ 检验方式: check_code 
+ 请求参数: {"username": "admin", "password": "password"} 
+  提取参数: {"token": "$.data"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: 200.0 
+ 
+2022-03-10 15:09:55.688 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-03-10 15:09:55.732 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/user/login
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'admin', 'password': 'password'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:55.734 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: token, 对应value: $.data
+2022-03-10 15:09:55.735 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:09:55.741 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-随机
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql: select * from apis; 
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:55.742 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:55.754 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'loadBalance.default', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:55.756 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:55.761 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-轮询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:55.762 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:55.805 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'loadBalance.default', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:55.806 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:55.810 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-哈希
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"2","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:55.813 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:55.849 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'loadBalance.default', 'value': '2', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:55.851 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:55.856 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：负载均衡-最小连接
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"loadBalance.default","value":"3","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:55.856 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:55.877 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'loadBalance.default', 'value': '3', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:55.878 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:55.899 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"degradation.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:55.901 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:55.913 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'degradation.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:55.915 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:55.921 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级默认阈值
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"degradation.default","value":"5","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:55.922 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.004 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'degradation.default', 'value': '5', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.005 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.008 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/degradation/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.degradationLimit.configType", "key":"$.data.list.0.degradationLimit.key","degradationService":"$.data.list.1.name", "service":"$.data.list.0.degradationService.key"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:09:56.009 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.021 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/degradation/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'degradationLimit': {'key': 'degradation.limit,192.168.5.120,2304,locationservice', 'value': '5', 'configType': 'global', 'serviceName': ''}, 'degradationService': {'key': 'degradation.service,192.168.5.120,2304,locationservice', 'value': 'serviceName', 'configType': 'global', 'serviceName': ''}, 'name': 'locationservice', 'port': 2304, 'deviceName': '', 'clusterName': 'admin'}, {'degradationLimit': {'key': 'degradation.limit,127.0.0.1,9960,serviceName', 'value': '', 'configType': 'global', 'serviceName': ''}, 'degradationService': {'key': 'degradation.service,127.0.0.1,9960,serviceName', 'value': '', 'configType': 'global', 'serviceName': ''}, 'name': 'serviceName', 'port': 9960, 'deviceName': 'service-dev-1', 'clusterName': 'admin'}, {'degradationLimit': {'key': 'degradation.limit,127.0.0.1,9961,serviceName2', 'value': '', 'configType': 'global', 'serviceName': ''}, 'degradationService': {'key': 'degradation.service,127.0.0.1,9961,serviceName2', 'value': '', 'configType': 'global', 'serviceName': ''}, 'name': 'serviceName2', 'port': 9961, 'deviceName': 'service-dev-2', 'clusterName': 'admin'}, {'degradationLimit': {'key': 'degradation.limit,192.168.5.120,1205,statisticsservice', 'value': '', 'configType': 'global', 'serviceName': ''}, 'degradationService': {'key': 'degradation.service,192.168.5.120,1205,statisticsservice', 'value': '', 'configType': 'global', 'serviceName': ''}, 'name': 'statisticsservice', 'port': 1205, 'deviceName': 'statis1', 'clusterName': 'admin'}], 'page': 1, 'size': 10, 'total': 4}}
+2022-03-10 15:09:56.038 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: configType, 对应value: $.data.list.0.degradationLimit.configType
+2022-03-10 15:09:56.038 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: key, 对应value: $.data.list.0.degradationLimit.key
+2022-03-10 15:09:56.038 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: degradationService, 对应value: $.data.list.1.name
+2022-03-10 15:09:56.038 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: service, 对应value: $.data.list.0.degradationService.key
+2022-03-10 15:09:56.039 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:09:56.041 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级阈值编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"5","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.042 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.065 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'degradation.limit,192.168.5.120,2304,locationservice', 'value': '5', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.066 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.069 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${service}","value":"${degradationService}","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.070 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.083 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'degradation.service,192.168.5.120,2304,locationservice', 'value': 'serviceName', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.085 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.088 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务降级关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"degradation.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.088 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.098 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'degradation.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.100 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.102 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"fusing.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.103 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.111 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'fusing.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.112 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.115 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断默认阈值
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"fusing.default","value":"5","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.116 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.123 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'fusing.default', 'value': '5', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.125 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.128 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断列表
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/fusing/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.configType", "key":"$.data.list.0.key"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:09:56.129 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.137 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/fusing/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'key': 'fusing.limit,192.168.5.120,2304,locationservice,CallFunc1', 'value': '5', 'configType': 'global', 'serviceName': '', 'method': 'CallFunc1', 'name': 'locationservice', 'port': 2304, 'deviceName': '', 'clusterName': 'admin'}, {'key': 'fusing.limit,127.0.0.1,9960,serviceName,CourierCallFunc_Helloworld', 'value': '', 'configType': 'global', 'serviceName': '', 'method': 'CourierCallFunc_Helloworld', 'name': 'serviceName', 'port': 9960, 'deviceName': 'service-dev-1', 'clusterName': 'admin'}, {'key': 'fusing.limit,127.0.0.1,9961,serviceName2,CourierCallFunc_Helloworld________2', 'value': '', 'configType': 'global', 'serviceName': '', 'method': 'CourierCallFunc_Helloworld________2', 'name': 'serviceName2', 'port': 9961, 'deviceName': 'service-dev-2', 'clusterName': 'admin'}, {'key': 'fusing.limit,192.168.5.120,1205,statisticsservice,CallFunc1', 'value': '', 'configType': 'global', 'serviceName': '', 'method': 'CallFunc1', 'name': 'statisticsservice', 'port': 1205, 'deviceName': 'statis1', 'clusterName': 'admin'}], 'page': 1, 'size': 10, 'total': 4}}
+2022-03-10 15:09:56.138 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: configType, 对应value: $.data.list.0.configType
+2022-03-10 15:09:56.138 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: key, 对应value: $.data.list.0.key
+2022-03-10 15:09:56.139 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:09:56.142 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"5","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.142 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.164 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'fusing.limit,192.168.5.120,2304,locationservice,CallFunc1', 'value': '5', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.165 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.168 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务熔断关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"fusing.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.169 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.182 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'fusing.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.183 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.186 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：白名单添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/whitelist/add
+ 检验方式:  
+ 请求参数: ["${random_ip()}"] 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.188 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.264 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/ipfilter/whitelist/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:['72.152.86.100']
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.265 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.268 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：黑名单添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/blacklist/add
+ 检验方式:  
+ 请求参数: ["${random_ip()}"] 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.269 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.279 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/ipfilter/blacklist/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:['40.216.60.83']
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.280 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.283 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：白名单修改
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/whitelist/modify
+ 检验方式:  
+ 请求参数: {"ip":"${random_ip()}","index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.283 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.294 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/ipfilter/whitelist/modify
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'ip': '163.109.133.232', 'index': 0}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.298 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.311 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：黑名单修改
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/blacklist/modify
+ 检验方式:  
+ 请求参数: {"ip":"${random_ip()}","index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.314 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.327 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/ipfilter/blacklist/modify
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'ip': '224.194.251.45', 'index': 0}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.328 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.330 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：白名单删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/whitelist/remove
+ 检验方式:  
+ 请求参数: {"index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.331 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.339 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/ipfilter/whitelist/remove
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'index': 0}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.340 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.342 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：黑名单删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: ipfilter/blacklist/remove
+ 检验方式:  
+ 请求参数: {"index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.343 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.353 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/ipfilter/blacklist/remove
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'index': 0}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.354 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.357 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.357 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.367 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'location.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.368 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.370 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: location/add
+ 检验方式:  
+ 请求参数: {"locationname":"区域1","longtitude":32,"latitude":23,"radius":12} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.locationname": "区域1"} 
+ 
+2022-03-10 15:09:56.370 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.390 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/location/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'locationname': '区域1', 'longtitude': 32, 'latitude': 23, 'radius': 12}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'locationname': '区域1', 'longtitude': 32, 'latitude': 23, 'radius': 12, 'index': 0}}
+2022-03-10 15:09:56.391 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:区域1 | 预期结果:区域1 
+断言结果 True
+2022-03-10 15:09:56.394 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置强制开启
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.force,区域1","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.395 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.410 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'location.force,区域1', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.411 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.414 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置强制关闭
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.force,区域1","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.414 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.453 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'location.force,区域1', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.457 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.460 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: location/update
+ 检验方式:  
+ 请求参数: {"locationname":"区域1","longtitude":30,"latitude":30,"radius":10} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.locationname": "区域1"} 
+ 
+2022-03-10 15:09:56.461 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.470 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/location/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'locationname': '区域1', 'longtitude': 30, 'latitude': 30, 'radius': 10}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'locationname': '区域1', 'longtitude': 30, 'latitude': 30, 'radius': 10, 'index': 0}}
+2022-03-10 15:09:56.471 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:区域1 | 预期结果:区域1 
+断言结果 True
+2022-03-10 15:09:56.474 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: location/delete
+ 检验方式:  
+ 请求参数: {"index":0} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.474 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.490 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/location/delete?index=0
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'index': 0}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.491 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.494 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：地理位置关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"location.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.494 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.503 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'location.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.504 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.506 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式添加
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/add
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","enabled":true,"tags":[{"address":["432.1.3.5"],"tagname":"标签1"}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.servicename": "服务1"} 
+ 
+2022-03-10 15:09:56.507 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.612 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/condition/add
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'servicename': '服务1', 'enabled': True, 'tags': [{'address': ['432.1.3.5'], 'tagname': '标签1'}]}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'servicename': '服务1', 'enabled': True, 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}]}}
+2022-03-10 15:09:56.630 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:服务1 | 预期结果:服务1 
+断言结果 True
+2022-03-10 15:09:56.633 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式标签关闭
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/update
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","tags":[{"tagname":"标签1","address":["432.1.3.5"]}],"enabled":false} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.servicename": "服务1"} 
+ 
+2022-03-10 15:09:56.634 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.645 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/condition/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'servicename': '服务1', 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}], 'enabled': False}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'servicename': '服务1', 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}]}}
+2022-03-10 15:09:56.646 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:服务1 | 预期结果:服务1 
+断言结果 True
+2022-03-10 15:09:56.648 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式标签开启
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/update
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","tags":[{"tagname":"标签1","address":["432.1.3.5"]}],"enabled":true} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.servicename": "服务1"} 
+ 
+2022-03-10 15:09:56.649 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.838 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/condition/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'servicename': '服务1', 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}], 'enabled': True}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'servicename': '服务1', 'enabled': True, 'tags': [{'tagname': '标签1', 'address': ['432.1.3.5']}]}}
+2022-03-10 15:09:56.839 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:服务1 | 预期结果:服务1 
+断言结果 True
+2022-03-10 15:09:56.842 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：条件表达式编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: condition/update
+ 检验方式:  
+ 请求参数: {"servicename":"服务1","tags":[{"tagname":"标签2","address":["${random_ip()}"]}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.tags.0.tagname": "标签2"} 
+ 
+2022-03-10 15:09:56.843 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.852 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/condition/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'servicename': '服务1', 'tags': [{'tagname': '标签2', 'address': ['240.114.146.218']}]}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'servicename': '服务1', 'tags': [{'tagname': '标签2', 'address': ['240.114.146.218']}]}}
+2022-03-10 15:09:56.856 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:标签2 | 预期结果:标签2 
+断言结果 True
+2022-03-10 15:09:56.859 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置新建-global
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/post
+ 检验方式:  
+ 请求参数: {"configType":"global","configContent":[{"id":"${get_current_highest()}","key":"key1","value":"value1"}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.860 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.861 | ERROR    | tools:rep_expr:60 - name 'get_current_highest' is not defined
+2022-03-10 15:09:56.875 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/service/post
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'configType': 'global', 'configContent': [{'id': '${get_current_highest()}', 'key': 'key1', 'value': 'value1'}]}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.876 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.879 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置新建-service
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/post
+ 检验方式:  
+ 请求参数: {"configType":"","configContent":[{"id":"${get_current_highest()}","key":"key2","value":"value/v1"}],"serviceName":"服务1"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.880 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.880 | ERROR    | tools:rep_expr:60 - name 'get_current_highest' is not defined
+2022-03-10 15:09:56.892 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/service/post
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'configType': '', 'configContent': [{'id': '${get_current_highest()}', 'key': 'key2', 'value': 'value/v1'}], 'serviceName': '服务1'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.893 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.896 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置编辑-global
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/update
+ 检验方式:  
+ 请求参数: {"configType":"global","configContent":[{"key":"key1","value":"value2","id":"${get_current_highest()}"}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.896 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.897 | ERROR    | tools:rep_expr:60 - name 'get_current_highest' is not defined
+2022-03-10 15:09:56.904 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/service/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'configType': 'global', 'configContent': [{'key': 'key1', 'value': 'value2', 'id': '${get_current_highest()}'}]}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.905 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.908 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置编辑-service
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/update
+ 检验方式:  
+ 请求参数: {"configType":"","configContent":[{"id":"${get_current_highest()}","key":"key2","value":"value/v2"}],"serviceName":"服务1"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.909 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.909 | ERROR    | tools:rep_expr:60 - name 'get_current_highest' is not defined
+2022-03-10 15:09:56.916 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/service/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'configType': '', 'configContent': [{'id': '${get_current_highest()}', 'key': 'key2', 'value': 'value/v2'}], 'serviceName': '服务1'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.917 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.920 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置删除-global
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/delete
+ 检验方式:  
+ 请求参数: {"key":"key1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.920 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.928 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/service/delete?key=key1&configType=global
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'key1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.929 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.932 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务配置删除-service
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/service/delete
+ 检验方式:  
+ 请求参数: {"serviceName":"服务1","key":"key2","configType":"service"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:09:56.932 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:09:56.939 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/service/delete?serviceName=%E6%9C%8D%E5%8A%A11&key=key2&configType=service
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'serviceName': '服务1', 'key': 'key2', 'configType': 'service'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:09:56.940 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:09:56.943 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：链路列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: trace/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"traceId1": "$.data.list.0.traceID"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:09:56.943 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:03.417 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/trace/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'traceID': '758d215645d001', 'spanID': '758d215645d000', 'parentID': '-1', 'startTime': 1643275152529, 'endTime': 1643275152529, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d213d85d001', 'spanID': '758d213d85d000', 'parentID': '-1', 'startTime': 1643275152430, 'endTime': 1643275152431, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d212405d001', 'spanID': '758d212405d000', 'parentID': '-1', 'startTime': 1643275152328, 'endTime': 1643275152329, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d210ac5d001', 'spanID': '758d210ac5d000', 'parentID': '-1', 'startTime': 1643275152227, 'endTime': 1643275152228, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d20f1c5d001', 'spanID': '758d20f1c5d000', 'parentID': '-1', 'startTime': 1643275152127, 'endTime': 1643275152128, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d20d905d001', 'spanID': '758d20d905d000', 'parentID': '-1', 'startTime': 1643275152028, 'endTime': 1643275152029, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d20bfc5d001', 'spanID': '758d20bfc5d000', 'parentID': '-1', 'startTime': 1643275151927, 'endTime': 1643275151927, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d20a705d001', 'spanID': '758d20a705d000', 'parentID': '-1', 'startTime': 1643275151828, 'endTime': 1643275151829, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d208dc5d001', 'spanID': '758d208dc5d000', 'parentID': '-1', 'startTime': 1643275151727, 'endTime': 1643275151728, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}, {'traceID': '758d207545d001', 'spanID': '758d207545d000', 'parentID': '-1', 'startTime': 1643275151629, 'endTime': 1643275151630, 'toServiceName': 'serviceName', 'toMethodName': 'CourierCallFunc_Helloworld', 'deviceName': 'client-dev-1', 'toDeviceName': 'service-dev-1'}], 'page': 1, 'size': 10, 'total': 500500}}
+2022-03-10 15:10:03.418 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: traceId1, 对应value: $.data.list.0.traceID
+2022-03-10 15:10:03.419 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:10:03.422 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：链路查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: trace/detail
+ 检验方式: check_code 
+ 请求参数: {"traceId":"${traceId1}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:10:03.422 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:03.911 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/trace/detail?traceId=758d215645d001
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'traceId': '758d215645d001'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'topDetail': {'TraceId': '758d215645d001', 'duration': 0, 'startTime': 1643275152529}, 'chartData': [{'serviceName': 'serviceName', 'time': 0, 'duration': 0, 'frequency': 500500}, {'serviceName': 'serviceName2', 'time': 0, 'duration': 0, 'frequency': 500000}], 'graphData': {'id': 'root', 'serviceName': 'Client', 'methodName': '', 'duration': 0, 'children': [{'id': '758d215645d000', 'serviceName': 'serviceName', 'methodName': 'CourierCallFunc_Helloworld', 'duration': 0, 'children': [{'id': '758d2156407000', 'serviceName': 'serviceName2', 'methodName': 'CourierCallFunc_Helloworld________2', 'duration': 0, 'children': []}]}]}}}
+2022-03-10 15:10:03.913 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:10:03.915 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"trafficControl.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:03.916 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:03.924 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'trafficControl.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:03.925 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:03.928 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量默认网速值
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"trafficControl.default","value":"${random_int("1,100")}","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:03.928 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:03.958 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'trafficControl.default', 'value': '27', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:03.959 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:03.962 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/trafficControl/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.configType", "key":"$.data.list.0.key"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:10:03.963 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:03.971 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/trafficControl/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'key': '192.168.5.120', 'value': '62', 'configType': 'global', 'serviceName': '', 'ip': '192.168.5.120', 'deviceName': '', 'servicesName': 'locationservice,statisticsservice'}, {'key': '127.0.0.1', 'value': '', 'configType': 'global', 'serviceName': '', 'ip': '127.0.0.1', 'deviceName': 'service-dev-1', 'servicesName': 'serviceName,serviceName2'}], 'page': 1, 'size': 10, 'total': 2}}
+2022-03-10 15:10:03.972 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: configType, 对应value: $.data.list.0.configType
+2022-03-10 15:10:03.972 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: key, 对应value: $.data.list.0.key
+2022-03-10 15:10:03.973 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:10:03.976 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制权重编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"${random_int("1,100")}","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:03.976 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:03.985 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': '192.168.5.120', 'value': '99', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:03.986 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:03.989 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：流量控制关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"trafficControl.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:03.989 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.000 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'trafficControl.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:04.001 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:04.003 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量开
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"qos.switch","value":"1","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:04.004 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.013 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'qos.switch', 'value': '1', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:04.014 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:04.017 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/qos/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"configType":"$.data.list.0.configType", "key":"$.data.list.0.key"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:10:04.017 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.027 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/qos/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'key': 'qos.limit,192.168.5.120,2304,locationservice,CallFunc1', 'value': '62,46,75', 'configType': 'global', 'serviceName': '', 'method': 'CallFunc1', 'name': 'locationservice', 'port': 2304, 'deviceName': '', 'clusterName': 'admin'}, {'key': 'qos.limit,127.0.0.1,9960,serviceName,CourierCallFunc_Helloworld', 'value': '', 'configType': 'global', 'serviceName': '', 'method': 'CourierCallFunc_Helloworld', 'name': 'serviceName', 'port': 9960, 'deviceName': 'service-dev-1', 'clusterName': 'admin'}, {'key': 'qos.limit,127.0.0.1,9961,serviceName2,CourierCallFunc_Helloworld________2', 'value': '', 'configType': 'global', 'serviceName': '', 'method': 'CourierCallFunc_Helloworld________2', 'name': 'serviceName2', 'port': 9961, 'deviceName': 'service-dev-2', 'clusterName': 'admin'}, {'key': 'qos.limit,192.168.5.120,1205,statisticsservice,CallFunc1', 'value': '', 'configType': 'global', 'serviceName': '', 'method': 'CallFunc1', 'name': 'statisticsservice', 'port': 1205, 'deviceName': 'statis1', 'clusterName': 'admin'}], 'page': 1, 'size': 10, 'total': 4}}
+2022-03-10 15:10:04.028 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: configType, 对应value: $.data.list.0.configType
+2022-03-10 15:10:04.028 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: key, 对应value: $.data.list.0.key
+2022-03-10 15:10:04.029 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:10:04.031 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"${key}","value":"${random_int("0,100")},${random_int("0,100")},${random_int("0,100")}","configType":"${configType}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:04.032 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.040 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'qos.limit,192.168.5.120,2304,locationservice,CallFunc1', 'value': '92,38,82', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:04.041 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:04.043 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务质量关
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: config/update
+ 检验方式:  
+ 请求参数: {"key":"qos.switch","value":"0","configType":"global"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.msg": "success"} 
+ 
+2022-03-10 15:10:04.044 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.053 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/config/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'key': 'qos.switch', 'value': '0', 'configType': 'global'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'msg': 'success'}}
+2022-03-10 15:10:04.054 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:success | 预期结果:success 
+断言结果 True
+2022-03-10 15:10:04.056 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务管理查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: registry/list
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"ip":"$.data.list.0.ip", "servicename":"$.data.list.0.name", "port":"$.data.list.0.port", "id": "$.data.list.0.id", "clusterName":"$.data.list.0.clusterName"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:10:04.057 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.063 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/registry/list
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'list': [{'id': 'fe6dbb3dadd23489f71572f77e1b540d', 'name': 'locationservice', 'ip': '192.168.5.120', 'port': 2304, 'clusterName': 'admin', 'description': '描述', 'methods': ['CallFunc1'], 'longtitude': 15.21, 'latitude': 16.321}, {'id': '791ef3934d34882dc3504e82c1f4fa87', 'name': 'serviceName', 'ip': '127.0.0.1', 'port': 9960, 'deviceName': 'service-dev-1', 'clusterName': 'admin', 'methods': ['CourierCallFunc_Helloworld']}, {'id': '5773cf568e87e2ba51996cea405b2a61', 'name': 'serviceName2', 'ip': '127.0.0.1', 'port': 9961, 'deviceName': 'service-dev-2', 'clusterName': 'admin', 'methods': ['CourierCallFunc_Helloworld________2']}, {'id': '0ed2454dc267d65eb4596d8bcd4d4434', 'name': 'statisticsservice', 'ip': '192.168.5.120', 'port': 1205, 'deviceName': 'statis1', 'clusterName': 'admin', 'methods': ['CallFunc1']}], 'page': 1, 'size': 10, 'total': 4}}
+2022-03-10 15:10:04.064 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: ip, 对应value: $.data.list.0.ip
+2022-03-10 15:10:04.064 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: servicename, 对应value: $.data.list.0.name
+2022-03-10 15:10:04.064 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: port, 对应value: $.data.list.0.port
+2022-03-10 15:10:04.064 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: id, 对应value: $.data.list.0.id
+2022-03-10 15:10:04.065 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: clusterName, 对应value: $.data.list.0.clusterName
+2022-03-10 15:10:04.065 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:10:04.068 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：服务管理修改
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: registry/update
+ 检验方式:  
+ 请求参数: {"id":"${id}","name":"${servicename}","ip":"${ip}","port":${port},"deviceName":"","longtitude":15.21,"latitude":16.321,"clusterName":"${clusterName}","description":"描述"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.code": 0} 
+ 
+2022-03-10 15:10:04.068 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.081 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/registry/update
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'id': 'fe6dbb3dadd23489f71572f77e1b540d', 'name': 'locationservice', 'ip': '192.168.5.120', 'port': 2304, 'deviceName': '', 'longtitude': 15.21, 'latitude': 16.321, 'clusterName': 'admin', 'description': '描述'}
+上传文件:None
+响应状态码200
+响应数据:{'code': 0, 'msg': '', 'data': {'id': 'fe6dbb3dadd23489f71572f77e1b540d', 'name': 'locationservice', 'ip': '192.168.5.120', 'port': 2304, 'clusterName': 'admin', 'description': '描述', 'methods': ['CallFunc1'], 'longtitude': 15.21, 'latitude': 16.321}}
+2022-03-10 15:10:04.082 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:0 | 预期结果:0 
+断言结果 True
+2022-03-10 15:10:04.085 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：指标统计
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: statusStat/StatCount
+ 检验方式: check_code 
+ 请求参数: {"ip":"${iptoint("${ip}")}", "serviceName":"${servicename}", "port":"${port}", "infoType":4} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 15:10:04.085 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+2022-03-10 15:10:04.093 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.31.11:8080/backend/statusStat/StatCount?ip=3232236920&serviceName=locationservice&port=2304&infoType=4
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q='}
+请求参数:{'ip': '3232236920', 'serviceName': 'locationservice', 'port': '2304', 'infoType': 4}
+上传文件:None
+响应状态码200
+响应数据:{'code': 207, 'msg': 'not found', 'data': None}
+2022-03-10 15:10:04.095 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-10 15:10:07.050 | SUCCESS  | __main__:run:51 - 报告已生成

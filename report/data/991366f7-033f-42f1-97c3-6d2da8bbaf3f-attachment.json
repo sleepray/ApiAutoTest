@@ -1,0 +1,9 @@
+{
+    "name": "$.data.list.0.username",
+    "description": "牛的一批",
+    "permIds": [
+        2,
+        12,
+        14
+    ]
+}

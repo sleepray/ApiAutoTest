@@ -1,0 +1,189 @@
+{
+  "uid" : "8ab316f68c4aa9fb",
+  "name" : "post请求实现登录",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "8174f8ecb1004db16679a852ff5f760a",
+  "time" : {
+    "start" : 1648882062331,
+    "stop" : 1648882062441,
+    "duration" : 110
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: expected string or bytes-like object",
+  "statusTrace" : "cases = ['c1', 'post请求实现登录', '', 'userMgr/auth', 'post', 'json', ...]\n\n    @pytest.mark.flaky(reruns=None, reruns_delay=1) #pytest 失败重跑装饰器\n    def test_main(cases):   # 不使用数据库功能\n        # 发送请求\n>       response, response_code, expect, sql, check_mode = BaseRequest.send_request(cases, env = 'dev')\n\ntest\\test_api.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\napi\\base_requests.py:51: in send_request\n    DataProcess.handle_extra(extra, response)\ntools\\data_process.py:112: in handle_extra\n    response = rep_expr(response, cls.extra_pool)\ntools\\__init__.py:54: in rep_expr\n    content = Template(content).safe_substitute(data)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <string.Template object at 0x000002570B5D6FA0>, mapping = {}, kws = {}\nconvert = <function Template.safe_substitute.<locals>.convert at 0x000002570B5CDE50>\n\n    def safe_substitute(self, mapping=_sentinel_dict, /, **kws):\n        if mapping is _sentinel_dict:\n            mapping = kws\n        elif kws:\n            mapping = _ChainMap(kws, mapping)\n        # Helper function for .sub()\n        def convert(mo):\n            named = mo.group('named') or mo.group('braced')\n            if named is not None:\n                try:\n                    return str(mapping[named])\n                except KeyError:\n                    return mo.group()\n            if mo.group('escaped') is not None:\n                return self.delimiter\n            if mo.group('invalid') is not None:\n                return mo.group()\n            raise ValueError('Unrecognized named group in pattern',\n                             self.pattern)\n>       return self.pattern.sub(convert, self.template)\nE       TypeError: expected string or bytes-like object\n\nE:\\python3.9.6\\lib\\string.py:142: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1648882062331,
+      "stop" : 1648882062331,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: expected string or bytes-like object",
+    "statusTrace" : "cases = ['c1', 'post请求实现登录', '', 'userMgr/auth', 'post', 'json', ...]\n\n    @pytest.mark.flaky(reruns=None, reruns_delay=1) #pytest 失败重跑装饰器\n    def test_main(cases):   # 不使用数据库功能\n        # 发送请求\n>       response, response_code, expect, sql, check_mode = BaseRequest.send_request(cases, env = 'dev')\n\ntest\\test_api.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\napi\\base_requests.py:51: in send_request\n    DataProcess.handle_extra(extra, response)\ntools\\data_process.py:112: in handle_extra\n    response = rep_expr(response, cls.extra_pool)\ntools\\__init__.py:54: in rep_expr\n    content = Template(content).safe_substitute(data)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <string.Template object at 0x000002570B5D6FA0>, mapping = {}, kws = {}\nconvert = <function Template.safe_substitute.<locals>.convert at 0x000002570B5CDE50>\n\n    def safe_substitute(self, mapping=_sentinel_dict, /, **kws):\n        if mapping is _sentinel_dict:\n            mapping = kws\n        elif kws:\n            mapping = _ChainMap(kws, mapping)\n        # Helper function for .sub()\n        def convert(mo):\n            named = mo.group('named') or mo.group('braced')\n            if named is not None:\n                try:\n                    return str(mapping[named])\n                except KeyError:\n                    return mo.group()\n            if mo.group('escaped') is not None:\n                return self.delimiter\n            if mo.group('invalid') is not None:\n                return mo.group()\n            raise ValueError('Unrecognized named group in pattern',\n                             self.pattern)\n>       return self.pattern.sub(convert, self.template)\nE       TypeError: expected string or bytes-like object\n\nE:\\python3.9.6\\lib\\string.py:142: TypeError",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.0.6/api/userMgr/auth",
+      "time" : {
+        "start" : 1648882062331,
+        "stop" : 1648882062331,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1648882062331,
+        "stop" : 1648882062331,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "64811d0a286a99f6",
+        "name" : "请求头",
+        "source" : "64811d0a286a99f6.json",
+        "type" : "application/json",
+        "size" : 220
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1648882062331,
+        "stop" : 1648882062331,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b54864bc5ea2aa1c",
+        "name" : "请求数据",
+        "source" : "b54864bc5ea2aa1c.json",
+        "type" : "application/json",
+        "size" : 52
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(s): 0.111678",
+      "time" : {
+        "start" : 1648882062441,
+        "stop" : 1648882062441,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1648882062441,
+        "stop" : 1648882062441,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "47e540b5d1cccde8",
+        "name" : "响应结果",
+        "source" : "47e540b5d1cccde8.json",
+        "type" : "application/json",
+        "size" : 2401
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "13328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c1', 'post请求实现登录', '', 'userMgr/auth', 'post', 'json', '', 'check_code', '{\"username\":\"root\",\"password\":\"123456\"}', '{\"token\": \"$.data.token\"}', 'select * from apis; select * from cases', 200.0]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "8ab316f68c4aa9fb.json",
+  "parameterValues" : [ "['c1', 'post请求实现登录', '', 'userMgr/auth', 'post', 'json', '', 'check_code', '{\"username\":\"root\",\"password\":\"123456\"}', '{\"token\": \"$.data.token\"}', 'select * from apis; select * from cases', 200.0]" ]
+}

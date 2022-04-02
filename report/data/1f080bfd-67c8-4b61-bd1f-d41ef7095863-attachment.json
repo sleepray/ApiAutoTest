@@ -1,0 +1,5 @@
+{
+    "code": "500",
+    "message": "JSON parse error: Cannot deserialize instance of `[Ljava.lang.Integer;` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `[Ljava.lang.Integer;` out of VALUE_STRING token\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: cn.ghostcloud.admins.vo.UserReq[\"roleIds\"])",
+    "data": null
+}

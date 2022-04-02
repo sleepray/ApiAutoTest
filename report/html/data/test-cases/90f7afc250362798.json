@@ -1,0 +1,223 @@
+{
+  "uid" : "90f7afc250362798",
+  "name" : "获取secretKey",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "80ae97e530843c3e161db11f90773af5",
+  "time" : {
+    "start" : 1648880315641,
+    "stop" : 1648880315641,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1648880315641,
+      "stop" : 1648880315641,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.0.6/api/device/secretKey",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "50da041542c4eae5",
+        "name" : "请求头",
+        "source" : "50da041542c4eae5.json",
+        "type" : "application/json",
+        "size" : 382
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a26253efd389d7f1",
+        "name" : "请求数据",
+        "source" : "a26253efd389d7f1.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(s): 0.003018",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "86d5154d2770f2f1",
+        "name" : "响应结果",
+        "source" : "86d5154d2770f2f1.json",
+        "type" : "application/json",
+        "size" : 120
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "739b03baf8a7ab6e",
+        "name" : "当前可用参数池",
+        "source" : "739b03baf8a7ab6e.json",
+        "type" : "application/json",
+        "size" : 416
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1648880315641,
+        "stop" : 1648880315641,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6ea529cf790b7789",
+        "name" : "第1个断言",
+        "source" : "6ea529cf790b7789.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "12432-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c22', '获取secretKey', '{\"Authorization\": \"${token}\"}', 'device/secretKey', 'post', 'json', '', 'check_json', '', '{\"secretkey\":\"$.data\"}', '', '{\"$.message\":\"success\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "90f7afc250362798.json",
+  "parameterValues" : [ "['c22', '获取secretKey', '{\"Authorization\": \"${token}\"}', 'device/secretKey', 'post', 'json', '', 'check_json', '', '{\"secretkey\":\"$.data\"}', '', '{\"$.message\":\"success\"}']" ]
+}

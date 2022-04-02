@@ -1,0 +1,452 @@
+2022-03-18 13:46:57.673 | INFO     | __main__:run:31 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-03-18 13:46:58.592 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: userMgr/auth
+ 检验方式: check_code 
+ 请求参数: {"username":"root","password":"123456"} 
+  提取参数: {"token": "$.data.token"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:58.593 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-03-18 13:46:58.640 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/auth
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'root', 'password': '123456'}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'id': 1, 'isAdmin': 1, 'authorities': [{'id': 1, 'perm': 'r', 'name': '首页统计'}, {'id': 2, 'perm': 'r', 'name': '用户管理'}, {'id': 3, 'perm': 'w', 'name': '用户管理'}, {'id': 4, 'perm': 'r', 'name': '设备管理'}, {'id': 5, 'perm': 'w', 'name': '设备管理'}, {'id': 6, 'perm': 'r', 'name': '服务管理'}, {'id': 7, 'perm': 'w', 'name': '服务管理'}, {'id': 8, 'perm': 'r', 'name': '集群管理'}, {'id': 9, 'perm': 'w', 'name': '集群管理'}, {'id': 10, 'perm': 'r', 'name': '数据管理'}, {'id': 11, 'perm': 'w', 'name': '数据管理'}, {'id': 60, 'perm': 'r', 'name': 'Demo服务'}, {'id': 61, 'perm': 'w', 'name': 'Demo服务'}, {'id': 62, 'perm': 'r', 'name': 'Demo服务2'}, {'id': 63, 'perm': 'w', 'name': 'Demo服务2'}, {'id': 64, 'perm': 'r', 'name': 'Demo3'}, {'id': 65, 'perm': 'w', 'name': 'Demo3'}], 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU', 'username': 'root'}}
+2022-03-18 13:46:58.678 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: token, 对应value: $.data.token
+2022-03-18 13:46:58.679 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:58.699 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：角色列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roleList
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"roleId":"$.data.0.id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:58.700 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.716 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/roleList
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': [{'id': 2, 'name': '$.data.list.0.name1'}, {'id': 3, 'name': '$.data.list.0.name2'}]}
+2022-03-18 13:46:58.716 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: roleId, 对应value: $.data.0.id
+2022-03-18 13:46:58.717 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:58.720 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加用户
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_admin","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!!!!!"} 
+ 
+2022-03-18 13:46:58.720 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.770 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/users
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'username': 'new_admin', 'password': '123456', 'roleIds': [2]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '用户添加成功!!!!!!!'}
+2022-03-18 13:46:58.771 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:用户添加成功!!!!!!! | 预期结果:用户添加成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:58.774 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加用户2
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_adminx","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!!!!!"} 
+ 
+2022-03-18 13:46:58.774 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.808 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/users
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'username': 'new_adminx', 'password': '123456', 'roleIds': [2]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '用户添加成功!!!!!!!'}
+2022-03-18 13:46:58.810 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:用户添加成功!!!!!!! | 预期结果:用户添加成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:58.813 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加用户3
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_adminy","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!!!!!"} 
+ 
+2022-03-18 13:46:58.813 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.833 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/users
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'username': 'new_adminy', 'password': '123456', 'roleIds': [2]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '用户添加成功!!!!!!!'}
+2022-03-18 13:46:58.833 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:用户添加成功!!!!!!! | 预期结果:用户添加成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:58.836 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：用户列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_code 
+ 请求参数: {"current":1,"pageSize":100} 
+  提取参数: {"username":"$.data.list.2.username", "id":"$.data.list.2.id", "id2":"$.data.list.3.id", "id3":"$.data.list.4.id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:58.837 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.858 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/user?current=1&pageSize=100
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'current': 1, 'pageSize': 100}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'current': 1, 'pageSize': 100, 'total': 3, 'totalPages': 1, 'list': [{'id': 2, 'nickname': None, 'username': 'new_admin', 'isAdmin': 0, 'roleName': '$.data.list.0.name1', 'roleId': '2', 'lastLoginTime': None, 'createdTime': '2022-03-18 13:46:56'}, {'id': 3, 'nickname': None, 'username': 'new_adminx', 'isAdmin': 0, 'roleName': '$.data.list.0.name1', 'roleId': '2', 'lastLoginTime': None, 'createdTime': '2022-03-18 13:46:56'}, {'id': 4, 'nickname': None, 'username': 'new_adminy', 'isAdmin': 0, 'roleName': '$.data.list.0.name1', 'roleId': '2', 'lastLoginTime': None, 'createdTime': '2022-03-18 13:46:56'}]}}
+2022-03-18 13:46:58.859 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: username, 对应value: $.data.list.2.username
+2022-03-18 13:46:58.860 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: id, 对应value: $.data.list.2.id
+2022-03-18 13:46:58.860 | ERROR    | tools:extractor:43 - $.data.list.3.id - 提取不到内容，丢给你一个错误！'bool' object is not subscriptable
+2022-03-18 13:46:58.860 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: id2, 对应value: $.data.list.3.id
+2022-03-18 13:46:58.860 | ERROR    | tools:extractor:43 - $.data.list.4.id - 提取不到内容，丢给你一个错误！'bool' object is not subscriptable
+2022-03-18 13:46:58.861 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: id3, 对应value: $.data.list.4.id
+2022-03-18 13:46:58.861 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:58.864 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：用户编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_json 
+ 请求参数: {"username":"${username}1","roleIds":[${roleId}],"id":"${id}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户修改成功!!!!!!!"} 
+ 
+2022-03-18 13:46:58.865 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.903 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/user
+请求方法:put
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'username': 'new_adminy1', 'roleIds': [2], 'id': '4'}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '用户修改成功!!!!!!!'}
+2022-03-18 13:46:58.904 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:用户修改成功!!!!!!! | 预期结果:用户修改成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:58.907 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：重置用户密码
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/autut
+ 检验方式: check_json 
+ 请求参数: {"id":${id}} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"重置密码成功"} 
+ 
+2022-03-18 13:46:58.909 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.925 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/autut?id=4
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'id': 4}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '重置密码成功'}
+2022-03-18 13:46:58.927 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:重置密码成功 | 预期结果:重置密码成功 
+断言结果 True
+2022-03-18 13:46:58.929 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：登录该用户
+ 请求头：
+ 接口路径: userMgr/auth
+ 检验方式: check_json 
+ 请求参数: {"username":"${username}1","password":"123456"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.username":"${username}1"} 
+ 
+2022-03-18 13:46:58.931 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.954 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/auth
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'username': 'new_adminy1', 'password': '123456'}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'id': 4, 'isAdmin': 0, 'authorities': [{'id': 1, 'perm': 'r', 'name': '首页统计'}, {'id': 2, 'perm': 'r', 'name': '用户管理'}], 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0IiwiaWF0IjoxNjQ3NTgyNDE5LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTl9.v-x8BgNPweeqglBKLhmxZxfu2KMdQCfiO2i4oMDIFns', 'username': 'new_adminy1'}}
+2022-03-18 13:46:58.955 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:new_adminy1 | 预期结果:new_adminy1 
+断言结果 True
+2022-03-18 13:46:58.958 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：删除用户
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_code 
+ 请求参数: {"ids":[${id}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:58.959 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:58.983 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/user
+请求方法:delete
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'ids': [4]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': 1}
+2022-03-18 13:46:58.984 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:58.987 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：批量删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_code 
+ 请求参数: {"ids":[${id2}, ${id3}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:58.987 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.291 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：角色查询获取角色名
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roles
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"new_username":"$.data.list.0.name"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:59.292 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.312 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/roles
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'current': 1, 'pageSize': 10, 'total': 2, 'totalPages': 1, 'list': [{'id': 2, 'name': '$.data.list.0.name1', 'description': '牛的一批', 'permIds': '14,1,2,12', 'services': None}, {'id': 3, 'name': '$.data.list.0.name2', 'description': '牛的一批', 'permIds': '1,2,12,14', 'services': None}]}}
+2022-03-18 13:46:59.313 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: new_username, 对应value: $.data.list.0.name
+2022-03-18 13:46:59.313 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:59.316 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}1","description":"牛的一批","permIds":[1,2,12,14]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"角色添加成功!!!!!!!"} 
+ 
+2022-03-18 13:46:59.316 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.344 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'name': '$.data.list.0.name11', 'description': '牛的一批', 'permIds': [1, 2, 12, 14]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '角色添加成功!!!!!!!'}
+2022-03-18 13:46:59.345 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:角色添加成功!!!!!!! | 预期结果:角色添加成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:59.348 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加角色2
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}2","description":"牛的一批","permIds":[1,2,12,14]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"角色添加成功!!!!!!!"} 
+ 
+2022-03-18 13:46:59.349 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.371 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'name': '$.data.list.0.name12', 'description': '牛的一批', 'permIds': [1, 2, 12, 14]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '角色添加成功!!!!!!!'}
+2022-03-18 13:46:59.372 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:角色添加成功!!!!!!! | 预期结果:角色添加成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:59.374 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加角色3
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}3","description":"牛的一批","permIds":[1,2,12,14]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"角色添加成功!!!!!!!"} 
+ 
+2022-03-18 13:46:59.375 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.393 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'name': '$.data.list.0.name13', 'description': '牛的一批', 'permIds': [1, 2, 12, 14]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '角色添加成功!!!!!!!'}
+2022-03-18 13:46:59.394 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:角色添加成功!!!!!!! | 预期结果:角色添加成功!!!!!!! 
+断言结果 True
+2022-03-18 13:46:59.397 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：角色查询获取id
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roles
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"roleId1":"$.data.list.2.id","roleId2":"$.data.list.3.id","roleId3":"$.data.list.4.id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:59.397 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.419 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/roles
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'current': 1, 'pageSize': 10, 'total': 5, 'totalPages': 1, 'list': [{'id': 2, 'name': '$.data.list.0.name1', 'description': '牛的一批', 'permIds': '12,14,1,2', 'services': None}, {'id': 3, 'name': '$.data.list.0.name2', 'description': '牛的一批', 'permIds': '1,2,12,14', 'services': None}, {'id': 6, 'name': '$.data.list.0.name11', 'description': '牛的一批', 'permIds': '2,12,14,1', 'services': None}, {'id': 7, 'name': '$.data.list.0.name12', 'description': '牛的一批', 'permIds': '1,2,12,14', 'services': None}, {'id': 8, 'name': '$.data.list.0.name13', 'description': '牛的一批', 'permIds': '1,2,12,14', 'services': None}]}}
+2022-03-18 13:46:59.420 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: roleId1, 对应value: $.data.list.2.id
+2022-03-18 13:46:59.420 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: roleId2, 对应value: $.data.list.3.id
+2022-03-18 13:46:59.420 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: roleId3, 对应value: $.data.list.4.id
+2022-03-18 13:46:59.421 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:59.423 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：编辑角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}new","description":"别说了","permIds":[1,2,3,12,14],"id":"${roleId1}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"update ok"} 
+ 
+2022-03-18 13:46:59.424 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.459 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role
+请求方法:put
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'name': '$.data.list.0.name1new', 'description': '别说了', 'permIds': [1, 2, 3, 12, 14], 'id': '6'}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': 'update ok'}
+2022-03-18 13:46:59.460 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:update ok | 预期结果:update ok 
+断言结果 True
+2022-03-18 13:46:59.463 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：查询角色详情
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_code 
+ 请求参数: {"id":${roleId1}} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-18 13:46:59.463 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.502 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role?id=6
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'id': 6}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'id': 6, 'name': '$.data.list.0.name1new', 'description': '别说了', 'permIds': None, 'services': [{'serviceId': 2, 'serviceName': '用户管理', 'perms': [{'id': 2, 'perm': '读'}, {'id': 3, 'perm': '写'}]}, {'serviceId': 4, 'serviceName': '首页统计', 'perms': [{'id': 1, 'perm': '读'}]}]}}
+2022-03-18 13:46:59.503 | INFO     | tools.data_process:assert_result:133 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-03-18 13:46:59.505 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：删除角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"ids":[${roleId1}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"delete ok"} 
+ 
+2022-03-18 13:46:59.506 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.545 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role
+请求方法:DELETE
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'ids': [6]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': 'delete ok'}
+2022-03-18 13:46:59.546 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:delete ok | 预期结果:delete ok 
+断言结果 True
+2022-03-18 13:46:59.549 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：批量删除该角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"ids":[${roleId2},${roleId3}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"delete ok"} 
+ 
+2022-03-18 13:46:59.549 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+2022-03-18 13:46:59.569 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://192.168.0.6/api/userMgr/role
+请求方法:DELETE
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU'}
+请求参数:{'ids': [7, 8]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': 'delete ok'}
+2022-03-18 13:46:59.570 | INFO     | tools.data_process:assert_result:151 - 第1个断言,实际结果:delete ok | 预期结果:delete ok 
+断言结果 True
+2022-03-18 13:47:05.640 | SUCCESS  | __main__:run:51 - 报告已生成

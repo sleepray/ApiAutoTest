@@ -1,0 +1,284 @@
+2022-03-10 09:25:32.710 | INFO     | __main__:run:31 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-03-10 09:25:33.888 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: userMgr/auth
+ 检验方式: check_code 
+ 请求参数: {"username":"root","password":"123456"} 
+  提取参数: {"token": "$.data.token"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: 200.0 
+ 
+2022-03-10 09:25:33.891 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-03-10 09:25:55.499 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：角色列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roleList
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"roleId":"$.data.0.id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:25:55.500 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:25:55.500 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:16.618 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加用户
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_admin","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!!!!!"} 
+ 
+2022-03-10 09:26:16.618 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:16.619 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:16.619 | ERROR    | tools:rep_expr:60 - name 'roleId' is not defined
+2022-03-10 09:26:16.685 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加用户2
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_adminx","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!!!!!"} 
+ 
+2022-03-10 09:26:16.685 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:16.686 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:16.686 | ERROR    | tools:rep_expr:60 - name 'roleId' is not defined
+2022-03-10 09:26:16.714 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加用户3
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_adminy","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!!!!!"} 
+ 
+2022-03-10 09:26:16.714 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:16.715 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:16.715 | ERROR    | tools:rep_expr:60 - name 'roleId' is not defined
+2022-03-10 09:26:16.731 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：用户列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_code 
+ 请求参数: {"current":1,"pageSize":100} 
+  提取参数: {"username":"$.data.list.2.username", "id":"$.data.list.2.id", "id2":"$.data.list.3.id", "id3":"$.data.list.4.id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:26:16.732 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:16.733 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:37.883 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：用户编辑
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_json 
+ 请求参数: {"username":"${username}1","roleIds":[${roleId}],"id":"${id}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户修改成功!!!!!!!"} 
+ 
+2022-03-10 09:26:37.883 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:37.884 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:37.884 | ERROR    | tools:rep_expr:60 - name 'username' is not defined
+2022-03-10 09:26:37.884 | ERROR    | tools:rep_expr:60 - name 'roleId' is not defined
+2022-03-10 09:26:37.902 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：重置用户密码
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/autut
+ 检验方式: check_json 
+ 请求参数: {"id":${id}} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"重置密码成功"} 
+ 
+2022-03-10 09:26:37.902 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:37.902 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:37.925 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：登录该用户
+ 请求头：
+ 接口路径: userMgr/auth
+ 检验方式: check_json 
+ 请求参数: {"username":"${username}1","password":"123456"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data.username":"${username}1"} 
+ 
+2022-03-10 09:26:37.925 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:37.926 | ERROR    | tools:rep_expr:60 - name 'username' is not defined
+2022-03-10 09:26:59.041 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：删除用户
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_code 
+ 请求参数: {"ids":[${id}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:26:59.041 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:59.042 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:59.059 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：批量删除
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/user
+ 检验方式: check_code 
+ 请求参数: {"ids":[${id2}, ${id3}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:26:59.059 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:59.060 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:26:59.060 | ERROR    | tools:rep_expr:60 - name 'id2' is not defined
+2022-03-10 09:26:59.060 | ERROR    | tools:rep_expr:60 - name 'id3' is not defined
+2022-03-10 09:26:59.077 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：角色查询获取角色名
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roles
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"new_username":"$.data.list.0.name"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:26:59.077 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:26:59.078 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:27:20.219 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}1","description":"牛的一批","permIds":[1,2,12,14]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"角色添加成功!!!!!!!"} 
+ 
+2022-03-10 09:27:20.220 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:27:20.220 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:27:20.220 | ERROR    | tools:rep_expr:60 - name 'new_username' is not defined
+2022-03-10 09:27:41.335 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加角色2
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}2","description":"牛的一批","permIds":[1,2,12,14]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"角色添加成功!!!!!!!"} 
+ 
+2022-03-10 09:27:41.335 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:27:41.336 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:27:41.336 | ERROR    | tools:rep_expr:60 - name 'new_username' is not defined
+2022-03-10 09:28:02.461 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：添加角色3
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}3","description":"牛的一批","permIds":[1,2,12,14]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"角色添加成功!!!!!!!"} 
+ 
+2022-03-10 09:28:02.461 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:28:02.462 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:28:02.462 | ERROR    | tools:rep_expr:60 - name 'new_username' is not defined
+2022-03-10 09:28:23.600 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：角色查询获取id
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roles
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"roleId1":"$.data.list.2.id","roleId2":"$.data.list.3.id","roleId3":"$.data.list.4.id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:28:23.601 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:28:23.601 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:28:44.735 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：编辑角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"name":"${new_username}new","description":"别说了","permIds":[1,2,3,12,14],"id":"${roleId1}"} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"update ok"} 
+ 
+2022-03-10 09:28:44.735 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:28:44.736 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:28:44.736 | ERROR    | tools:rep_expr:60 - name 'new_username' is not defined
+2022-03-10 09:28:44.736 | ERROR    | tools:rep_expr:60 - name 'roleId1' is not defined
+2022-03-10 09:29:05.874 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：查询角色详情
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_code 
+ 请求参数: {"id":${roleId1}} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-03-10 09:29:05.874 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:29:05.874 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:29:05.875 | ERROR    | tools:rep_expr:60 - name 'roleId1' is not defined
+2022-03-10 09:29:05.892 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：删除角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"ids":[${roleId1}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"delete ok"} 
+ 
+2022-03-10 09:29:05.892 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:29:05.893 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:29:05.893 | ERROR    | tools:rep_expr:60 - name 'roleId1' is not defined
+2022-03-10 09:29:05.910 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：批量删除该角色
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/role
+ 检验方式: check_json 
+ 请求参数: {"ids":[${roleId2},${roleId3}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"delete ok"} 
+ 
+2022-03-10 09:29:05.910 | ERROR    | tools:rep_expr:60 - name 'token' is not defined
+2022-03-10 09:29:05.910 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '${token}'}
+2022-03-10 09:29:05.910 | ERROR    | tools:rep_expr:60 - name 'roleId2' is not defined
+2022-03-10 09:29:05.910 | ERROR    | tools:rep_expr:60 - name 'roleId3' is not defined

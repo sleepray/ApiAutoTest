@@ -1,0 +1,82 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "current": 1,
+        "pageSize": 100,
+        "total": 10,
+        "totalPages": 1,
+        "list": [
+            {
+                "id": 2,
+                "name": "设备管理员",
+                "description": "管理设备的管理员",
+                "permIds": "3,4,10,11,2",
+                "services": null
+            },
+            {
+                "id": 93,
+                "name": "测试角色1号",
+                "description": "",
+                "permIds": "10,63,3,11,4,60,5,61,1,14,6,8,15,7,9,62,2",
+                "services": null
+            },
+            {
+                "id": 96,
+                "name": "测试角色3号",
+                "description": "",
+                "permIds": "6,2,1,10",
+                "services": null
+            },
+            {
+                "id": 97,
+                "name": "测试角色2号",
+                "description": "",
+                "permIds": "2,1,10",
+                "services": null
+            },
+            {
+                "id": 98,
+                "name": "测试角色4号",
+                "description": "",
+                "permIds": "2,1,10",
+                "services": null
+            },
+            {
+                "id": 155,
+                "name": "测试角色5号",
+                "description": "",
+                "permIds": "5,1,10,11,2,4",
+                "services": null
+            },
+            {
+                "id": 199,
+                "name": "test",
+                "description": "基础角色",
+                "permIds": "8,1,62,6,4,7,60,9,5,2,61,10,63,3,64,11,65",
+                "services": null
+            },
+            {
+                "id": 200,
+                "name": "new_username1",
+                "description": "牛的一批",
+                "permIds": "1,2,12,14",
+                "services": null
+            },
+            {
+                "id": 201,
+                "name": "new_username2",
+                "description": "牛的一批",
+                "permIds": "14,1,2,12",
+                "services": null
+            },
+            {
+                "id": 202,
+                "name": "new_username3",
+                "description": "牛的一批",
+                "permIds": "1,2,12,14",
+                "services": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "key": "192.168.5.120",
+                "value": "89",
+                "configType": "global",
+                "serviceName": "",
+                "ip": "192.168.5.120",
+                "deviceName": "",
+                "servicesName": "locationservice,statisticsservice"
+            },
+            {
+                "key": "127.0.0.1",
+                "value": "",
+                "configType": "global",
+                "serviceName": "",
+                "ip": "127.0.0.1",
+                "deviceName": "service-dev-1",
+                "servicesName": "serviceName,serviceName2"
+            }
+        ],
+        "page": 1,
+        "size": 10,
+        "total": 2
+    }
+}

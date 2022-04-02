@@ -1,0 +1,11 @@
+{
+    "configType": "",
+    "configContent": [
+        {
+            "id": "${get_current_highest()}",
+            "key": "key2",
+            "value": "value/v2"
+        }
+    ],
+    "serviceName": "服务1"
+}

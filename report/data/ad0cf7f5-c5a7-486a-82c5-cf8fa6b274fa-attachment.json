@@ -1,0 +1,26 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "current": 1,
+        "pageSize": 10,
+        "total": 2,
+        "totalPages": 1,
+        "list": [
+            {
+                "id": 2,
+                "name": "$.data.list.0.name1",
+                "description": "牛的一批",
+                "permIds": "14,1,2,12",
+                "services": null
+            },
+            {
+                "id": 3,
+                "name": "$.data.list.0.name2",
+                "description": "牛的一批",
+                "permIds": "1,2,12,14",
+                "services": null
+            }
+        ]
+    }
+}

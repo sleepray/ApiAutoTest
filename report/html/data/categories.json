@@ -1,0 +1,429 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D98CE310>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "post请求实现登录",
+        "uid" : "edd352dc044201ca",
+        "parentUid" : "e48371d091b3ddcd4b24f1517ff3d569",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882760884,
+          "stop" : 1646882781931,
+          "duration" : 21047
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c1', 'post请求实现登录', '', 'userMgr/auth', 'post', 'json', '', 'check_code', '{\"username\":\"root\",\"password\":\"123456\"}', '{\"token\": \"$.data.token\"}', 'select * from apis; select * from cases', 200.0]" ]
+      } ],
+      "uid" : "e48371d091b3ddcd4b24f1517ff3d569"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/roleList (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9BA8760>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "角色列表查询",
+        "uid" : "258532dd16e22554",
+        "parentUid" : "27e89fe836eb50e787797e1c2aebc576",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882782231,
+          "stop" : 1646882803265,
+          "duration" : 21034
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c2', '角色列表查询', '{\"Authorization\": \"${token}\"}', 'userMgr/roleList', 'get', 'params', '', 'check_code', '', '{\"roleId\":\"$.data.0.id\"}', '', 200.0]" ]
+      } ],
+      "uid" : "27e89fe836eb50e787797e1c2aebc576"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"username\":\"new_admin\",\"password\":\"123456\",\"roleIds\":[${roleId}]}\n                                                           ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "添加用户",
+        "uid" : "61088bd009f1033b",
+        "parentUid" : "8554b53fc2f07898080d6a670e76f8f8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882803353,
+          "stop" : 1646882803354,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c3', '添加用户', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_admin\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "8554b53fc2f07898080d6a670e76f8f8"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"username\":\"new_adminx\",\"password\":\"123456\",\"roleIds\":[${roleId}]}\n                                                            ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "添加用户2",
+        "uid" : "69a79cf8f8a47f19",
+        "parentUid" : "e1feba0b6695e813238033f4c0920ab8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882803411,
+          "stop" : 1646882803413,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c4', '添加用户2', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_adminx\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "e1feba0b6695e813238033f4c0920ab8"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"username\":\"new_adminy\",\"password\":\"123456\",\"roleIds\":[${roleId}]}\n                                                            ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "添加用户3",
+        "uid" : "ccde792846b0d225",
+        "parentUid" : "47db89340c8536853f0710f2e89c1e4a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882803442,
+          "stop" : 1646882803444,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c5', '添加用户3', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_adminy\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "47db89340c8536853f0710f2e89c1e4a"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/user?current=1&pageSize=100 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9977790>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "用户列表查询",
+        "uid" : "1915cdf51f1e433f",
+        "parentUid" : "cb7744d1aa5a2bc27403d4e77703b805",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882803461,
+          "stop" : 1646882824507,
+          "duration" : 21046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c6', '用户列表查询', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'get', 'params', '', 'check_code', '{\"current\":1,\"pageSize\":100}', '{\"username\":\"$.data.list.2.username\", \"id\":\"$.data.list.2.id\", \"id2\":\"$.data.list.3.id\", \"id3\":\"$.data.list.4.id\"}', '', 200.0]" ]
+      } ],
+      "uid" : "cb7744d1aa5a2bc27403d4e77703b805"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"username\":\"${username}1\",\"roleIds\":[${roleId}],\"id\":\"<built-in function id>\"}\n                                          ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "用户编辑",
+        "uid" : "750b39748b5c6fa7",
+        "parentUid" : "d0af51b3b8350d692a24b23153f8e4ff",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882824591,
+          "stop" : 1646882824592,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c7', '用户编辑', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'put', 'json', '', 'check_json', '{\"username\":\"${username}1\",\"roleIds\":[${roleId}],\"id\":\"${id}\"}', '', '', '{\"$.data\":\"用户修改成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "d0af51b3b8350d692a24b23153f8e4ff"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"id\":<built-in function id>}\n          ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "重置用户密码",
+        "uid" : "e0c410a593324e2d",
+        "parentUid" : "caae9404d425a4ed15db01483e0d9319",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882824609,
+          "stop" : 1646882824611,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c8', '重置用户密码', '{\"Authorization\": \"${token}\"}', 'userMgr/autut', 'post', 'params', '', 'check_json', '{\"id\":${id}}', '', '', '{\"$.data\":\"重置密码成功\"}']" ]
+      } ],
+      "uid" : "caae9404d425a4ed15db01483e0d9319"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9AD7040>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "登录该用户",
+        "uid" : "3339a57db2b1f03f",
+        "parentUid" : "c1928186d0094e1a27fd11a0a7777425",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882824627,
+          "stop" : 1646882845657,
+          "duration" : 21030
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c9', '登录该用户', '', 'userMgr/auth', 'post', 'json', '', 'check_json', '{\"username\":\"${username}1\",\"password\":\"123456\"}', '', '', '{\"$.data.username\":\"${username}1\"}']" ]
+      } ],
+      "uid" : "c1928186d0094e1a27fd11a0a7777425"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"ids\":[<built-in function id>]}\n            ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "删除用户",
+        "uid" : "f0743a6355e6d1a",
+        "parentUid" : "be06c9b1ea789c64d1421589987055c5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882845742,
+          "stop" : 1646882845743,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c10', '删除用户', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'delete', 'json', '', 'check_code', '{\"ids\":[${id}]}', '', '', 200.0]" ]
+      } ],
+      "uid" : "be06c9b1ea789c64d1421589987055c5"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"ids\":[${id2}, ${id3}]}\n            ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "批量删除",
+        "uid" : "88bf0bc3e10af1fa",
+        "parentUid" : "5599f2ff51baf2bfbb65e04226c3cf4f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882845760,
+          "stop" : 1646882845762,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c11', '批量删除', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'delete', 'json', '', 'check_code', '{\"ids\":[${id2}, ${id3}]}', '', '', 200.0]" ]
+      } ],
+      "uid" : "5599f2ff51baf2bfbb65e04226c3cf4f"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/roles (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9A98850>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "角色查询获取角色名",
+        "uid" : "d25866acda1875d9",
+        "parentUid" : "83fea6dd6a573e0e456fa4a84701e1ef",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882845778,
+          "stop" : 1646882866825,
+          "duration" : 21047
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c12', '角色查询获取角色名', '{\"Authorization\": \"${token}\"}', 'userMgr/roles', 'get', 'json', '', 'check_code', '', '{\"new_username\":\"$.data.list.0.name\"}', '', 200.0]" ]
+      } ],
+      "uid" : "83fea6dd6a573e0e456fa4a84701e1ef"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9B35A60>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "添加角色",
+        "uid" : "c915e5a01aa80bd7",
+        "parentUid" : "3bb81384ffb9dc1400462e7fba016830",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882866925,
+          "stop" : 1646882887980,
+          "duration" : 21055
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c13', '添加角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"${new_username}1\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "3bb81384ffb9dc1400462e7fba016830"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9D10FA0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "添加角色2",
+        "uid" : "e39f4a6531161c71",
+        "parentUid" : "978ced104c34d95f3235aa3d6a831b61",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882888067,
+          "stop" : 1646882909122,
+          "duration" : 21055
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c14', '添加角色2', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"${new_username}2\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "978ced104c34d95f3235aa3d6a831b61"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9B36490>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "添加角色3",
+        "uid" : "bb684e0c90483270",
+        "parentUid" : "69cbece22bbdff7ca11311a5fd523b72",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882909207,
+          "stop" : 1646882930247,
+          "duration" : 21040
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c15', '添加角色3', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"${new_username}3\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+      } ],
+      "uid" : "69cbece22bbdff7ca11311a5fd523b72"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/roles (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9D39820>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "角色查询获取id",
+        "uid" : "4fa907ace59f1cc9",
+        "parentUid" : "5b9a0807bebdffefc4bf7f52c6dcdd42",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882930347,
+          "stop" : 1646882951399,
+          "duration" : 21052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c16', '角色查询获取id', '{\"Authorization\": \"${token}\"}', 'userMgr/roles', 'get', 'json', '', 'check_code', '', '{\"roleId1\":\"$.data.list.2.id\",\"roleId2\":\"$.data.list.3.id\",\"roleId3\":\"$.data.list.4.id\"}', '', 200.0]" ]
+      } ],
+      "uid" : "5b9a0807bebdffefc4bf7f52c6dcdd42"
+    }, {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9B63580>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "children" : [ {
+        "name" : "编辑角色",
+        "uid" : "53dcca12b1c2df87",
+        "parentUid" : "dd1eee2d2a9d19c2ffff03c3fc80ff07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882951483,
+          "stop" : 1646882972529,
+          "duration" : 21046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c17', '编辑角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'put', 'json', '', 'check_json', '{\"name\":\"${new_username}new\",\"description\":\"别说了\",\"permIds\":[1,2,3,12,14],\"id\":\"${roleId1}\"}', '', '', '{\"$.data\":\"update ok\"}']" ]
+      } ],
+      "uid" : "dd1eee2d2a9d19c2ffff03c3fc80ff07"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"id\":${roleId1}}\n          ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "查询角色详情",
+        "uid" : "b601d07ca6863b88",
+        "parentUid" : "75697369602954d7722651144f786f52",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882972614,
+          "stop" : 1646882972616,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c18', '查询角色详情', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'get', 'params', '', 'check_code', '{\"id\":${roleId1}}', '', '', 200.0]" ]
+      } ],
+      "uid" : "75697369602954d7722651144f786f52"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"ids\":[${roleId1}]}\n            ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "删除角色",
+        "uid" : "bc827f2f21960525",
+        "parentUid" : "a7c9e9d49a24c012fb2e6af6a414b443",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882972633,
+          "stop" : 1646882972635,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c19', '删除角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'DELETE', 'json', '', 'check_json', '{\"ids\":[${roleId1}]}', '', '', '{\"$.data\":\"delete ok\"}']" ]
+      } ],
+      "uid" : "a7c9e9d49a24c012fb2e6af6a414b443"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"ids\":[${roleId2},${roleId3}]}\n            ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "批量删除该角色",
+        "uid" : "17bf693613d5028b",
+        "parentUid" : "ad30c245860e76d7a9cdb967e74e092d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646882972652,
+          "stop" : 1646882972654,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c20', '批量删除该角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'DELETE', 'json', '', 'check_json', '{\"ids\":[${roleId2},${roleId3}]}', '', '', '{\"$.data\":\"delete ok\"}']" ]
+      } ],
+      "uid" : "ad30c245860e76d7a9cdb967e74e092d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

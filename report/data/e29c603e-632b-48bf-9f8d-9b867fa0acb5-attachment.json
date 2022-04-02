@@ -1,0 +1,83 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "degradationLimit": {
+                    "key": "degradation.limit,192.168.5.120,2304,locationservice",
+                    "value": "5",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "degradationService": {
+                    "key": "degradation.service,192.168.5.120,2304,locationservice",
+                    "value": "statisticsservice",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "name": "locationservice",
+                "port": 2304,
+                "deviceName": "",
+                "clusterName": "admin"
+            },
+            {
+                "degradationLimit": {
+                    "key": "degradation.limit,127.0.0.1,9960,serviceName",
+                    "value": "",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "degradationService": {
+                    "key": "degradation.service,127.0.0.1,9960,serviceName",
+                    "value": "",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "name": "serviceName",
+                "port": 9960,
+                "deviceName": "service-dev-1",
+                "clusterName": "admin"
+            },
+            {
+                "degradationLimit": {
+                    "key": "degradation.limit,127.0.0.1,9961,serviceName2",
+                    "value": "",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "degradationService": {
+                    "key": "degradation.service,127.0.0.1,9961,serviceName2",
+                    "value": "",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "name": "serviceName2",
+                "port": 9961,
+                "deviceName": "service-dev-2",
+                "clusterName": "admin"
+            },
+            {
+                "degradationLimit": {
+                    "key": "degradation.limit,192.168.5.120,1205,statisticsservice",
+                    "value": "",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "degradationService": {
+                    "key": "degradation.service,192.168.5.120,1205,statisticsservice",
+                    "value": "",
+                    "configType": "global",
+                    "serviceName": ""
+                },
+                "name": "statisticsservice",
+                "port": 1205,
+                "deviceName": "statis1",
+                "clusterName": "admin"
+            }
+        ],
+        "page": 1,
+        "size": 10,
+        "total": 4
+    }
+}

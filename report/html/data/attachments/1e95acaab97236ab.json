@@ -1,0 +1,97 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "id": 1,
+        "isAdmin": 1,
+        "authorities": [
+            {
+                "id": 1,
+                "perm": "r",
+                "name": "首页统计"
+            },
+            {
+                "id": 2,
+                "perm": "r",
+                "name": "用户管理"
+            },
+            {
+                "id": 3,
+                "perm": "w",
+                "name": "用户管理"
+            },
+            {
+                "id": 4,
+                "perm": "r",
+                "name": "设备管理"
+            },
+            {
+                "id": 5,
+                "perm": "w",
+                "name": "设备管理"
+            },
+            {
+                "id": 6,
+                "perm": "r",
+                "name": "服务管理"
+            },
+            {
+                "id": 7,
+                "perm": "w",
+                "name": "服务管理"
+            },
+            {
+                "id": 8,
+                "perm": "r",
+                "name": "集群管理"
+            },
+            {
+                "id": 9,
+                "perm": "w",
+                "name": "集群管理"
+            },
+            {
+                "id": 10,
+                "perm": "r",
+                "name": "数据管理"
+            },
+            {
+                "id": 11,
+                "perm": "w",
+                "name": "数据管理"
+            },
+            {
+                "id": 60,
+                "perm": "r",
+                "name": "Demo服务"
+            },
+            {
+                "id": 61,
+                "perm": "w",
+                "name": "Demo服务"
+            },
+            {
+                "id": 62,
+                "perm": "r",
+                "name": "Demo服务2"
+            },
+            {
+                "id": 63,
+                "perm": "w",
+                "name": "Demo服务2"
+            },
+            {
+                "id": 64,
+                "perm": "r",
+                "name": "Demo3"
+            },
+            {
+                "id": 65,
+                "perm": "w",
+                "name": "Demo3"
+            }
+        ],
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ3NTgyNDE4LCJzdWIiOiIiLCJleHAiOjE2NDc2Njg4MTh9.qPhOk1Mvplfl63DNvMghWD6wIN7U7pw0nNsZLVR2sjU",
+        "username": "root"
+    }
+}

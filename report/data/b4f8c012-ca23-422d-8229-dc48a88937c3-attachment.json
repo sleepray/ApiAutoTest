@@ -1,0 +1,47 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "current": 1,
+        "pageSize": 10,
+        "total": 5,
+        "totalPages": 1,
+        "list": [
+            {
+                "id": 60,
+                "name": "管理员",
+                "description": "全部权限",
+                "permIds": "14,15,1,2,3,4,5,7,6,9,8,11,10,12,13",
+                "services": null
+            },
+            {
+                "id": 79,
+                "name": "操作员",
+                "description": "操作员",
+                "permIds": "1,2,4,12,14,6,8",
+                "services": null
+            },
+            {
+                "id": 99,
+                "name": "管理员1",
+                "description": "牛的一批",
+                "permIds": "14,12,2,1",
+                "services": null
+            },
+            {
+                "id": 100,
+                "name": "管理员2",
+                "description": "牛的一批",
+                "permIds": "14,12,2,1",
+                "services": null
+            },
+            {
+                "id": 101,
+                "name": "管理员3",
+                "description": "牛的一批",
+                "permIds": "14,12,2,1",
+                "services": null
+            }
+        ]
+    }
+}

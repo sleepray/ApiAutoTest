@@ -1,0 +1,7 @@
+{
+    "token": "DPn3ZB1AcUi6az/GMSrY1UJ+ZEkne8/1M6C7qBeCWKo=",
+    "configType": "global",
+    "key": "fusing.limit,192.168.5.120,2304,locationservice,CallFunc1",
+    "degradationService": "serviceName",
+    "service": "degradation.service,192.168.5.120,2304,locationservice"
+}

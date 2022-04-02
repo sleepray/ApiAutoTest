@@ -1,0 +1,87 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "id": 151,
+        "isAdmin": 0,
+        "authorities": [
+            {
+                "id": 1,
+                "perm": "r",
+                "name": "首页统计"
+            },
+            {
+                "id": 62,
+                "perm": "r",
+                "name": "yys"
+            },
+            {
+                "id": 6,
+                "perm": "r",
+                "name": "服务管理"
+            },
+            {
+                "id": 8,
+                "perm": "r",
+                "name": "集群管理"
+            },
+            {
+                "id": 7,
+                "perm": "w",
+                "name": "服务管理"
+            },
+            {
+                "id": 9,
+                "perm": "w",
+                "name": "集群管理"
+            },
+            {
+                "id": 2,
+                "perm": "r",
+                "name": "用户管理"
+            },
+            {
+                "id": 10,
+                "perm": "r",
+                "name": "数据管理"
+            },
+            {
+                "id": 3,
+                "perm": "w",
+                "name": "用户管理"
+            },
+            {
+                "id": 11,
+                "perm": "w",
+                "name": "数据管理"
+            },
+            {
+                "id": 4,
+                "perm": "r",
+                "name": "设备管理"
+            },
+            {
+                "id": 60,
+                "perm": "r",
+                "name": "Demo服务"
+            },
+            {
+                "id": 5,
+                "perm": "w",
+                "name": "设备管理"
+            },
+            {
+                "id": 61,
+                "perm": "w",
+                "name": "Demo服务"
+            },
+            {
+                "id": 63,
+                "perm": "w",
+                "name": "yys"
+            }
+        ],
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNTEiLCJpYXQiOjE2NDg4NzkwMTUsInN1YiI6IiIsImV4cCI6MTY0ODk2NTQxNX0.DtlCwyviTYVG65j2CSRAj5ylT61iRlAMXzu3EagZ4zg",
+        "username": "new_admin1"
+    }
+}

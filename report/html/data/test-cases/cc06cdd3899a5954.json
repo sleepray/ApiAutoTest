@@ -1,0 +1,223 @@
+{
+  "uid" : "cc06cdd3899a5954",
+  "name" : "服务降级关",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "0d3dd93f9d173bd3e59f983349bd1202",
+  "time" : {
+    "start" : 1646896196088,
+    "stop" : 1646896196100,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1646896196087,
+      "stop" : 1646896196087,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.31.11:8080/backend/config/update",
+      "time" : {
+        "start" : 1646896196088,
+        "stop" : 1646896196088,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1646896196088,
+        "stop" : 1646896196088,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "15732de9c9424052",
+        "name" : "请求头",
+        "source" : "15732de9c9424052.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1646896196089,
+        "stop" : 1646896196089,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7c755853798af8a",
+        "name" : "请求数据",
+        "source" : "7c755853798af8a.json",
+        "type" : "application/json",
+        "size" : 81
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应耗时(s): 0.008662",
+      "time" : {
+        "start" : 1646896196099,
+        "stop" : 1646896196099,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1646896196099,
+        "stop" : 1646896196099,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4174c643973a6041",
+        "name" : "响应结果",
+        "source" : "4174c643973a6041.json",
+        "type" : "application/json",
+        "size" : 78
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1646896196099,
+        "stop" : 1646896196099,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8595dfde1b9ddf83",
+        "name" : "当前可用参数池",
+        "source" : "8595dfde1b9ddf83.json",
+        "type" : "application/json",
+        "size" : 272
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1646896196100,
+        "stop" : 1646896196100,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3664afad466b84fe",
+        "name" : "第1个断言",
+        "source" : "3664afad466b84fe.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "23212-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c11', '服务降级关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"degradation.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "cc06cdd3899a5954.json",
+  "parameterValues" : [ "['c11', '服务降级关', '{\"Authorization\": \"${token}\"}', 'config/update', 'post', 'json', '', '', '{\"key\":\"degradation.switch\",\"value\":\"0\",\"configType\":\"global\"}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+}

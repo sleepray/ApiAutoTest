@@ -1,0 +1,10 @@
+{
+    "name": "${new_username}1",
+    "description": "牛的一批",
+    "permIds": [
+        1,
+        2,
+        12,
+        14
+    ]
+}

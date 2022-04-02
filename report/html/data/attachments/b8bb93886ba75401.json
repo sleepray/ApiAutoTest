@@ -1,0 +1,13 @@
+{
+    "token": "k9oE5mcYGJTm42zZ3zaTKBB4dIZhVIX7TFfP805ZO+Q=",
+    "configType": "global",
+    "key": "qos.limit,192.168.5.120,2304,locationservice,CallFunc1",
+    "degradationService": "serviceName",
+    "service": "degradation.service,192.168.5.120,2304,locationservice",
+    "traceId1": "758d215645d001",
+    "ip": "192.168.5.120",
+    "servicename": "locationservice",
+    "port": 2304,
+    "id": "fe6dbb3dadd23489f71572f77e1b540d",
+    "clusterName": "admin"
+}

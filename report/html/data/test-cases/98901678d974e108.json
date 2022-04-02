@@ -1,0 +1,223 @@
+{
+  "uid" : "98901678d974e108",
+  "name" : "服务配置新建-global",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "abfd3a4f7f4e445d9fadd1040c41f2e2",
+  "time" : {
+    "start" : 1646896196859,
+    "stop" : 1646896196877,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1646896196859,
+      "stop" : 1646896196859,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.31.11:8080/backend/config/service/post",
+      "time" : {
+        "start" : 1646896196860,
+        "stop" : 1646896196860,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1646896196860,
+        "stop" : 1646896196860,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3f5b682c23bc7c3b",
+        "name" : "请求头",
+        "source" : "3f5b682c23bc7c3b.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1646896196861,
+        "stop" : 1646896196862,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7c9c2f3888a1a758",
+        "name" : "请求数据",
+        "source" : "7c9c2f3888a1a758.json",
+        "type" : "application/json",
+        "size" : 183
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应耗时(s): 0.01357",
+      "time" : {
+        "start" : 1646896196876,
+        "stop" : 1646896196876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1646896196876,
+        "stop" : 1646896196876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "30a9ec79ad62b0d0",
+        "name" : "响应结果",
+        "source" : "30a9ec79ad62b0d0.json",
+        "type" : "application/json",
+        "size" : 78
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1646896196876,
+        "stop" : 1646896196876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e690368ed333a6c",
+        "name" : "当前可用参数池",
+        "source" : "e690368ed333a6c.json",
+        "type" : "application/json",
+        "size" : 277
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1646896196877,
+        "stop" : 1646896196877,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2ab6c6a81de8f309",
+        "name" : "第1个断言",
+        "source" : "2ab6c6a81de8f309.json",
+        "type" : "application/json",
+        "size" : 45
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "23212-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c35', '服务配置新建-global', '{\"Authorization\": \"${token}\"}', 'config/service/post', 'post', 'json', '', '', '{\"configType\":\"global\",\"configContent\":[{\"id\":\"${get_current_highest()}\",\"key\":\"key1\",\"value\":\"value1\"}]}', '', '', '{\"$.data.msg\": \"success\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "98901678d974e108.json",
+  "parameterValues" : [ "['c35', '服务配置新建-global', '{\"Authorization\": \"${token}\"}', 'config/service/post', 'post', 'json', '', '', '{\"configType\":\"global\",\"configContent\":[{\"id\":\"${get_current_highest()}\",\"key\":\"key1\",\"value\":\"value1\"}]}', '', '', '{\"$.data.msg\": \"success\"}']" ]
+}

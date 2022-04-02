@@ -1,0 +1,46 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "id": 208,
+        "name": "testnew",
+        "description": "别说了",
+        "permIds": null,
+        "services": [
+            {
+                "serviceId": 2,
+                "serviceName": "用户管理",
+                "perms": [
+                    {
+                        "id": 2,
+                        "perm": "读"
+                    },
+                    {
+                        "id": 3,
+                        "perm": "写"
+                    }
+                ]
+            },
+            {
+                "serviceId": 4,
+                "serviceName": "首页统计",
+                "perms": [
+                    {
+                        "id": 1,
+                        "perm": "读"
+                    }
+                ]
+            },
+            {
+                "serviceId": 8,
+                "serviceName": "数据中心",
+                "perms": [
+                    {
+                        "id": 14,
+                        "perm": "读"
+                    }
+                ]
+            }
+        ]
+    }
+}

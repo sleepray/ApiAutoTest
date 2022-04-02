@@ -1,0 +1,55 @@
+2022-01-18 17:48:26.300 | INFO     | __main__:run:31 - 
+                 _    _         _      _____         _
+  __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+ / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+| (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+ \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+      |_|
+      Starting      ...     ...     ...
+    
+2022-01-18 17:48:26.548 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: userMgr/auth
+ 检验方式: check_code 
+ 请求参数: {"username":"root","password":"123456"} 
+  提取参数: {"token": "$data.token"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: 200.0 
+ 
+2022-01-18 17:48:26.549 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+2022-01-18 17:48:26.562 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://172.16.8.251:81/api/userMgr/auth
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'root', 'password': '123456'}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'id': 1, 'isAdmin': 1, 'authorities': [{'id': 1, 'perm': 'r', 'name': '首页统计'}, {'id': 2, 'perm': 'r', 'name': '用户管理'}, {'id': 3, 'perm': 'w', 'name': '用户管理'}, {'id': 4, 'perm': 'r', 'name': '设备管理'}, {'id': 5, 'perm': 'w', 'name': '设备管理'}, {'id': 6, 'perm': 'r', 'name': '服务管理'}, {'id': 7, 'perm': 'w', 'name': '服务管理'}, {'id': 8, 'perm': 'r', 'name': '集群管理'}, {'id': 9, 'perm': 'w', 'name': '集群管理'}, {'id': 10, 'perm': 'r', 'name': '文件系统'}, {'id': 11, 'perm': 'w', 'name': '文件系统'}, {'id': 12, 'perm': 'r', 'name': '飞行任务'}, {'id': 13, 'perm': 'w', 'name': '飞行任务'}, {'id': 14, 'perm': 'r', 'name': '飞行事件'}, {'id': 15, 'perm': 'w', 'name': '飞行事件'}], 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQyNDk5MzAyLCJzdWIiOiIiLCJleHAiOjE2NDI1ODU3MDJ9.q4Vv-LvsTlruKf3Xrkq3i1-uOytTKGuZElL6PgSGhQY', 'username': 'root'}}
+2022-01-18 17:48:26.563 | ERROR    | tools:extractor:43 - $data.token - 提取不到内容，丢给你一个错误！'bool' object is not subscriptable
+2022-01-18 17:48:26.564 | INFO     | tools.data_process:handle_extra:113 - 加入依赖字典,key: token, 对应value: $data.token
+2022-01-18 17:48:26.564 | INFO     | tools.data_process:assert_result:131 - 断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True
+2022-01-18 17:48:26.567 | DEBUG    | api.base_requests:send_request:37 - 用例进行处理前数据: 
+用例标题：用户列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roleList
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数:  
+ 后置sql:  
+ 预期结果: 200.0 
+ 
+2022-01-18 17:48:26.568 | INFO     | api.base_requests:send_request:44 - 请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '$data.token'}
+2022-01-18 17:48:26.575 | INFO     | api.base_requests:send_api:114 - 
+最终请求地址:http://172.16.8.251:81/api/userMgr/roleList
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': '$data.token'}
+请求参数:None
+上传文件:None
+响应状态码401
+响应数据:{'code': '401', 'message': 'token验证失败，请联系管理员!', 'data': None}
+2022-01-18 17:48:26.575 | INFO     | tools.data_process:assert_result:131 - 断言结果, 实际结果:401 | 预期结果:200.0 
+断言结果 False

@@ -1,0 +1,5 @@
+{
+    "key": "fusing.limit,192.168.5.120,2304,locationservice,CallFunc1",
+    "value": "5",
+    "configType": "global"
+}

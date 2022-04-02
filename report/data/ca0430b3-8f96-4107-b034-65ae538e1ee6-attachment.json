@@ -1,0 +1,5 @@
+{
+    "code": "500",
+    "message": "JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String \"$.data.list.11.id\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String \"$.data.list.11.id\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 65] (through reference chain: cn.ghostcloud.admins.vo.UserReq[\"id\"])",
+    "data": null
+}
