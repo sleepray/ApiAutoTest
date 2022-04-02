@@ -1,5 +1,0 @@
-{
-    "name": "测试设备",
-    "deviceId": "123456",
-    "secretKey": "${secretkey}"
-}

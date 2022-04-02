@@ -107,8 +107,11 @@ class DataProcess:
         """
 
         if extra_str != '':
+            # 让提取参数时也能使用参数池,先替换变量后再进行提取
+            extra_str = rep_expr(extra_str, cls.extra_pool)
             extra_dict = convert_json(extra_str)
             for k, v in extra_dict.items():
+                logger.info(f"提取的值v为:{v}")
                 cls.extra_pool[k] = extractor(response, v)
                 logger.info(f'加入依赖字典,key: {k}, 对应value: {v}')
 
@@ -122,12 +125,14 @@ class DataProcess:
 
         #当接口返回为空时，处理掉
         if response == None:
+            allure_step("当前可用参数池", cls.extra_pool)
             logger.info(
                 f'断言结果, 返回值为空,无法断言')
             allure_step(f'断言结果', f'返回值为空,无法断言')
             return None
 
         if check_mode == 'check_code':
+            allure_step("当前可用参数池", cls.extra_pool)
             logger.info(
                 f'断言结果, 实际结果:{response_code} | 预期结果:{expect_str} \n断言结果 {int(expect_str) == int(response_code)}')
             allure_step(f'断言结果',f'实际结果状态码:{response_code} = 预期结果状态码:{expect_str}')

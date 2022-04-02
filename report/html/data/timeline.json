@@ -4,67 +4,16 @@
   "children" : [ {
     "name" : "DESKTOP-BNVFIE4",
     "children" : [ {
-      "name" : "24356-MainThread",
+      "name" : "19060-MainThread",
       "children" : [ {
-        "name" : "角色查询获取id",
-        "uid" : "4fa907ace59f1cc9",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882930347,
-          "stop" : 1646882951399,
-          "duration" : 21052
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c16', '角色查询获取id', '{\"Authorization\": \"${token}\"}', 'userMgr/roles', 'get', 'json', '', 'check_code', '', '{\"roleId1\":\"$.data.list.2.id\",\"roleId2\":\"$.data.list.3.id\",\"roleId3\":\"$.data.list.4.id\"}', '', 200.0]" ]
-      }, {
-        "name" : "登录该用户",
-        "uid" : "3339a57db2b1f03f",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882824627,
-          "stop" : 1646882845657,
-          "duration" : 21030
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c9', '登录该用户', '', 'userMgr/auth', 'post', 'json', '', 'check_json', '{\"username\":\"${username}1\",\"password\":\"123456\"}', '', '', '{\"$.data.username\":\"${username}1\"}']" ]
-      }, {
-        "name" : "批量删除",
-        "uid" : "88bf0bc3e10af1fa",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882845760,
-          "stop" : 1646882845762,
-          "duration" : 2
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c11', '批量删除', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'delete', 'json', '', 'check_code', '{\"ids\":[${id2}, ${id3}]}', '', '', 200.0]" ]
-      }, {
         "name" : "批量删除该角色",
-        "uid" : "17bf693613d5028b",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "uid" : "a025b27a79a8ade8",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882972652,
-          "stop" : 1646882972654,
-          "duration" : 2
+          "start" : 1648887131470,
+          "stop" : 1648887131531,
+          "duration" : 61
         },
         "flaky" : false,
         "newFailed" : false,
@@ -72,16 +21,101 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c20', '批量删除该角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'DELETE', 'json', '', 'check_json', '{\"ids\":[${roleId2},${roleId3}]}', '', '', '{\"$.data\":\"delete ok\"}']" ]
+        "parameters" : [ "['c21', '批量删除该角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'DELETE', 'json', '', 'check_json', '{\"ids\":[${roleId2},${roleId3},${roleId0}]}', '', '', '{\"$.data\":\"delete ok\"}']" ]
+      }, {
+        "name" : "获取secretKey",
+        "uid" : "bad9089079b3d7e",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131533,
+          "stop" : 1648887131545,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c22', '获取secretKey', '{\"Authorization\": \"${token}\"}', 'device/secretKey', 'post', 'json', '', 'check_json', '', '{\"secretkey\":\"$.data\"}', '', '{\"$.message\":\"success\"}']" ]
+      }, {
+        "name" : "删除用户",
+        "uid" : "7af71ef88c525924",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887125085,
+          "stop" : 1648887126828,
+          "duration" : 1743
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c11', '删除用户', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'delete', 'json', '', 'check_code', '{\"ids\":[${id}]}', '', '', 200.0]" ]
+      }, {
+        "name" : "添加用户2",
+        "uid" : "94db872d55cc84ae",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887112641,
+          "stop" : 1648887117815,
+          "duration" : 5174
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c5', '添加用户2', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_adminx\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!\"}']" ]
+      }, {
+        "name" : "添加角色2",
+        "uid" : "e41fb502827adab6",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131015,
+          "stop" : 1648887131076,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c15', '添加角色2', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"new_username2\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+      }, {
+        "name" : "添加基本角色",
+        "uid" : "c57082cdbb7b44f7",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887108105,
+          "stop" : 1648887108215,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c2', '添加基本角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"test\",\"description\":\"基础角色\",\"permIds\":[1,62,6,8,7,9,2,10,3,11,4,60,5,61,63,64,65]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
       }, {
         "name" : "添加用户3",
-        "uid" : "ccde792846b0d225",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "uid" : "da95f947070c2606",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882803442,
-          "stop" : 1646882803444,
-          "duration" : 2
+          "start" : 1648887117830,
+          "stop" : 1648887122814,
+          "duration" : 4984
         },
         "flaky" : false,
         "newFailed" : false,
@@ -89,16 +123,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c5', '添加用户3', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_adminy\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!!!!!\"}']" ]
+        "parameters" : [ "['c6', '添加用户3', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_adminy\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!\"}']" ]
       }, {
-        "name" : "用户列表查询",
-        "uid" : "1915cdf51f1e433f",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "name" : "删除设备列表",
+        "uid" : "b203ed52a5adf2d",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882803461,
-          "stop" : 1646882824507,
-          "duration" : 21046
+          "start" : 1648887131882,
+          "stop" : 1648887131941,
+          "duration" : 59
         },
         "flaky" : false,
         "newFailed" : false,
@@ -106,16 +140,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c6', '用户列表查询', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'get', 'params', '', 'check_code', '{\"current\":1,\"pageSize\":100}', '{\"username\":\"$.data.list.2.username\", \"id\":\"$.data.list.2.id\", \"id2\":\"$.data.list.3.id\", \"id3\":\"$.data.list.4.id\"}', '', 200.0]" ]
+        "parameters" : [ "['c26', '删除设备列表', '{\"Authorization\": \"${token}\"}', 'device', 'delete', 'json', '', 'check_code', '{\"ids\":[\"$devsid\"]}', '', '', 200.0]" ]
       }, {
-        "name" : "添加用户",
-        "uid" : "61088bd009f1033b",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "name" : "登录该用户",
+        "uid" : "5566f41ad0c8c683",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882803353,
-          "stop" : 1646882803354,
-          "duration" : 1
+          "start" : 1648887125023,
+          "stop" : 1648887125085,
+          "duration" : 62
         },
         "flaky" : false,
         "newFailed" : false,
@@ -123,16 +157,33 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c3', '添加用户', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_admin\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!!!!!\"}']" ]
+        "parameters" : [ "['c10', '登录该用户', '', 'userMgr/auth', 'post', 'json', '', 'check_json', '{\"username\":\"${username}1\",\"password\":\"123456\"}', '', '', '{\"$.data.username\":\"${username}1\"}']" ]
+      }, {
+        "name" : "添加设备",
+        "uid" : "e31919bea5e5347",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131547,
+          "stop" : 1648887131710,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c23', '添加设备', '{\"Authorization\": \"${token}\"}', 'device', 'post', 'json', '', 'check_json', '{\"name\":\"测试设备\",\"deviceId\":\"123456\",\"secretKey\":\"${secretkey}\"}', '', '', '{\"$.message\":\"success\"}']" ]
       }, {
         "name" : "添加角色3",
-        "uid" : "bb684e0c90483270",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "uid" : "5752aa8c8a800236",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882909207,
-          "stop" : 1646882930247,
-          "duration" : 21040
+          "start" : 1648887131079,
+          "stop" : 1648887131184,
+          "duration" : 105
         },
         "flaky" : false,
         "newFailed" : false,
@@ -140,16 +191,101 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c15', '添加角色3', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"${new_username}3\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+        "parameters" : [ "['c16', '添加角色3', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"new_username3\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+      }, {
+        "name" : "添加角色",
+        "uid" : "3b7a47de1d2d09c4",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887130920,
+          "stop" : 1648887131012,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c14', '添加角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"new_username1\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+      }, {
+        "name" : "角色列表查询",
+        "uid" : "79b25134f0c333ab",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887108215,
+          "stop" : 1648887108246,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c3', '角色列表查询', '{\"Authorization\": \"${token}\"}', 'userMgr/roleList', 'get', 'params', '', 'check_code', '', '{\"roleId\":\"$.data[?(@.name==\\'test\\')].id\"}', '', 200.0]" ]
+      }, {
+        "name" : "角色查询获取角色名",
+        "uid" : "16a067d07f83e17e",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887130862,
+          "stop" : 1648887130904,
+          "duration" : 42
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c13', '角色查询获取角色名', '{\"Authorization\": \"${token}\"}', 'userMgr/roles?pageSize=100', 'get', 'json', '', 'check_code', '', '', '', 200.0]" ]
+      }, {
+        "name" : "删除角色",
+        "uid" : "20a332d75224d510",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131387,
+          "stop" : 1648887131468,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c20', '删除角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'DELETE', 'json', '', 'check_json', '{\"ids\":[${roleId1}]}', '', '', '{\"$.data\":\"delete ok\"}']" ]
+      }, {
+        "name" : "添加用户",
+        "uid" : "3daf0a4859197625",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887108246,
+          "stop" : 1648887112625,
+          "duration" : 4379
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c4', '添加用户', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_admin\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!\"}']" ]
       }, {
         "name" : "post请求实现登录",
-        "uid" : "edd352dc044201ca",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "uid" : "1e9a1c4eccb19ec6",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882760884,
-          "stop" : 1646882781931,
-          "duration" : 21047
+          "start" : 1648887108027,
+          "stop" : 1648887108105,
+          "duration" : 78
         },
         "flaky" : false,
         "newFailed" : false,
@@ -159,14 +295,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "['c1', 'post请求实现登录', '', 'userMgr/auth', 'post', 'json', '', 'check_code', '{\"username\":\"root\",\"password\":\"123456\"}', '{\"token\": \"$.data.token\"}', 'select * from apis; select * from cases', 200.0]" ]
       }, {
-        "name" : "查询角色详情",
-        "uid" : "b601d07ca6863b88",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "name" : "查询设备列表",
+        "uid" : "59f4ff743a000243",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882972614,
-          "stop" : 1646882972616,
-          "duration" : 2
+          "start" : 1648887131712,
+          "stop" : 1648887131796,
+          "duration" : 84
         },
         "flaky" : false,
         "newFailed" : false,
@@ -174,118 +310,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c18', '查询角色详情', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'get', 'params', '', 'check_code', '{\"id\":${roleId1}}', '', '', 200.0]" ]
-      }, {
-        "name" : "删除用户",
-        "uid" : "f0743a6355e6d1a",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882845742,
-          "stop" : 1646882845743,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c10', '删除用户', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'delete', 'json', '', 'check_code', '{\"ids\":[${id}]}', '', '', 200.0]" ]
-      }, {
-        "name" : "角色列表查询",
-        "uid" : "258532dd16e22554",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882782231,
-          "stop" : 1646882803265,
-          "duration" : 21034
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c2', '角色列表查询', '{\"Authorization\": \"${token}\"}', 'userMgr/roleList', 'get', 'params', '', 'check_code', '', '{\"roleId\":\"$.data.0.id\"}', '', 200.0]" ]
-      }, {
-        "name" : "添加用户2",
-        "uid" : "69a79cf8f8a47f19",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882803411,
-          "stop" : 1646882803413,
-          "duration" : 2
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c4', '添加用户2', '{\"Authorization\": \"${token}\"}', 'userMgr/users', 'post', 'json', '', 'check_json', '{\"username\":\"new_adminx\",\"password\":\"123456\",\"roleIds\":[${roleId}]}', '', '', '{\"$.data\":\"用户添加成功!!!!!!!\"}']" ]
-      }, {
-        "name" : "编辑角色",
-        "uid" : "53dcca12b1c2df87",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882951483,
-          "stop" : 1646882972529,
-          "duration" : 21046
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c17', '编辑角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'put', 'json', '', 'check_json', '{\"name\":\"${new_username}new\",\"description\":\"别说了\",\"permIds\":[1,2,3,12,14],\"id\":\"${roleId1}\"}', '', '', '{\"$.data\":\"update ok\"}']" ]
-      }, {
-        "name" : "删除角色",
-        "uid" : "bc827f2f21960525",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882972633,
-          "stop" : 1646882972635,
-          "duration" : 2
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c19', '删除角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'DELETE', 'json', '', 'check_json', '{\"ids\":[${roleId1}]}', '', '', '{\"$.data\":\"delete ok\"}']" ]
-      }, {
-        "name" : "添加角色",
-        "uid" : "c915e5a01aa80bd7",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1646882866925,
-          "stop" : 1646882887980,
-          "duration" : 21055
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "['c13', '添加角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"${new_username}1\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+        "parameters" : [ "['c24', '查询设备列表', '{\"Authorization\": \"${token}\"}', 'device/list?', 'get', 'json', '', 'check_code', '', '{\"devsid\":\"$.data.list[?(@.secretKey==\\'${secretkey}\\')].deviceId\",\"devid\":\"$.data.list[?(@.secretKey==\\'${secretkey}\\')].id\"}', '', 200.0]" ]
       }, {
         "name" : "重置用户密码",
-        "uid" : "e0c410a593324e2d",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "uid" : "c5405bf912c87e2d",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882824609,
-          "stop" : 1646882824611,
-          "duration" : 2
+          "start" : 1648887124945,
+          "stop" : 1648887125023,
+          "duration" : 78
         },
         "flaky" : false,
         "newFailed" : false,
@@ -293,16 +327,50 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c8', '重置用户密码', '{\"Authorization\": \"${token}\"}', 'userMgr/autut', 'post', 'params', '', 'check_json', '{\"id\":${id}}', '', '', '{\"$.data\":\"重置密码成功\"}']" ]
+        "parameters" : [ "['c9', '重置用户密码', '{\"Authorization\": \"${token}\"}', 'userMgr/autut', 'post', 'params', '', 'check_json', '{\"id\":${id}}', '', '', '{\"$.data\":\"重置密码成功\"}']" ]
+      }, {
+        "name" : "编辑设备列表",
+        "uid" : "f32db168b915000d",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131798,
+          "stop" : 1648887131882,
+          "duration" : 84
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c25', '编辑设备列表', '{\"Authorization\": \"${token}\"}', 'device', 'put', 'json', '', 'check_json', '{\"name\":\"测试设备2\",\"deviceId\":\"123456\",\"secretKey\":\"${secretkey}\",\"description\":null,\"id\":${devid}}', '', '', '{\"$.message\":\"success\"}']" ]
+      }, {
+        "name" : "角色查询获取id",
+        "uid" : "9bc174b2aaeeaa55",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131199,
+          "stop" : 1648887131262,
+          "duration" : 63
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c17', '角色查询获取id', '{\"Authorization\": \"${token}\"}', 'userMgr/roles?pageSize=100', 'get', 'json', '', 'check_code', '', '{\"new_username\":\"$.data.list[?(@.name==\\'test\\')].name\",\"roleId0\":\"$.data.list[?(@.name==\\'test\\')].id\",\"roleId1\":\"$.data.list[?(@.name==\\'new_username1\\')].id\",\"roleId2\":\"$.data.list[?(@.name==\\'new_username2\\')].id\",\"roleId3\":\"$.data.list[?(@.name==\\'new_username3\\')].id\"}', '', 200.0]" ]
       }, {
         "name" : "用户编辑",
-        "uid" : "750b39748b5c6fa7",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "uid" : "d3d77d6a08b4bdcb",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882824591,
-          "stop" : 1646882824592,
-          "duration" : 1
+          "start" : 1648887122845,
+          "stop" : 1648887124945,
+          "duration" : 2100
         },
         "flaky" : false,
         "newFailed" : false,
@@ -310,16 +378,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c7', '用户编辑', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'put', 'json', '', 'check_json', '{\"username\":\"${username}1\",\"roleIds\":[${roleId}],\"id\":\"${id}\"}', '', '', '{\"$.data\":\"用户修改成功!!!!!!!\"}']" ]
+        "parameters" : [ "['c8', '用户编辑', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'put', 'json', '', 'check_json', '{\"username\":\"${username}1\",\"roleIds\":[${roleId}],\"id\":\"${id}\"}', '', '', '{\"$.data\":\"用户修改成功!!!!!!!\"}']" ]
       }, {
-        "name" : "角色查询获取角色名",
-        "uid" : "d25866acda1875d9",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "name" : "用户列表查询",
+        "uid" : "1d02f520461b6494",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882845778,
-          "stop" : 1646882866825,
-          "duration" : 21047
+          "start" : 1648887122814,
+          "stop" : 1648887122845,
+          "duration" : 31
         },
         "flaky" : false,
         "newFailed" : false,
@@ -327,16 +395,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c12', '角色查询获取角色名', '{\"Authorization\": \"${token}\"}', 'userMgr/roles', 'get', 'json', '', 'check_code', '', '{\"new_username\":\"$.data.list.0.name\"}', '', 200.0]" ]
+        "parameters" : [ "['c7', '用户列表查询', '{\"Authorization\": \"${token}\"}', 'userMgr/user?pageSize=100', 'get', 'params', '', 'check_code', '{\"current\":1,\"pageSize\":100}', '{\"username\":\"$.data.list[?(@.username==\\'new_admin\\')].username\", \"id\":\"$.data.list[?(@.username==\\'new_admin\\')].id\", \"id2\":\"$.data.list[?(@.username==\\'new_adminx\\')].id\", \"id3\":\"$.data.list[?(@.username==\\'new_adminy\\')].id\"}', '', 200.0]" ]
       }, {
-        "name" : "添加角色2",
-        "uid" : "e39f4a6531161c71",
-        "parentUid" : "d050727562c8fc7ada7f827a28b9b75f",
-        "status" : "broken",
+        "name" : "查询角色详情",
+        "uid" : "b38c6b3e3e738216",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
         "time" : {
-          "start" : 1646882888067,
-          "stop" : 1646882909122,
-          "duration" : 21055
+          "start" : 1648887131371,
+          "stop" : 1648887131387,
+          "duration" : 16
         },
         "flaky" : false,
         "newFailed" : false,
@@ -344,9 +412,43 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "['c14', '添加角色2', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"${new_username}2\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+        "parameters" : [ "['c19', '查询角色详情', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'get', 'params', '', 'check_code', '{\"id\":${roleId1}}', '', '', 200.0]" ]
+      }, {
+        "name" : "批量删除",
+        "uid" : "7aeb1c54b05aac7f",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887126830,
+          "stop" : 1648887130860,
+          "duration" : 4030
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c12', '批量删除', '{\"Authorization\": \"${token}\"}', 'userMgr/user', 'delete', 'json', '', 'check_code', '{\"ids\":[${id2}, ${id3}]}', '', '', 200.0]" ]
+      }, {
+        "name" : "编辑角色",
+        "uid" : "7f8cec95e353a3fe",
+        "parentUid" : "0951ee73b742b0d1231603f1c81d2cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648887131262,
+          "stop" : 1648887131371,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c18', '编辑角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'put', 'json', '', 'check_json', '{\"name\":\"${new_username}new\",\"description\":\"别说了\",\"permIds\":[1,2,3,12,14],\"id\":\"${roleId1}\"}', '', '', '{\"$.data\":\"update ok\"}']" ]
       } ],
-      "uid" : "d050727562c8fc7ada7f827a28b9b75f"
+      "uid" : "0951ee73b742b0d1231603f1c81d2cbe"
     } ],
     "uid" : "2ca111a12666b5e97bab9d73b5cb6128"
   } ]

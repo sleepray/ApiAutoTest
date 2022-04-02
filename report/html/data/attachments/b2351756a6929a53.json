@@ -1,5 +1,0 @@
-{
-    "ids": [
-        "$.data.list[?(@.secretkey=='fd0c01ff-f524-4f81-8707-61147a6d5ece')].deviceId"
-    ]
-}

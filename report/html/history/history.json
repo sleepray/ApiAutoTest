@@ -1,401 +1,495 @@
 {
-  "5777368728cab34aec99bce292e15e60" : {
+  "87c14f5e2e8fc7cd2273593b4246d3c3" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3339a57db2b1f03f",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9AD7040>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "uid" : "e31919bea5e5347",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882824627,
-        "stop" : 1646882845657,
-        "duration" : 21030
+        "start" : 1648887131547,
+        "stop" : 1648887131710,
+        "duration" : 163
       }
     } ]
   },
-  "9b58e419aa66c81ba5e26368887473ad" : {
+  "5fc9bc56855771723806a5e9b7c1733a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1915cdf51f1e433f",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/user?current=1&pageSize=100 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9977790>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "uid" : "f32db168b915000d",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882803461,
-        "stop" : 1646882824507,
-        "duration" : 21046
-      }
-    } ]
-  },
-  "e48abca8fb0895e685397860fb6393f1" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e0c410a593324e2d",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"id\":<built-in function id>}\n          ^\nSyntaxError: invalid syntax",
-      "time" : {
-        "start" : 1646882824609,
-        "stop" : 1646882824611,
-        "duration" : 2
-      }
-    } ]
-  },
-  "b0878ee5eb70538305b060fabbf99fe0" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "bc827f2f21960525",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"ids\":[${roleId1}]}\n            ^\nSyntaxError: invalid syntax",
-      "time" : {
-        "start" : 1646882972633,
-        "stop" : 1646882972635,
-        "duration" : 2
-      }
-    } ]
-  },
-  "94c53f645702c06e17118fd92e09f479" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "750b39748b5c6fa7",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"username\":\"${username}1\",\"roleIds\":[${roleId}],\"id\":\"<built-in function id>\"}\n                                          ^\nSyntaxError: invalid syntax",
-      "time" : {
-        "start" : 1646882824591,
-        "stop" : 1646882824592,
-        "duration" : 1
-      }
-    } ]
-  },
-  "cb8576f098f00f7b2b9caa91976f2b58" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e39f4a6531161c71",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9D10FA0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
-      "time" : {
-        "start" : 1646882888067,
-        "stop" : 1646882909122,
-        "duration" : 21055
-      }
-    } ]
-  },
-  "0d3dd93f9d173bd3e59f983349bd1202" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "88bf0bc3e10af1fa",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"ids\":[${id2}, ${id3}]}\n            ^\nSyntaxError: invalid syntax",
-      "time" : {
-        "start" : 1646882845760,
-        "stop" : 1646882845762,
-        "duration" : 2
-      }
-    } ]
-  },
-  "5a1a59aa4470006c7c58a5ba625a4478" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d25866acda1875d9",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/roles (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9A98850>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
-      "time" : {
-        "start" : 1646882845778,
-        "stop" : 1646882866825,
-        "duration" : 21047
-      }
-    } ]
-  },
-  "b38dd9102eca0ecc435403cc70874ea0" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b601d07ca6863b88",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"id\":${roleId1}}\n          ^\nSyntaxError: invalid syntax",
-      "time" : {
-        "start" : 1646882972614,
-        "stop" : 1646882972616,
-        "duration" : 2
+        "start" : 1648887131798,
+        "stop" : 1648887131882,
+        "duration" : 84
       }
     } ]
   },
   "d5345d39adc3d02ffcaf8f15af49ab18" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "258532dd16e22554",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/roleList (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9BA8760>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "uid" : "c57082cdbb7b44f7",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882782231,
-        "stop" : 1646882803265,
-        "duration" : 21034
+        "start" : 1648887108105,
+        "stop" : 1648887108215,
+        "duration" : 110
       }
     } ]
   },
   "8174f8ecb1004db16679a852ff5f760a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "edd352dc044201ca",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D98CE310>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "uid" : "1e9a1c4eccb19ec6",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882760884,
-        "stop" : 1646882781931,
-        "duration" : 21047
-      }
-    } ]
-  },
-  "606664f28e2ceb44b0ad0dc80a135fc2" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "bb684e0c90483270",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9B36490>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
-      "time" : {
-        "start" : 1646882909207,
-        "stop" : 1646882930247,
-        "duration" : 21040
+        "start" : 1648887108027,
+        "stop" : 1648887108105,
+        "duration" : 78
       }
     } ]
   },
   "0739167ffd7bddb403117cdf6fcb588f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ccde792846b0d225",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"username\":\"new_adminy\",\"password\":\"123456\",\"roleIds\":[${roleId}]}\n                                                            ^\nSyntaxError: invalid syntax",
+      "uid" : "94db872d55cc84ae",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882803442,
-        "stop" : 1646882803444,
-        "duration" : 2
+        "start" : 1648887112641,
+        "stop" : 1648887117815,
+        "duration" : 5174
+      }
+    } ]
+  },
+  "ee88be9148a730617b573ca871d38066" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "59f4ff743a000243",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131712,
+        "stop" : 1648887131796,
+        "duration" : 84
+      }
+    } ]
+  },
+  "5777368728cab34aec99bce292e15e60" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c5405bf912c87e2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887124945,
+        "stop" : 1648887125023,
+        "duration" : 78
+      }
+    } ]
+  },
+  "80ae97e530843c3e161db11f90773af5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bad9089079b3d7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131533,
+        "stop" : 1648887131545,
+        "duration" : 12
+      }
+    } ]
+  },
+  "9b58e419aa66c81ba5e26368887473ad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da95f947070c2606",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887117830,
+        "stop" : 1648887122814,
+        "duration" : 4984
+      }
+    } ]
+  },
+  "e48abca8fb0895e685397860fb6393f1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3d77d6a08b4bdcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887122845,
+        "stop" : 1648887124945,
+        "duration" : 2100
+      }
+    } ]
+  },
+  "b0878ee5eb70538305b060fabbf99fe0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b38c6b3e3e738216",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131371,
+        "stop" : 1648887131387,
+        "duration" : 16
+      }
+    } ]
+  },
+  "94c53f645702c06e17118fd92e09f479" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1d02f520461b6494",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887122814,
+        "stop" : 1648887122845,
+        "duration" : 31
+      }
+    } ]
+  },
+  "0d3dd93f9d173bd3e59f983349bd1202" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7af71ef88c525924",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887125085,
+        "stop" : 1648887126828,
+        "duration" : 1743
+      }
+    } ]
+  },
+  "cb8576f098f00f7b2b9caa91976f2b58" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3b7a47de1d2d09c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887130920,
+        "stop" : 1648887131012,
+        "duration" : 92
+      }
+    } ]
+  },
+  "5a1a59aa4470006c7c58a5ba625a4478" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7aeb1c54b05aac7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887126830,
+        "stop" : 1648887130860,
+        "duration" : 4030
+      }
+    } ]
+  },
+  "b38dd9102eca0ecc435403cc70874ea0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7f8cec95e353a3fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131262,
+        "stop" : 1648887131371,
+        "duration" : 109
+      }
+    } ]
+  },
+  "606664f28e2ceb44b0ad0dc80a135fc2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e41fb502827adab6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131015,
+        "stop" : 1648887131076,
+        "duration" : 61
       }
     } ]
   },
   "371500b22dde43facb97f8752bf0ff77" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "17bf693613d5028b",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"ids\":[${roleId2},${roleId3}]}\n            ^\nSyntaxError: invalid syntax",
+      "uid" : "20a332d75224d510",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882972652,
-        "stop" : 1646882972654,
-        "duration" : 2
+        "start" : 1648887131387,
+        "stop" : 1648887131468,
+        "duration" : 81
       }
     } ]
   },
   "2a3dfa6b36ee5ab01504c51319b8492e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "53dcca12b1c2df87",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9B63580>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "uid" : "9bc174b2aaeeaa55",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882951483,
-        "stop" : 1646882972529,
-        "duration" : 21046
+        "start" : 1648887131199,
+        "stop" : 1648887131262,
+        "duration" : 63
       }
     } ]
   },
   "25f6ba9e78828713a480fcdbed4cfa82" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f0743a6355e6d1a",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"ids\":[<built-in function id>]}\n            ^\nSyntaxError: invalid syntax",
+      "uid" : "5566f41ad0c8c683",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882845742,
-        "stop" : 1646882845743,
-        "duration" : 1
+        "start" : 1648887125023,
+        "stop" : 1648887125085,
+        "duration" : 62
       }
     } ]
   },
   "d9a0d8b349872450f96c814afdee344e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c915e5a01aa80bd7",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/role (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9B35A60>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "uid" : "16a067d07f83e17e",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882866925,
-        "stop" : 1646882887980,
-        "duration" : 21055
-      }
-    } ]
-  },
-  "5dcd673c9103656bd9a03aaad715fda7" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "4fa907ace59f1cc9",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='172.16.8.253', port=80): Max retries exceeded with url: /api/userMgr/roles (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F3D9D39820>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
-      "time" : {
-        "start" : 1646882930347,
-        "stop" : 1646882951399,
-        "duration" : 21052
+        "start" : 1648887130862,
+        "stop" : 1648887130904,
+        "duration" : 42
       }
     } ]
   },
   "3a098e261ee7b9115a8be890393002aa" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61088bd009f1033b",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"username\":\"new_admin\",\"password\":\"123456\",\"roleIds\":[${roleId}]}\n                                                           ^\nSyntaxError: invalid syntax",
+      "uid" : "79b25134f0c333ab",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882803353,
-        "stop" : 1646882803354,
-        "duration" : 1
+        "start" : 1648887108215,
+        "stop" : 1648887108246,
+        "duration" : 31
+      }
+    } ]
+  },
+  "5dcd673c9103656bd9a03aaad715fda7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5752aa8c8a800236",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131079,
+        "stop" : 1648887131184,
+        "duration" : 105
       }
     } ]
   },
   "f9a3a528aa08d345b131e068670a2332" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "69a79cf8f8a47f19",
-      "status" : "broken",
-      "statusDetails" : "  File \"<string>\", line 1\n    {\"username\":\"new_adminx\",\"password\":\"123456\",\"roleIds\":[${roleId}]}\n                                                            ^\nSyntaxError: invalid syntax",
+      "uid" : "3daf0a4859197625",
+      "status" : "passed",
       "time" : {
-        "start" : 1646882803411,
-        "stop" : 1646882803413,
-        "duration" : 2
+        "start" : 1648887108246,
+        "stop" : 1648887112625,
+        "duration" : 4379
+      }
+    } ]
+  },
+  "fc9acbf2b7eaa9638dd183228c9aaf75" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a025b27a79a8ade8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131470,
+        "stop" : 1648887131531,
+        "duration" : 61
+      }
+    } ]
+  },
+  "d030fb94e733654b63567d5109cdc7d4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b203ed52a5adf2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648887131882,
+        "stop" : 1648887131941,
+        "duration" : 59
       }
     } ]
   }

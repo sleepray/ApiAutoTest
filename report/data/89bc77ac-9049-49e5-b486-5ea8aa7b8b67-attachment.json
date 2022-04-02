@@ -1,5 +1,0 @@
-{
-    "key": "qos.limit,192.168.5.120,2304,locationservice,CallFunc1",
-    "value": "62,46,75",
-    "configType": "global"
-}

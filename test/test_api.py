@@ -8,6 +8,8 @@
 @time: 2020/11/22
 @desc: 测试方法
 """
+import logging
+
 from .conftest import pytest
 
 from api import BaseRequest

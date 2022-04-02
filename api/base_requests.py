@@ -112,7 +112,7 @@ class BaseRequest(object):
 
         response = res.json()
         logger.info(
-            f'\n最终请求地址:{res.url}\n请求方法:{method}\n请求头:{header}\n请求参数:{data}\n上传文件:{file}\n相应状态码{res.status_code}\n响应数据:{response}')
+            f'\n最终请求地址:{res.url}\n请求方法:{method}\n请求头:{header}\n请求参数:{data}\n上传文件:{file}\n响应状态码{res.status_code}\n响应数据:{response}')
         allure_step_no(f'响应耗时(s): {res.elapsed.total_seconds()}')
         allure_step('响应结果', response)
         return response, res.status_code
