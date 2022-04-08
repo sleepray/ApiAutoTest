@@ -1,0 +1,22 @@
+[32m2022-04-08 14:45:15.811[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：添加用户2
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/users
+ 检验方式: check_json 
+ 请求参数: {"username":"new_adminx","password":"123456","roleIds":[${roleId}]} 
+  提取参数:  
+ 后置sql:  
+ 预期结果: {"$.data":"用户添加成功!!!"} 
+ [0m
+[32m2022-04-08 14:45:15.811[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks'}[0m
+[32m2022-04-08 14:45:20.624[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m114[0m - [1m
+最终请求地址:http://192.168.0.6/api/userMgr/users
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks'}
+请求参数:{'username': 'new_adminx', 'password': '123456', 'roleIds': [665]}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': '用户添加成功!!!'}[0m
+[32m2022-04-08 14:45:20.639[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m157[0m - [1m第1个断言,实际结果:用户添加成功!!! | 预期结果:用户添加成功!!! 
+断言结果 True[0m

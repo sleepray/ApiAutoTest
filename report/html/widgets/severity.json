@@ -1,260 +1,370 @@
 [ {
-  "uid" : "5566f41ad0c8c683",
-  "name" : "登录该用户",
-  "time" : {
-    "start" : 1648887125023,
-    "stop" : 1648887125085,
-    "duration" : 62
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9bc174b2aaeeaa55",
-  "name" : "角色查询获取id",
-  "time" : {
-    "start" : 1648887131199,
-    "stop" : 1648887131262,
-    "duration" : 63
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7aeb1c54b05aac7f",
-  "name" : "批量删除",
-  "time" : {
-    "start" : 1648887126830,
-    "stop" : 1648887130860,
-    "duration" : 4030
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c57082cdbb7b44f7",
-  "name" : "添加基本角色",
-  "time" : {
-    "start" : 1648887108105,
-    "stop" : 1648887108215,
-    "duration" : 110
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bad9089079b3d7e",
-  "name" : "获取secretKey",
-  "time" : {
-    "start" : 1648887131533,
-    "stop" : 1648887131545,
-    "duration" : 12
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b203ed52a5adf2d",
-  "name" : "删除设备列表",
-  "time" : {
-    "start" : 1648887131882,
-    "stop" : 1648887131941,
-    "duration" : 59
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "da95f947070c2606",
-  "name" : "添加用户3",
-  "time" : {
-    "start" : 1648887117830,
-    "stop" : 1648887122814,
-    "duration" : 4984
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "16a067d07f83e17e",
-  "name" : "角色查询获取角色名",
-  "time" : {
-    "start" : 1648887130862,
-    "stop" : 1648887130904,
-    "duration" : 42
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3daf0a4859197625",
-  "name" : "添加用户",
-  "time" : {
-    "start" : 1648887108246,
-    "stop" : 1648887112625,
-    "duration" : 4379
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "20a332d75224d510",
-  "name" : "删除角色",
-  "time" : {
-    "start" : 1648887131387,
-    "stop" : 1648887131468,
-    "duration" : 81
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "94db872d55cc84ae",
-  "name" : "添加用户2",
-  "time" : {
-    "start" : 1648887112641,
-    "stop" : 1648887117815,
-    "duration" : 5174
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "59f4ff743a000243",
-  "name" : "查询设备列表",
-  "time" : {
-    "start" : 1648887131712,
-    "stop" : 1648887131796,
-    "duration" : 84
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c5405bf912c87e2d",
-  "name" : "重置用户密码",
-  "time" : {
-    "start" : 1648887124945,
-    "stop" : 1648887125023,
-    "duration" : 78
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e41fb502827adab6",
-  "name" : "添加角色2",
-  "time" : {
-    "start" : 1648887131015,
-    "stop" : 1648887131076,
-    "duration" : 61
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e31919bea5e5347",
-  "name" : "添加设备",
-  "time" : {
-    "start" : 1648887131547,
-    "stop" : 1648887131710,
-    "duration" : 163
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5752aa8c8a800236",
-  "name" : "添加角色3",
-  "time" : {
-    "start" : 1648887131079,
-    "stop" : 1648887131184,
-    "duration" : 105
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3b7a47de1d2d09c4",
+  "uid" : "8af51867b8a24c5a",
   "name" : "添加角色",
   "time" : {
-    "start" : 1648887130920,
-    "stop" : 1648887131012,
-    "duration" : 92
+    "start" : 1649400333802,
+    "stop" : 1649400333960,
+    "duration" : 158
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7af71ef88c525924",
+  "uid" : "d6e740602b8b4c1e",
+  "name" : "角色查询获取角色名",
+  "time" : {
+    "start" : 1649400333703,
+    "stop" : 1649400333799,
+    "duration" : 96
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e27329978749d23f",
   "name" : "删除用户",
   "time" : {
-    "start" : 1648887125085,
-    "stop" : 1648887126828,
-    "duration" : 1743
+    "start" : 1649400327787,
+    "stop" : 1649400329550,
+    "duration" : 1763
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f32db168b915000d",
-  "name" : "编辑设备列表",
+  "uid" : "8d7e94b8c32cf733",
+  "name" : "编辑文件",
   "time" : {
-    "start" : 1648887131798,
-    "stop" : 1648887131882,
-    "duration" : 84
+    "start" : 1649400335496,
+    "stop" : 1649400335668,
+    "duration" : 172
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d3d77d6a08b4bdcb",
-  "name" : "用户编辑",
+  "uid" : "cb8ff1e0587891e6",
+  "name" : "角色查询获取id",
   "time" : {
-    "start" : 1648887122845,
-    "stop" : 1648887124945,
-    "duration" : 2100
+    "start" : 1649400334121,
+    "stop" : 1649400334153,
+    "duration" : 32
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "79b25134f0c333ab",
-  "name" : "角色列表查询",
+  "uid" : "1e1b9068288c4906",
+  "name" : "重置用户密码",
   "time" : {
-    "start" : 1648887108215,
-    "stop" : 1648887108246,
-    "duration" : 31
+    "start" : 1649400327522,
+    "stop" : 1649400327616,
+    "duration" : 94
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7f8cec95e353a3fe",
-  "name" : "编辑角色",
+  "uid" : "8b25e93f76eb9fb8",
+  "name" : "登录该用户",
   "time" : {
-    "start" : 1648887131262,
-    "stop" : 1648887131371,
-    "duration" : 109
+    "start" : 1649400327616,
+    "stop" : 1649400327787,
+    "duration" : 171
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a025b27a79a8ade8",
-  "name" : "批量删除该角色",
+  "uid" : "28a4d079dee39841",
+  "name" : "编辑文件,权限大于7",
   "time" : {
-    "start" : 1648887131470,
-    "stop" : 1648887131531,
-    "duration" : 61
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1d02f520461b6494",
-  "name" : "用户列表查询",
-  "time" : {
-    "start" : 1648887122814,
-    "stop" : 1648887122845,
-    "duration" : 31
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b38c6b3e3e738216",
-  "name" : "查询角色详情",
-  "time" : {
-    "start" : 1648887131371,
-    "stop" : 1648887131387,
+    "start" : 1649400335964,
+    "stop" : 1649400335980,
     "duration" : 16
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1e9a1c4eccb19ec6",
+  "uid" : "dbbf424c0c03df28",
+  "name" : "添加角色2",
+  "time" : {
+    "start" : 1649400333963,
+    "stop" : 1649400334043,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33effd20f626e6ff",
   "name" : "post请求实现登录",
   "time" : {
-    "start" : 1648887108027,
-    "stop" : 1648887108105,
+    "start" : 1649400311279,
+    "stop" : 1649400311419,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cdf02cc539ff08ef",
+  "name" : "重复删除",
+  "time" : {
+    "start" : 1649400336308,
+    "stop" : 1649400336479,
+    "duration" : 171
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d42a5fb1615cb6c7",
+  "name" : "添加角色3",
+  "time" : {
+    "start" : 1649400334043,
+    "stop" : 1649400334121,
     "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83bb90930edee8f0",
+  "name" : "获取secretKey",
+  "time" : {
+    "start" : 1649400334496,
+    "stop" : 1649400334512,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2eb74be396f30753",
+  "name" : "添加用户",
+  "time" : {
+    "start" : 1649400311607,
+    "stop" : 1649400315796,
+    "duration" : 4189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "512976705c14e8da",
+  "name" : "编辑后查询",
+  "time" : {
+    "start" : 1649400335683,
+    "stop" : 1649400335902,
+    "duration" : 219
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8139e28022eff77",
+  "name" : "删除文件",
+  "time" : {
+    "start" : 1649400335996,
+    "stop" : 1649400336308,
+    "duration" : 312
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a0bfb96f25519e5",
+  "name" : "文件列表查询",
+  "time" : {
+    "start" : 1649400334793,
+    "stop" : 1649400334949,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1daefb9b32e33695",
+  "name" : "编辑文件，权限小于0",
+  "time" : {
+    "start" : 1649400335918,
+    "stop" : 1649400335949,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f29bc0868fd7abbb",
+  "name" : "查询角色详情",
+  "time" : {
+    "start" : 1649400334355,
+    "stop" : 1649400334371,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "14644ac0a6d2d4d2",
+  "name" : "用户编辑",
+  "time" : {
+    "start" : 1649400325489,
+    "stop" : 1649400327522,
+    "duration" : 2033
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f65d0e1f4cfb2de8",
+  "name" : "查询设备列表",
+  "time" : {
+    "start" : 1649400334605,
+    "stop" : 1649400334684,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6226bd0163a0d8c7",
+  "name" : "批量删除",
+  "time" : {
+    "start" : 1649400329553,
+    "stop" : 1649400333687,
+    "duration" : 4134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "788689e55ce8d88f",
+  "name" : "编辑设备列表",
+  "time" : {
+    "start" : 1649400334684,
+    "stop" : 1649400334762,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62e539de9951749e",
+  "name" : "批量删除该角色",
+  "time" : {
+    "start" : 1649400334418,
+    "stop" : 1649400334496,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85ad56d360b8bea9",
+  "name" : "添加设备",
+  "time" : {
+    "start" : 1649400334512,
+    "stop" : 1649400334605,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3ecf8a46adc2fd",
+  "name" : "角色列表查询",
+  "time" : {
+    "start" : 1649400311591,
+    "stop" : 1649400311607,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7b1b7e99af02383",
+  "name" : "新建目录",
+  "time" : {
+    "start" : 1649400334996,
+    "stop" : 1649400335168,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93858b791ce88b27",
+  "name" : "删除设备列表",
+  "time" : {
+    "start" : 1649400334762,
+    "stop" : 1649400334793,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2612980c3eccf8be",
+  "name" : "删除角色",
+  "time" : {
+    "start" : 1649400334371,
+    "stop" : 1649400334418,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8bac1f3b02ef59db",
+  "name" : "添加基本角色",
+  "time" : {
+    "start" : 1649400311419,
+    "stop" : 1649400311591,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "beb0faa53c29b306",
+  "name" : "添加用户2",
+  "time" : {
+    "start" : 1649400315811,
+    "stop" : 1649400320640,
+    "duration" : 4829
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "55ce5bb6e8953802",
+  "name" : "编辑角色",
+  "time" : {
+    "start" : 1649400334153,
+    "stop" : 1649400334355,
+    "duration" : 202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8851015694c2557b",
+  "name" : "添加用户3",
+  "time" : {
+    "start" : 1649400320640,
+    "stop" : 1649400325474,
+    "duration" : 4834
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15f4dd968abde15",
+  "name" : "新建相同目录",
+  "time" : {
+    "start" : 1649400335324,
+    "stop" : 1649400335496,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "749e0694da7c0189",
+  "name" : "文件列表其他目录查询",
+  "time" : {
+    "start" : 1649400334949,
+    "stop" : 1649400334996,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eeda4c33626e3af",
+  "name" : "用户列表查询",
+  "time" : {
+    "start" : 1649400325474,
+    "stop" : 1649400325489,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d67d830641afaa6a",
+  "name" : "新建后查询",
+  "time" : {
+    "start" : 1649400335168,
+    "stop" : 1649400335324,
+    "duration" : 156
   },
   "status" : "passed",
   "severity" : "normal"

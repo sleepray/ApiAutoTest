@@ -1,0 +1,8 @@
+{
+    "success": false,
+    "code": "400",
+    "message": "Validation Failed",
+    "data": [
+        "field: userAction, error message: 权限值最小为0"
+    ]
+}

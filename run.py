@@ -26,8 +26,9 @@ def run():
     if os.path.exists('report/'):
         shutil.rmtree(path='report/')
 
-    logger.remove()
-    logger.add(file_path['log'], enqueue=True, encoding='utf-8')
+    # logger.remove() 不输出到控制台
+    # logger.remove()
+    logger.add(file_path['log'], enqueue=True, encoding='utf-8',retention=10) # retention 保留日志数量
     logger.info("""
                  _    _         _      _____         _
   __ _ _ __ (_)  / \\  _   _| |_ __|_   _|__  ___| |_
@@ -39,6 +40,7 @@ def run():
     """)
     pytest.main(
         args=[
+            '-v', #显示执行进度
             'test/test_api.py',
             f'--alluredir={file_path["report"]}/data'])
 

@@ -56,6 +56,8 @@ database:
     # 数据库备份文件导出的本地路径, 需要保证存在该文件夹
     sql_data_file: backup_sqls/
 
-
+#自定义变量
+variable:
+  pagesize: 100
 
 

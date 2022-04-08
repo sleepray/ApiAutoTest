@@ -1,0 +1,138 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "current": 1,
+        "pageSize": 100,
+        "total": 18,
+        "totalPages": 1,
+        "list": [
+            {
+                "id": 2,
+                "name": "设备管理员",
+                "description": "管理设备的管理员",
+                "permIds": "4,10,11,2,3",
+                "services": null
+            },
+            {
+                "id": 93,
+                "name": "测试角色1号",
+                "description": "",
+                "permIds": "4,5,1,6,8,7,9,2,3,60,61,14,15,62,10,63,11",
+                "services": null
+            },
+            {
+                "id": 96,
+                "name": "测试角色3号",
+                "description": "",
+                "permIds": "2,1,10,6",
+                "services": null
+            },
+            {
+                "id": 97,
+                "name": "测试角色2号",
+                "description": "",
+                "permIds": "2,1,10",
+                "services": null
+            },
+            {
+                "id": 98,
+                "name": "测试角色4号",
+                "description": "",
+                "permIds": "1,10,2",
+                "services": null
+            },
+            {
+                "id": 155,
+                "name": "测试角色5号",
+                "description": "",
+                "permIds": "11,2,4,5,1,10",
+                "services": null
+            },
+            {
+                "id": 448,
+                "name": "liangxx1",
+                "description": "hhh",
+                "permIds": "6,7,2,3,5,61,1,14,8,15,9,62,10,63,11,4,60",
+                "services": null
+            },
+            {
+                "id": 653,
+                "name": "role_veEjt",
+                "description": "this is test role",
+                "permIds": "2,5,1,10,11,4",
+                "services": null
+            },
+            {
+                "id": 655,
+                "name": "role_vi0FN",
+                "description": "this is test role",
+                "permIds": "1,10,11,2,4,5",
+                "services": null
+            },
+            {
+                "id": 656,
+                "name": "role_EIWjp",
+                "description": "this is test role",
+                "permIds": "10,11,1,2,4,5",
+                "services": null
+            },
+            {
+                "id": 657,
+                "name": "role_BHeXc",
+                "description": "this is test role",
+                "permIds": "11,2,4,5,1,10",
+                "services": null
+            },
+            {
+                "id": 658,
+                "name": "role_AV6Jv",
+                "description": "this is test role",
+                "permIds": "2,4,5,1,10,11",
+                "services": null
+            },
+            {
+                "id": 663,
+                "name": "role_0Jft0",
+                "description": "this is test role",
+                "permIds": "2,4,5,1,10,11",
+                "services": null
+            },
+            {
+                "id": 664,
+                "name": "role_lsvxf",
+                "description": "this is test role",
+                "permIds": "2,4,5,1,10,11",
+                "services": null
+            },
+            {
+                "id": 665,
+                "name": "test",
+                "description": "基础角色",
+                "permIds": "1,62,3,6,11,8,4,7,60,9,5,2,61,10,63,64,65",
+                "services": null
+            },
+            {
+                "id": 666,
+                "name": "new_username1",
+                "description": "牛的一批",
+                "permIds": "1,2,12,14",
+                "services": null
+            },
+            {
+                "id": 667,
+                "name": "new_username2",
+                "description": "牛的一批",
+                "permIds": "2,12,14,1",
+                "services": null
+            },
+            {
+                "id": 668,
+                "name": "new_username3",
+                "description": "牛的一批",
+                "permIds": "1,2,12,14",
+                "services": null
+            }
+        ]
+    }
+}

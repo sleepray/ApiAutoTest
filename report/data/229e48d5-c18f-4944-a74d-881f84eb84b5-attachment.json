@@ -1,0 +1,162 @@
+{
+    "code": "200",
+    "message": "服务器处理成功",
+    "data": {
+        "current": 1,
+        "pageSize": 100,
+        "total": 15,
+        "totalPages": 1,
+        "list": [
+            {
+                "id": 127,
+                "nickname": null,
+                "username": "liang",
+                "isAdmin": 0,
+                "roleName": "测试角色1号",
+                "roleId": "93",
+                "lastLoginTime": "2022-04-08 10:49:56",
+                "createdTime": "2022-03-30 15:55:08"
+            },
+            {
+                "id": 128,
+                "nickname": null,
+                "username": "hongqi",
+                "isAdmin": 0,
+                "roleName": "测试角色1号",
+                "roleId": "93",
+                "lastLoginTime": "2022-03-30 17:29:57",
+                "createdTime": "2022-03-30 17:29:52"
+            },
+            {
+                "id": 144,
+                "nickname": null,
+                "username": "lihang22",
+                "isAdmin": 0,
+                "roleName": "测试角色5号",
+                "roleId": "155",
+                "lastLoginTime": "2022-04-02 10:02:50",
+                "createdTime": "2022-04-02 10:02:59"
+            },
+            {
+                "id": 300,
+                "nickname": null,
+                "username": "test111",
+                "isAdmin": 0,
+                "roleName": "测试角色5号",
+                "roleId": "155",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-07 11:14:23"
+            },
+            {
+                "id": 348,
+                "nickname": null,
+                "username": "lihang@",
+                "isAdmin": 0,
+                "roleName": "liangxx1",
+                "roleId": "448",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 09:24:30"
+            },
+            {
+                "id": 397,
+                "nickname": null,
+                "username": "user_3MXhI",
+                "isAdmin": 0,
+                "roleName": "role_veEjt",
+                "roleId": "653",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:28:54"
+            },
+            {
+                "id": 398,
+                "nickname": null,
+                "username": "user_zYtne",
+                "isAdmin": 0,
+                "roleName": "role_vi0FN",
+                "roleId": "655",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:28:59"
+            },
+            {
+                "id": 399,
+                "nickname": null,
+                "username": "user_mA5z0",
+                "isAdmin": 0,
+                "roleName": "role_EIWjp",
+                "roleId": "656",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:31:26"
+            },
+            {
+                "id": 400,
+                "nickname": null,
+                "username": "user_XIS37",
+                "isAdmin": 0,
+                "roleName": "role_BHeXc",
+                "roleId": "657",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:31:31"
+            },
+            {
+                "id": 401,
+                "nickname": null,
+                "username": "user_v1ku2",
+                "isAdmin": 0,
+                "roleName": "role_AV6Jv",
+                "roleId": "658",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:36:42"
+            },
+            {
+                "id": 405,
+                "nickname": null,
+                "username": "user_PvW5R",
+                "isAdmin": 0,
+                "roleName": "role_0Jft0",
+                "roleId": "663",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:42:37"
+            },
+            {
+                "id": 406,
+                "nickname": null,
+                "username": "user_Pm23J",
+                "isAdmin": 0,
+                "roleName": "role_lsvxf",
+                "roleId": "664",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:43:19"
+            },
+            {
+                "id": 407,
+                "nickname": null,
+                "username": "new_admin",
+                "isAdmin": 0,
+                "roleName": "test",
+                "roleId": "665",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:45:11"
+            },
+            {
+                "id": 408,
+                "nickname": null,
+                "username": "new_adminx",
+                "isAdmin": 0,
+                "roleName": "test",
+                "roleId": "665",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:45:15"
+            },
+            {
+                "id": 409,
+                "nickname": null,
+                "username": "new_adminy",
+                "isAdmin": 0,
+                "roleName": "test",
+                "roleId": "665",
+                "lastLoginTime": null,
+                "createdTime": "2022-04-08 14:45:20"
+            }
+        ]
+    }
+}

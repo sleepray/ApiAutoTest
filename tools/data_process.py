@@ -16,7 +16,10 @@ import json, requests, json
 class DataProcess:
     # 存放提取参数的池子
     extra_pool = {}
+    # 参数池提前载入自定义变量
+    extra_pool.update(ReadFile.read_config('$.variable'))
     header = ReadFile.read_config('$.request_headers')
+
 
     @classmethod
     def handle_path(cls, path_str: str, env: str) -> str:
@@ -161,4 +164,8 @@ class DataProcess:
                         f'第{index}个断言失败 -|- 实际结果:{actual} || 预期结果: {v}')
 
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
+    extra_pool = {}
+    # variable = ReadFile.read_config('$.variable')
+    extra_pool.update(ReadFile.read_config('$.variable'))
+    print(extra_pool)

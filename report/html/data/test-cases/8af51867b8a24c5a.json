@@ -1,0 +1,229 @@
+{
+  "uid" : "8af51867b8a24c5a",
+  "name" : "添加角色",
+  "fullName" : "test.test_api#test_main",
+  "historyId" : "cb8576f098f00f7b2b9caa91976f2b58",
+  "time" : {
+    "start" : 1649400333802,
+    "stop" : 1649400333960,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "cases",
+    "time" : {
+      "start" : 1649400333801,
+      "stop" : 1649400333802,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://192.168.0.6/api/userMgr/role",
+      "time" : {
+        "start" : 1649400333802,
+        "stop" : 1649400333802,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1649400333802,
+        "stop" : 1649400333803,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7953f27d6212088d",
+        "name" : "请求头",
+        "source" : "7953f27d6212088d.json",
+        "type" : "application/json",
+        "size" : 382
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1649400333803,
+        "stop" : 1649400333803,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "51277059c309f1cb",
+        "name" : "请求数据",
+        "source" : "51277059c309f1cb.json",
+        "type" : "application/json",
+        "size" : 135
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "响应耗时(s): 0.154436",
+      "time" : {
+        "start" : 1649400333958,
+        "stop" : 1649400333958,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "响应结果",
+      "time" : {
+        "start" : 1649400333958,
+        "stop" : 1649400333959,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ca3dd6f2867ce390",
+        "name" : "响应结果",
+        "source" : "ca3dd6f2867ce390.json",
+        "type" : "application/json",
+        "size" : 102
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "当前可用参数池",
+      "time" : {
+        "start" : 1649400333959,
+        "stop" : 1649400333959,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b78b4bb2f178695c",
+        "name" : "当前可用参数池",
+        "source" : "b78b4bb2f178695c.json",
+        "type" : "application/json",
+        "size" : 272
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "第1个断言",
+      "time" : {
+        "start" : 1649400333959,
+        "stop" : 1649400333960,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5e3b8ddfa9f30ede",
+        "name" : "第1个断言",
+        "source" : "5e3b8ddfa9f30ede.json",
+        "type" : "application/json",
+        "size" : 81
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "e61b92581ed24d06",
+      "name" : "stderr",
+      "source" : "e61b92581ed24d06.txt",
+      "type" : "text/plain",
+      "size" : 2053
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6,
+    "hasContent" : true,
+    "stepsCount" : 7
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "flaky(reruns=None, reruns_delay=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BNVFIE4"
+  }, {
+    "name" : "thread",
+    "value" : "14040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cases",
+    "value" : "['c14', '添加角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"new_username1\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=None, reruns_delay=1)" ]
+  },
+  "source" : "8af51867b8a24c5a.json",
+  "parameterValues" : [ "['c14', '添加角色', '{\"Authorization\": \"${token}\"}', 'userMgr/role', 'post', 'json', '', 'check_json', '{\"name\":\"new_username1\",\"description\":\"牛的一批\",\"permIds\":[1,2,12,14]}', '', '', '{\"$.data\":\"角色添加成功!!!!!!!\"}']" ]
+}

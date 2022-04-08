@@ -1,0 +1,24 @@
+[32m2022-04-08 14:45:11.278[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：post请求实现登录
+ 请求头：
+ 接口路径: userMgr/auth
+ 检验方式: check_code 
+ 请求参数: {"username":"root","password":"123456"} 
+  提取参数: {"token": "$.data.token"} 
+ 后置sql: select * from apis; select * from cases 
+ 预期结果: 200.0 
+ [0m
+[32m2022-04-08 14:45:11.278[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}[0m
+[32m2022-04-08 14:45:11.419[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m114[0m - [1m
+最终请求地址:http://192.168.0.6/api/userMgr/auth
+请求方法:post
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}
+请求参数:{'username': 'root', 'password': '123456'}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'id': 1, 'isAdmin': 1, 'authorities': [{'id': 1, 'perm': 'r', 'name': '首页统计'}, {'id': 2, 'perm': 'r', 'name': '用户管理'}, {'id': 3, 'perm': 'w', 'name': '用户管理'}, {'id': 4, 'perm': 'r', 'name': '设备管理'}, {'id': 5, 'perm': 'w', 'name': '设备管理'}, {'id': 6, 'perm': 'r', 'name': '服务管理'}, {'id': 7, 'perm': 'w', 'name': '服务管理'}, {'id': 8, 'perm': 'r', 'name': '集群管理'}, {'id': 9, 'perm': 'w', 'name': '集群管理'}, {'id': 10, 'perm': 'r', 'name': '数据管理'}, {'id': 11, 'perm': 'w', 'name': '数据管理'}, {'id': 14, 'perm': 'r', 'name': '数据中心'}, {'id': 15, 'perm': 'w', 'name': '数据中心'}, {'id': 60, 'perm': 'r', 'name': 'Demo服务'}, {'id': 61, 'perm': 'w', 'name': 'Demo服务'}, {'id': 62, 'perm': 'r', 'name': 'yys'}, {'id': 63, 'perm': 'w', 'name': 'yys'}], 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks', 'username': 'root'}}[0m
+[32m2022-04-08 14:45:11.419[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data.token[0m
+[32m2022-04-08 14:45:11.419[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: token, 对应value: $.data.token[0m
+[32m2022-04-08 14:45:11.419[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m139[0m - [1m断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True[0m

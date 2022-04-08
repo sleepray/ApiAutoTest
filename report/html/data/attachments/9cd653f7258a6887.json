@@ -1,0 +1,103 @@
+{
+    "success": true,
+    "code": "200",
+    "message": "success",
+    "data": {
+        "current": 1,
+        "total": 9,
+        "pages": 1,
+        "pageSize": 10,
+        "list": [
+            {
+                "permission": "rwx------",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-03-30 19:00:00",
+                "size": 0.0,
+                "name": ".Trash",
+                "isdir": true,
+                "path": "/root/.Trash"
+            },
+            {
+                "permission": "rwxr-xr-x",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-03-29 09:07:51",
+                "size": 0.0,
+                "name": ".sparkStaging",
+                "isdir": true,
+                "path": "/root/.sparkStaging"
+            },
+            {
+                "permission": "rwx------",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-04-07 16:45:24",
+                "size": 0.0,
+                "name": ".staging",
+                "isdir": true,
+                "path": "/root/.staging"
+            },
+            {
+                "permission": "rw-rw-rw-",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-04-07 16:58:50",
+                "size": 0.0,
+                "name": "11",
+                "isdir": true,
+                "path": "/root/11"
+            },
+            {
+                "permission": "rw-rw-rw-",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-03-31 16:58:38",
+                "size": 0.0,
+                "name": "213",
+                "isdir": true,
+                "path": "/root/213"
+            },
+            {
+                "permission": "rwxrw-rw-",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-03-30 15:35:52",
+                "size": 0.0,
+                "name": "321",
+                "isdir": true,
+                "path": "/root/321"
+            },
+            {
+                "permission": "---------",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-03-30 18:18:07",
+                "size": 0.0,
+                "name": "chiangTest",
+                "isdir": true,
+                "path": "/root/chiangTest"
+            },
+            {
+                "permission": "rw-rw-rw-",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-04-08 14:45:34",
+                "size": 0.0,
+                "name": "new_test",
+                "isdir": true,
+                "path": "/root/new_test"
+            },
+            {
+                "permission": "rw-rw-rw-",
+                "owner": "root",
+                "group": "supergroup",
+                "lastmodified": "2022-04-01 18:34:31",
+                "size": 0.0,
+                "name": "wqq1",
+                "isdir": true,
+                "path": "/root/wqq1"
+            }
+        ]
+    }
+}

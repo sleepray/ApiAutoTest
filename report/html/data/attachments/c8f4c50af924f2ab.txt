@@ -1,0 +1,32 @@
+[32m2022-04-08 14:45:34.121[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：角色查询获取id
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roles?pageSize=${pagesize}
+ 检验方式: check_code 
+ 请求参数: {"current":1,"pageSize":100} 
+  提取参数: {"new_username":"$.data.list[?(@.name=='test')].name","roleId0":"$.data.list[?(@.name=='test')].id","roleId1":"$.data.list[?(@.name=='new_username1')].id","roleId2":"$.data.list[?(@.name=='new_username2')].id","roleId3":"$.data.list[?(@.name=='new_username3')].id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ [0m
+[32m2022-04-08 14:45:34.136[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks'}[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m114[0m - [1m
+最终请求地址:http://192.168.0.6/api/userMgr/roles?pageSize=100
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks'}
+请求参数:{'current': 1, 'pageSize': 100}
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': {'current': 1, 'pageSize': 100, 'total': 18, 'totalPages': 1, 'list': [{'id': 2, 'name': '设备管理员', 'description': '管理设备的管理员', 'permIds': '4,10,11,2,3', 'services': None}, {'id': 93, 'name': '测试角色1号', 'description': '', 'permIds': '4,5,1,6,8,7,9,2,3,60,61,14,15,62,10,63,11', 'services': None}, {'id': 96, 'name': '测试角色3号', 'description': '', 'permIds': '2,1,10,6', 'services': None}, {'id': 97, 'name': '测试角色2号', 'description': '', 'permIds': '2,1,10', 'services': None}, {'id': 98, 'name': '测试角色4号', 'description': '', 'permIds': '1,10,2', 'services': None}, {'id': 155, 'name': '测试角色5号', 'description': '', 'permIds': '11,2,4,5,1,10', 'services': None}, {'id': 448, 'name': 'liangxx1', 'description': 'hhh', 'permIds': '6,7,2,3,5,61,1,14,8,15,9,62,10,63,11,4,60', 'services': None}, {'id': 653, 'name': 'role_veEjt', 'description': 'this is test role', 'permIds': '2,5,1,10,11,4', 'services': None}, {'id': 655, 'name': 'role_vi0FN', 'description': 'this is test role', 'permIds': '1,10,11,2,4,5', 'services': None}, {'id': 656, 'name': 'role_EIWjp', 'description': 'this is test role', 'permIds': '10,11,1,2,4,5', 'services': None}, {'id': 657, 'name': 'role_BHeXc', 'description': 'this is test role', 'permIds': '11,2,4,5,1,10', 'services': None}, {'id': 658, 'name': 'role_AV6Jv', 'description': 'this is test role', 'permIds': '2,4,5,1,10,11', 'services': None}, {'id': 663, 'name': 'role_0Jft0', 'description': 'this is test role', 'permIds': '2,4,5,1,10,11', 'services': None}, {'id': 664, 'name': 'role_lsvxf', 'description': 'this is test role', 'permIds': '2,4,5,1,10,11', 'services': None}, {'id': 665, 'name': 'test', 'description': '基础角色', 'permIds': '1,62,3,6,11,8,4,7,60,9,5,2,61,10,63,64,65', 'services': None}, {'id': 666, 'name': 'new_username1', 'description': '牛的一批', 'permIds': '1,2,12,14', 'services': None}, {'id': 667, 'name': 'new_username2', 'description': '牛的一批', 'permIds': '2,12,14,1', 'services': None}, {'id': 668, 'name': 'new_username3', 'description': '牛的一批', 'permIds': '1,2,12,14', 'services': None}]}}[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data.list[?(@.name=='test')].name[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: new_username, 对应value: $.data.list[?(@.name=='test')].name[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data.list[?(@.name=='test')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: roleId0, 对应value: $.data.list[?(@.name=='test')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data.list[?(@.name=='new_username1')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: roleId1, 对应value: $.data.list[?(@.name=='new_username1')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data.list[?(@.name=='new_username2')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: roleId2, 对应value: $.data.list[?(@.name=='new_username2')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data.list[?(@.name=='new_username3')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: roleId3, 对应value: $.data.list[?(@.name=='new_username3')].id[0m
+[32m2022-04-08 14:45:34.152[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m139[0m - [1m断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True[0m

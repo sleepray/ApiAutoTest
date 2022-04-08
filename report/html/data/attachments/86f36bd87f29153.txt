@@ -1,0 +1,24 @@
+[32m2022-04-08 14:45:11.591[0m | [34m[1mDEBUG   [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m37[0m - [34m[1m用例进行处理前数据: 
+用例标题：角色列表查询
+ 请求头：{"Authorization": "${token}"}
+ 接口路径: userMgr/roleList
+ 检验方式: check_code 
+ 请求参数:  
+  提取参数: {"roleId":"$.data[?(@.name=='test')].id"} 
+ 后置sql:  
+ 预期结果: 200.0 
+ [0m
+[32m2022-04-08 14:45:11.591[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_request[0m:[36m44[0m - [1m请求头数据： 
+ {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks'}[0m
+[32m2022-04-08 14:45:11.606[0m | [1mINFO    [0m | [36mapi.base_requests[0m:[36msend_api[0m:[36m114[0m - [1m
+最终请求地址:http://192.168.0.6/api/userMgr/roleList
+请求方法:get
+请求头:{'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', 'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjQ5NDAwMzEwLCJzdWIiOiIiLCJleHAiOjE2NDk0ODY3MTB9.SESoTnaS47Aug41jJUxjAJN7GToSxH_kMzFmm6Ap1ks'}
+请求参数:None
+上传文件:None
+响应状态码200
+响应数据:{'code': '200', 'message': '服务器处理成功', 'data': [{'id': 2, 'name': '设备管理员'}, {'id': 93, 'name': '测试角色1号'}, {'id': 96, 'name': '测试角色3号'}, {'id': 97, 'name': '测试角色2号'}, {'id': 98, 'name': '测试角色4号'}, {'id': 155, 'name': '测试角色5号'}, {'id': 448, 'name': 'liangxx1'}, {'id': 653, 'name': 'role_veEjt'}, {'id': 655, 'name': 'role_vi0FN'}, {'id': 656, 'name': 'role_EIWjp'}, {'id': 657, 'name': 'role_BHeXc'}, {'id': 658, 'name': 'role_AV6Jv'}, {'id': 663, 'name': 'role_0Jft0'}, {'id': 664, 'name': 'role_lsvxf'}, {'id': 665, 'name': 'test'}]}[0m
+[32m2022-04-08 14:45:11.606[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m117[0m - [1m提取的值v为:$.data[?(@.name=='test')].id[0m
+[32m2022-04-08 14:45:11.606[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36mhandle_extra[0m:[36m119[0m - [1m加入依赖字典,key: roleId, 对应value: $.data[?(@.name=='test')].id[0m
+[32m2022-04-08 14:45:11.606[0m | [1mINFO    [0m | [36mtools.data_process[0m:[36massert_result[0m:[36m139[0m - [1m断言结果, 实际结果:200 | 预期结果:200.0 
+断言结果 True[0m
