@@ -20,14 +20,22 @@ from tools.hooks import *
 
 
 def exec_func(func: str) -> str:
-    """执行函数(exec可以执行Python代码)
+    """执行函数(exec将字符转化为Python语句，用于执行Python代码)
     :params func 字符的形式调用函数
     : return 返回的将是个str类型的结果
     """
+    # 之前的处理方法
     # 得到一个局部的变量字典，来修正exec函数中的变量，在其他函数内部使用不到的问题
-    loc = locals()
-    exec(f"result = {func}")
-    return str(loc['result'])
+    # loc = locals()
+    # exec(f"result = {func}")
+    # return str(loc['result'])
+
+    # 现在的方法
+    # eval() 函数将去掉两个引号，去掉引号的作为python语句执行，之前的字符串将会被其解释为一个变量，
+    # 由于之前没有定义过hello变量，解释器会报错，所以这里使用两层引号
+    # 不加双层引号跑 pytest框架能运行，暂不知道这里逻辑
+
+    return str(eval(f"{func}"))
 
 
 def extractor(obj: dict, expr: str = '.') -> object:
@@ -51,11 +59,15 @@ def rep_expr(content: str, data: dict) -> str:
     :param data: 提取的参数变量池
     return content： 替换表达式后的字符串
     """
+    # 替换${}模板类型的原始字符串
     content = Template(content).safe_substitute(data)
     for func in re.findall('\\${(.*?)}', content):
         try:
+            # 执行${}中的函数，并返回执行结果进行替换
             # replace添加参数1保证只替换一次，修复多次调用同一函数时值相同的bug
             content = content.replace('${%s}' % func, exec_func(func),1)
+            logger.info(f"exec_func(func),{exec_func(func)}")
+            logger.info(f"content,{content}")
         except Exception as e:
             logger.error(e)
     return content
@@ -114,3 +126,14 @@ def allure_step_no(step: str):
     """
     with allure.step(step):
         pass
+
+def he():
+    s = "123das"
+    print("hello 1")
+    return s
+
+
+if __name__ == '__main__':
+    # print(exec_func(random_choice("aaa,bbb,ccc")))
+    print(exec_func(random_int("1,100")))
+    # print(exec_func(he()))

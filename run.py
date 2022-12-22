@@ -24,10 +24,11 @@ email = ReadFile.read_config('$.email')
 
 def run():
     if os.path.exists('report/'):
+        #递归的删除文件
         shutil.rmtree(path='report/')
 
-    # logger.remove() 不输出到控制台
-    # logger.remove()
+    # 不输出到控制台
+    logger.remove()
     logger.add(file_path['log'], enqueue=True, encoding='utf-8',retention=10) # retention 保留日志数量
     logger.info("""
                  _    _         _      _____         _
@@ -40,7 +41,7 @@ def run():
     """)
     pytest.main(
         args=[
-            '-v', #显示执行进度
+            '-sv', #显示执行进度
             'test/test_api.py',
             f'--alluredir={file_path["report"]}/data'])
 

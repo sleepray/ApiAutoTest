@@ -54,3 +54,7 @@ class ReadFile:
                 value.pop(4)
                 data_list.append(list(value))
         return data_list
+
+if __name__ == '__main__':
+    red = ReadFile()
+    red.read_testcase()

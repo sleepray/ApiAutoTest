@@ -73,6 +73,7 @@ class DataProcess:
         """
         if variable != '':
             data = rep_expr(variable, cls.extra_pool)
+            logger.info(f"data,{data}")
             variable = convert_json(data)
             return variable
 

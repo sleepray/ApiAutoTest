@@ -2,8 +2,8 @@ server:
   # 本地接口服务
    test: http://127.0.0.1:8888/
   # https://space.bilibili.com/283273603 演示项目后端服务来自
-#   dev: http://192.168.31.11:8080/backend/
-   dev: http://192.168.0.6/api/
+   dev: http://192.168.5.39:8080/backend/
+#   dev: http://192.168.0.6/api/
 
 # 基准的请求头信息
 request_headers:
@@ -13,8 +13,8 @@ request_headers:
 
 # 用例及报告位置
 file_path:
-#  test_case: data/case_data.xls
-  test_case: data/613_case_data.xls
+  test_case: data/case_data.xls
+#  test_case: data/613_case_data.xls
   report: report/
   log: log/run{time} log
 

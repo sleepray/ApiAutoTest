@@ -1,6 +1,0 @@
-{
-    "success": false,
-    "code": "500",
-    "message": "创建文件夹失败！文件夹名[/user/root/test]重复，请勿重复创建",
-    "data": null
-}

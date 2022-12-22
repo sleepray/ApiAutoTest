@@ -1,5 +1,51 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "  File \"<string>\", line 1\n    {\"id\":\"$.data.list.0.id\",\"name\":\"$.data.list.0.name\",\"ip\":\"$.data.list.0.ip\",\"port\":$.data.list.0.port,\"deviceName\":\"\",\"longtitude\":15.21,\"latitude\":16.321,\"clusterName\":\"$.data.list.0.clusterName\",\"description\":\"描述\"}\n                                                                                        ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "服务管理修改",
+        "uid" : "a533b4c41a38c1cc",
+        "parentUid" : "39f7f544712dff6fad1271677bba8b5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1661303399393,
+          "stop" : 1661303399414,
+          "duration" : 21
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c53', '服务管理修改', '{\"Authorization\": \"${token}\"}', 'registry/update', 'post', 'json', '', '', '{\"id\":\"${id}\",\"name\":\"${servicename}\",\"ip\":\"${ip}\",\"port\":${port},\"deviceName\":\"\",\"longtitude\":15.21,\"latitude\":16.321,\"clusterName\":\"${clusterName}\",\"description\":\"描述\"}', '', '', '{\"$.code\": 0}']" ]
+      } ],
+      "uid" : "39f7f544712dff6fad1271677bba8b5e"
+    }, {
+      "name" : "  File \"<string>\", line 1\n    {\"ip\":\"${iptoint(\"$.data.list.0.ip\")}\", \"serviceName\":\"$.data.list.0.name\", \"port\":\"$.data.list.0.port\", \"infoType\":4}\n                      ^\nSyntaxError: invalid syntax",
+      "children" : [ {
+        "name" : "指标统计",
+        "uid" : "7c1d94da7e04ee4",
+        "parentUid" : "f886a9e97153c2eede4177166b9381cf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1661303399598,
+          "stop" : 1661303399600,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "['c55', '指标统计', '{\"Authorization\": \"${token}\"}', 'statusStat/StatCount', 'get', 'params', '', 'check_code', '{\"ip\":\"${iptoint(\"${ip}\")}\", \"serviceName\":\"${servicename}\", \"port\":\"${port}\", \"infoType\":4}', '', '', 200.0]" ]
+      } ],
+      "uid" : "f886a9e97153c2eede4177166b9381cf"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
 }
